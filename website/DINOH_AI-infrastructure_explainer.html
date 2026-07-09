@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!--
+  DINOH — public explainer: "Analysing oral histories with AI, with accountable safeguards"
+  C2DH / University of Luxembourg. Self-contained, no external dependencies.
+  EMBEDDING: paste the <style> + the <div id="life-explainer"> ... </div> + <script> into a CMS HTML block,
+  or <iframe> this whole file. Brand accent: change --accent (and --accent-ink) in :root below.
+  Languages: EN/DE toggle. View: parallel tracks (everyone / researchers+tech / both).
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DINOH — AI in our oral-history infrastructure</title>
+<style>
+#life-explainer{
+  --accent:#1f6f8b; --accent-ink:#0e3d4d;
+  --bg:#ffffff; --surface:#f5f7f8; --ink:#1b2227; --muted:#586069; --line:#e3e7ea;
+  --green:#2e7d32; --green-bg:#e8f3e9; --green-ink:#1c5320;
+  --amber:#9a6a00; --amber-bg:#fbf0d8; --amber-ink:#6b4a00;
+  --red:#b3261e; --red-bg:#fbe7e6; --red-ink:#7a1812;
+  --r:12px;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink); line-height:1.65; max-width:960px; margin:0 auto; padding:8px 18px 40px;
+  -webkit-font-smoothing:antialiased;
+}
+#life-explainer *{box-sizing:border-box}
+#life-explainer h1{font-size:30px;font-weight:600;line-height:1.2;margin:.2em 0 .15em}
+#life-explainer h2{font-size:22px;font-weight:600;margin:0 0 .35em}
+#life-explainer h3{font-size:17px;font-weight:600;margin:0 0 .3em}
+#life-explainer p{margin:.4em 0}
+#life-explainer .kicker{font-size:13px;letter-spacing:.04em;color:var(--accent-ink);font-weight:600;text-transform:uppercase}
+#life-explainer .lead{font-size:18px;color:#2c343b;max-width:70ch}
+#life-explainer .controls{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;
+  position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--line);margin-bottom:18px}
+#life-explainer .ctl{display:flex;align-items:center;gap:8px}
+#life-explainer .ctl > span.lab{font-size:13px;color:var(--muted)}
+#life-explainer .seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+#life-explainer .seg button{border:0;background:var(--bg);color:var(--ink);font:inherit;font-size:13px;
+  padding:6px 12px;cursor:pointer;line-height:1}
+#life-explainer .seg button[aria-pressed="true"]{background:var(--accent);color:#fff}
+#life-explainer section{padding:26px 0;border-top:1px solid var(--line)}
+#life-explainer .num{display:inline-block;min-width:1.6em;color:var(--accent);font-weight:600}
+#life-explainer figure{margin:18px 0 6px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+#life-explainer svg{display:block;width:100%;height:auto}
+#life-explainer .tracks{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px}
+#life-explainer .track{background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px}
+#life-explainer .track .tag{font-size:12px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);
+  display:block;margin-bottom:4px}
+#life-explainer .t-tech .tag{color:var(--accent-ink)}
+#life-explainer .t-tech code{background:#eef2f4;padding:1px 5px;border-radius:5px;font-size:.92em}
+@media(max-width:720px){#life-explainer .tracks{grid-template-columns:1fr}#life-explainer h1{font-size:25px}}
+/* language + track visibility */
+#life-explainer.lang-en .l-de{display:none}
+#life-explainer.lang-de .l-en{display:none}
+#life-explainer.track-everyone .t-tech{display:none}
+#life-explainer.track-tech .t-plain{display:none}
+/* traffic-light cards */
+#life-explainer .tl{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+@media(max-width:720px){#life-explainer .tl{grid-template-columns:1fr}}
+#life-explainer .tlc{border:1px solid var(--line);border-radius:var(--r);padding:0;overflow:hidden;background:var(--bg);text-align:left}
+#life-explainer .tlc summary{list-style:none;cursor:pointer;padding:14px 16px;display:block}
+#life-explainer .tlc summary::-webkit-details-marker{display:none}
+#life-explainer .tlc .dot{width:14px;height:14px;border-radius:50%;display:inline-block;vertical-align:middle;margin-right:8px}
+#life-explainer .tlc .nm{font-weight:600;font-size:16px;vertical-align:middle}
+#life-explainer .tlc .wh{color:#39414a;font-size:14.5px;margin-top:6px}
+#life-explainer .tlc .more{padding:0 16px 16px;font-size:14px;color:#39414a;border-top:1px dashed var(--line);margin-top:4px;padding-top:12px}
+#life-explainer .tlc .needs{font-weight:600;color:var(--ink);font-size:13px;margin-bottom:3px;display:block}
+#life-explainer .tlc.g{border-top:4px solid var(--green)}#life-explainer .tlc.g .dot{background:var(--green)}
+#life-explainer .tlc.y{border-top:4px solid var(--amber)}#life-explainer .tlc.y .dot{background:var(--amber)}
+#life-explainer .tlc.r{border-top:4px solid var(--red)}#life-explainer .tlc.r .dot{background:var(--red)}
+#life-explainer .hint{font-size:12.5px;color:var(--muted);margin-top:6px}
+/* gates demo */
+#life-explainer .demo{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px}
+#life-explainer .demo button{font:inherit;font-size:13px;padding:7px 12px;border:1px solid var(--line);
+  background:var(--bg);border-radius:999px;cursor:pointer;color:var(--ink)}
+#life-explainer .demo button[aria-pressed="true"]{border-color:var(--accent);background:#eaf2f5;color:var(--accent-ink);font-weight:600}
+#life-explainer .verdict{margin-top:8px;font-size:14.5px;min-height:1.4em}
+#life-explainer .verdict .ok{color:var(--green-ink);font-weight:600}
+#life-explainer .verdict .no{color:var(--red-ink);font-weight:600}
+#life-explainer .verdict code{background:#fbe7e6;color:var(--red-ink);padding:1px 6px;border-radius:5px}
+/* ai vs human */
+#life-explainer .split{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+@media(max-width:720px){#life-explainer .split{grid-template-columns:1fr}}
+#life-explainer .col{border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;background:var(--bg)}
+#life-explainer .col.machine{border-top:4px solid var(--accent)}
+#life-explainer .col.human{border-top:4px solid #6b4ea3}
+#life-explainer .col h3 .ic{font-weight:400;color:var(--muted);font-size:13px;display:block;margin-top:2px}
+#life-explainer .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+#life-explainer .chip{font-size:13.5px;padding:6px 11px;border-radius:999px;background:#eef2f4;color:#2c343b}
+#life-explainer .col.human .chip{background:#efeaf7;color:#3a2d5c}
+#life-explainer .footer{border-top:1px solid var(--line);margin-top:8px;padding-top:16px;color:var(--muted);font-size:13px}
+#life-explainer .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+#life-explainer svg text{font-family:inherit}
+.svg-pass{transition:fill .25s}
+</style>
+</head>
+<body>
+<div id="life-explainer" class="lang-en track-both">
+<h2 class="sr-only">An illustrated explainer of how the DINOH project uses AI to analyse oral-history material while combining technical safeguards, documented evidence and human decisions.</h2>
+
+<div class="controls" role="group" aria-label="Display options" data-meta-en="Display options" data-meta-de="Anzeigeoptionen">
+  <div class="ctl">
+    <span class="lab"><span class="l-en">Language</span><span class="l-de">Sprache</span></span>
+    <div class="seg" id="langseg">
+      <button data-lang="en" aria-pressed="true">EN</button>
+      <button data-lang="de" aria-pressed="false">DE</button>
+    </div>
+  </div>
+  <div class="ctl">
+    <span class="lab"><span class="l-en">View</span><span class="l-de">Ansicht</span></span>
+    <div class="seg" id="trackseg">
+      <button data-track="everyone" aria-pressed="false"><span class="l-en">For everyone</span><span class="l-de">Für alle</span></button>
+      <button data-track="tech" aria-pressed="false"><span class="l-en">Researchers &amp; tech</span><span class="l-de">Forschung &amp; Technik</span></button>
+      <button data-track="both" aria-pressed="true"><span class="l-en">Both</span><span class="l-de">Beide</span></button>
+    </div>
+  </div>
+</div>
+
+<header>
+  <p class="kicker">DINOH · C²DH · University of Luxembourg</p>
+  <h1><span class="l-en">Reading oral histories with AI — with accountable safeguards</span><span class="l-de">Oral History mit KI lesen — mit nachvollziehbaren Schutzmaßnahmen</span></h1>
+  <p class="lead">
+    <span class="l-en">DINOH collects recorded life stories across the borders of the Greater Region. To study them systematically, we are building a digital research infrastructure where AI can assist reading and coding, technical controls refuse unsupported processing, and the decisions that require judgement remain visibly human.</span>
+    <span class="l-de">DINOH sammelt aufgezeichnete Lebensgeschichten über die Grenzen der Großregion hinweg. Für ihre systematische Untersuchung bauen wir eine digitale Forschungsinfrastruktur, in der KI das Lesen und Codieren unterstützen kann, technische Kontrollen unbelegte Verarbeitung verweigern und urteilsabhängige Entscheidungen sichtbar beim Menschen bleiben.</span>
+  </p>
+</header>
+
+<section aria-labelledby="s1h">
+  <h2 id="s1h"><span class="num">1</span><span class="l-en">How the parts fit together</span><span class="l-de">Wie die Bausteine zusammenwirken</span></h2>
+  <figure>
+    <svg viewBox="0 0 680 330" role="img" aria-labelledby="s1t s1d">
+      <title id="s1t" data-meta-en="DINOH research-infrastructure architecture" data-meta-de="Architektur der DINOH-Forschungsinfrastruktur">DINOH research-infrastructure architecture</title>
+      <desc id="s1d" data-meta-en="Candidate data passes through admission before analysis. A separate synthetic benchmark evaluates privacy safeguards, while a developing provenance layer records how interpretations are produced." data-meta-de="Kandidatendaten durchlaufen den Zugang vor der Analyse. Ein getrennter synthetischer Prüfstand evaluiert Datenschutz-Schutzmaßnahmen; eine sich entwickelnde Provenienzschicht dokumentiert, wie Interpretationen entstehen.">Candidate data passes through admission before analysis. A separate synthetic benchmark evaluates privacy safeguards, while a developing provenance layer records how interpretations are produced.</desc>
+      <rect x="8" y="44" width="118" height="46" rx="8" fill="#eef2f4" stroke="#cfd8dc"></rect>
+      <text x="67" y="63" text-anchor="middle" font-size="13" font-weight="600" fill="#2c343b"><tspan class="l-en">Candidate data</tspan><tspan class="l-de">Kandidatendaten</tspan></text>
+      <text x="67" y="80" text-anchor="middle" font-size="11" fill="#586069"><tspan class="l-en">scope varies</tspan><tspan class="l-de">Scope variiert</tspan></text>
+      <rect x="8" y="232" width="118" height="46" rx="8" fill="#eef2f4" stroke="#cfd8dc"></rect>
+      <text x="67" y="251" text-anchor="middle" font-size="13" font-weight="600" fill="#2c343b"><tspan class="l-en">Synthetic corpus</tspan><tspan class="l-de">Synthet. Korpus</tspan></text>
+      <text x="67" y="268" text-anchor="middle" font-size="11" fill="#586069"><tspan class="l-en">seeded direct PII</tspan><tspan class="l-de">eingestreute direkte PII</tspan></text>
+
+      <rect x="170" y="40" width="70" height="120" rx="8" fill="#fbf0d8" stroke="#e4b94e"></rect>
+      <text x="205" y="92" text-anchor="middle" font-size="12" font-weight="600" fill="#6b4a00"><tspan class="l-en">Admission</tspan><tspan class="l-de">Zugang</tspan></text>
+      <text x="205" y="110" text-anchor="middle" font-size="11" fill="#6b4a00"><tspan class="l-en">classify + verify</tspan><tspan class="l-de">einstufen + prüfen</tspan></text>
+
+      <rect x="286" y="40" width="300" height="120" rx="10" fill="#eaf2f5" stroke="var(--accent)"></rect>
+      <text x="436" y="60" text-anchor="middle" font-size="15" font-weight="600" fill="#0e3d4d"><tspan class="l-en">Analysis</tspan><tspan class="l-de">Analyse</tspan></text>
+      <g font-size="11" fill="#0e3d4d">
+        <rect x="300" y="76" width="64" height="64" rx="7" fill="#fff" stroke="#bcd3da"></rect>
+        <text x="332" y="112" text-anchor="middle"><tspan class="l-en">prepare</tspan><tspan class="l-de">Vorbereiten</tspan></text>
+        <rect x="370" y="76" width="64" height="64" rx="7" fill="#fff" stroke="#bcd3da"></rect>
+        <text x="402" y="108" text-anchor="middle"><tspan class="l-en">segment</tspan><tspan class="l-de">Segment.</tspan></text>
+        <rect x="440" y="76" width="64" height="64" rx="7" fill="#fff" stroke="#bcd3da"></rect>
+        <text x="472" y="112" text-anchor="middle"><tspan class="l-en">code</tspan><tspan class="l-de">Codieren</tspan></text>
+        <rect x="510" y="76" width="64" height="64" rx="7" fill="#fff" stroke="#bcd3da"></rect>
+        <text x="542" y="112" text-anchor="middle"><tspan class="l-en">evaluate</tspan><tspan class="l-de">Bewerten</tspan></text>
+      </g>
+
+      <rect x="286" y="232" width="300" height="46" rx="8" fill="#f3eefb" stroke="#9a82c9"></rect>
+      <text x="436" y="251" text-anchor="middle" font-size="13" font-weight="600" fill="#3a2d5c"><tspan class="l-en">Privacy-safeguard benchmark</tspan><tspan class="l-de">Datenschutz-Prüfstand</tspan></text>
+      <text x="436" y="268" text-anchor="middle" font-size="11" fill="#3a2d5c"><tspan class="l-en">Stage 1: direct-PII recall on synthetic data</tspan><tspan class="l-de">Stufe 1: Direct-PII-Recall auf synthetischen Daten</tspan></text>
+
+      <rect x="170" y="180" width="416" height="30" rx="7" fill="#fff" stroke="#cfd8dc" stroke-dasharray="5 4"></rect>
+      <text x="378" y="200" text-anchor="middle" font-size="12" fill="#586069"><tspan class="l-en">Interpretive provenance — partial / developing</tspan><tspan class="l-de">Interpretative Provenienz — partiell / in Entwicklung</tspan></text>
+
+      <g stroke="#90a0a8" stroke-width="2" fill="none" marker-end="url(#ar)">
+        <path d="M126 67 H168"></path>
+        <path d="M240 100 H284"></path>
+      </g>
+      <g stroke="#9a82c9" stroke-width="2" fill="none" stroke-dasharray="5 4">
+        <path d="M126 255 H284"></path>
+        <path d="M286 255 H205 V162"></path>
+      </g>
+      <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#90a0a8"></path></marker></defs>
+    </svg>
+  </figure>
+  <div class="tracks">
+    <div class="track t-plain"><span class="tag"><span class="l-en">For everyone</span><span class="l-de">Für alle</span></span>
+      <p class="l-en"><strong>Admission</strong> checks whether the documented prerequisites for a dataset are present before analysis begins. <strong>Analysis</strong> prepares, segments and supports coding of admitted material. The current <strong>Benchmark</strong> tests one privacy safeguard — direct-PII detection on synthetic data — rather than the quality of historical interpretation. <strong>Provenance</strong> is the developing layer that makes interpretations traceable.</p>
+      <p class="l-de"><strong>Zugang</strong> prüft vor der Analyse, ob die dokumentierten Voraussetzungen eines Datensatzes vorliegen. <strong>Analyse</strong> bereitet zugelassenes Material auf, segmentiert es und unterstützt das Codieren. Der heutige <strong>Prüfstand</strong> testet eine Datenschutz-Schutzmaßnahme — direkte PII-Erkennung auf synthetischen Daten — nicht die Qualität historischer Deutung. <strong>Provenienz</strong> ist die sich entwickelnde Schicht für nachvollziehbare Interpretationen.</p>
+    </div>
+    <div class="track t-tech"><span class="tag"><span class="l-en">Researchers &amp; tech</span><span class="l-de">Forschung &amp; Technik</span></span>
+      <p class="l-en"><strong>Data Admission &amp; Governance</strong> classifies candidate datasets and verifies machine-checkable prerequisites. <strong>Analysis Workflow</strong> begins after that boundary (preparation → segmentation → AI-assisted coding → evaluation → controlled export). <strong>Evaluation &amp; Benchmarking</strong> currently provides a Stage-1 synthetic direct-PII recall harness; it is privacy assurance, not a QCA-quality acceptance gate. <strong>Interpretive Provenance &amp; Accountability</strong> is partly implemented and partly specified.</p>
+      <p class="l-de"><strong>Datenzugang und Governance</strong> stuft Kandidatendatensätze ein und prüft maschinenprüfbare Voraussetzungen. Der <strong>Analyseworkflow</strong> beginnt hinter dieser Grenze (Vorbereitung → Segmentierung → KI-gestütztes Codieren → Evaluation → kontrollierter Export). <strong>Evaluation und Benchmarking</strong> stellt derzeit einen synthetischen Stufe-1-Harness für Direct-PII-Recall bereit; dies ist Privacy Assurance, kein QCA-Qualitäts-Gate. <strong>Interpretative Provenienz und Rechenschaft</strong> ist teils implementiert und teils spezifiziert.</p>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="s2h">
+  <h2 id="s2h"><span class="num">2</span><span class="l-en">A traffic light for data</span><span class="l-de">Eine Ampel für Daten</span></h2>
+  <div class="tracks">
+    <div class="track t-plain"><span class="tag"><span class="l-en">For everyone</span><span class="l-de">Für alle</span></span>
+      <p class="l-en">Not all data carries the same risk, so each candidate dataset receives a provisional colour. Green requires a documented human conclusion that the material is genuinely anonymous. Yellow remains personal data and needs formal assessment and release. Red is outside the generic route. The colour guides the process; the software does not decide the legal status.</p>
+      <p class="l-de">Nicht alle Daten tragen dasselbe Risiko, deshalb erhält jeder Kandidatendatensatz eine vorläufige Farbe. Grün setzt eine dokumentierte menschliche Feststellung echter Anonymität voraus. Gelb bleibt personenbezogen und benötigt formelle Prüfung und Freigabe. Rot liegt außerhalb des generischen Wegs. Die Farbe steuert das Verfahren; die Software entscheidet nicht über den Rechtsstatus.</p>
+    </div>
+    <div class="track t-tech"><span class="tag"><span class="l-en">Researchers &amp; tech</span><span class="l-de">Forschung &amp; Technik</span></span>
+      <p class="l-en">Each dataset is classified before intake. Green = demonstrably anonymous (outside the GDPR, Recital 26) with hashed proof. Yellow = pseudonymised personal data → in Luxembourg a DPIA is mandatory (CNPD list, Art. 65), plus a DPO opinion and a controller release. Red = special categories / minors / restricted sources → no generic pipeline use.</p>
+      <p class="l-de">Jeder Datensatz wird vor der Aufnahme klassifiziert. Grün = nachweislich anonym (außerhalb der DSGVO, Erwägungsgrund 26) mit gehashtem Nachweis. Gelb = pseudonymisierte personenbezogene Daten → in Luxemburg ist eine DSFA zwingend (CNPD-Liste, Art. 65), plus DPO-Stellungnahme und Controller-Freigabe. Rot = Sonderkategorien / Minderjährige / restricted sources → keine generische Pipeline-Nutzung.</p>
+    </div>
+  </div>
+  <div class="tl">
+    <details class="tlc g"><summary><span class="dot"></span><span class="nm"><span class="l-en">Green — evidenced anonymous</span><span class="l-de">Grün — als anonym belegt</span></span><div class="wh"><span class="l-en">Eligible only after a documented human anonymity decision.</span><span class="l-de">Erst nach dokumentierter menschlicher Anonymitätsentscheidung zugangsberechtigt.</span></div></summary><div class="more"><span class="needs"><span class="l-en">Needs</span><span class="l-de">Braucht</span></span><span class="l-en">A signed anonymity proof, controller sign-off and the required dataset documentation. The gate verifies the referenced evidence and its hash; it does not decide whether the text is truly anonymous. Rare for real interviews.</span><span class="l-de">Einen unterschriebenen Anonymitätsnachweis, Controller-Bestätigung und die erforderliche Datensatzdokumentation. Das Gate prüft Referenz und Hash des Nachweises; es entscheidet nicht, ob der Text tatsächlich anonym ist. Selten für echte Interviews.</span></div></details>
+    <details class="tlc y"><summary><span class="dot"></span><span class="nm"><span class="l-en">Yellow — pseudonymised</span><span class="l-de">Gelb — pseudonymisiert</span></span><div class="wh"><span class="l-en">Still personal data — codes instead of names.</span><span class="l-de">Weiterhin personenbezogen — Codes statt Namen.</span></div></summary><div class="more"><span class="needs"><span class="l-en">Needs</span><span class="l-de">Braucht</span></span><span class="l-en">A data-protection impact assessment, a DPO opinion and a controller release; EU-local processing only; human review of free text before any result leaves.</span><span class="l-de">Eine Datenschutz-Folgenabschätzung, eine DPO-Stellungnahme und eine Controller-Freigabe; nur EU-lokale Verarbeitung; menschliches Freitext-Review, bevor ein Ergebnis das System verlässt.</span></div></details>
+    <details class="tlc r"><summary><span class="dot"></span><span class="nm"><span class="l-en">Red — set aside</span><span class="l-de">Rot — zurückgestellt</span></span><div class="wh"><span class="l-en">Minors, health, small communities, restricted archives.</span><span class="l-de">Minderjährige, Gesundheit, kleine Communities, restricted Archive.</span></div></summary><div class="more"><span class="needs"><span class="l-en">Needs</span><span class="l-de">Braucht</span></span><span class="l-en">No generic pipeline use. Only a bespoke, project-specific approval with explicit controller decision and DPO involvement.</span><span class="l-de">Keine generische Pipeline-Nutzung. Nur eine maßgeschneiderte, projektspezifische Freigabe mit ausdrücklicher Controller-Entscheidung und DPO-Einbindung.</span></div></details>
+  </div>
+  <p class="hint"><span class="l-en">Tip: click a card to see what each colour requires.</span><span class="l-de">Tipp: Auf eine Karte klicken, um zu sehen, was jede Farbe verlangt.</span></p>
+</section>
+
+<section aria-labelledby="s3h">
+  <h2 id="s3h"><span class="num">3</span><span class="l-en">Run evidence first, then three record gates</span><span class="l-de">Zuerst Lauf-Evidenz, dann drei Record-Gates</span></h2>
+  <figure>
+    <svg viewBox="0 0 680 220" role="img" aria-labelledby="s3t s3d">
+      <title id="s3t" data-meta-en="Default-deny admission checks" data-meta-de="Default-deny-Prüfungen des Zugangs">Default-deny admission checks</title>
+      <desc id="s3d" data-meta-en="The run-level attestation and its evidence are checked first. If they pass, each record is checked at G1 schema, G2 consent and purpose, and G3 route and privacy evidence." data-meta-de="Zuerst werden die Lauf-Attestierung und ihre Evidenz geprüft. Wenn sie bestehen, wird jeder Record bei G1 auf Schema, bei G2 auf Consent und Zweck sowie bei G3 auf Route und Privacy-Evidenz geprüft.">The run-level attestation and its evidence are checked first. If they pass, each record is checked at G1 schema, G2 consent and purpose, and G3 route and privacy evidence.</desc>
+      <rect x="30" y="40" width="150" height="112" rx="10" fill="#f3eefb" stroke="#9a82c9"></rect>
+      <text x="105" y="68" text-anchor="middle" font-size="13" font-weight="600" fill="#3a2d5c"><tspan class="l-en">Run-level attestation</tspan><tspan class="l-de">Lauf-Attestierung</tspan></text>
+      <text x="105" y="91" text-anchor="middle" font-size="10.5" fill="#3a2d5c"><tspan class="l-en">checked first</tspan><tspan class="l-de">zuerst geprüft</tspan></text>
+      <text x="105" y="111" text-anchor="middle" font-size="10.5" fill="#3a2d5c"><tspan class="l-en">wording · route · purpose</tspan><tspan class="l-de">Wortlaut · Route · Zweck</tspan></text>
+      <text x="105" y="128" text-anchor="middle" font-size="10.5" fill="#3a2d5c"><tspan class="l-en">evidence path + hash</tspan><tspan class="l-de">Evidenzpfad + Hash</tspan></text>
+      <path d="M180 96 H640" stroke="#cfd8dc" stroke-width="2" fill="none"></path>
+      <text x="194" y="150" font-size="12" fill="#586069"><tspan class="l-en">record checks</tspan><tspan class="l-de">Record-Prüfungen</tspan></text>
+      <text x="640" y="150" text-anchor="end" font-size="12" fill="#586069"><tspan class="l-en">analysis</tspan><tspan class="l-de">Analyse</tspan></text>
+      <g font-size="13" font-weight="600">
+        <g id="g1"><rect x="235" y="64" width="88" height="64" rx="8" fill="#eef2f4" stroke="#cfd8dc"></rect>
+          <text x="279" y="90" text-anchor="middle" fill="#2c343b">G1</text>
+          <text x="279" y="108" text-anchor="middle" font-size="10.5" font-weight="400" fill="#586069"><tspan class="l-en">schema</tspan><tspan class="l-de">Schema</tspan></text></g>
+        <g id="g2"><rect x="365" y="64" width="88" height="64" rx="8" fill="#eef2f4" stroke="#cfd8dc"></rect>
+          <text x="409" y="88" text-anchor="middle" fill="#2c343b">G2</text>
+          <text x="409" y="106" text-anchor="middle" font-size="10.5" font-weight="400" fill="#586069"><tspan class="l-en">consent +</tspan><tspan class="l-de">Consent +</tspan></text>
+          <text x="409" y="119" text-anchor="middle" font-size="10.5" font-weight="400" fill="#586069"><tspan class="l-en">purpose</tspan><tspan class="l-de">Zweck</tspan></text></g>
+        <g id="g3"><rect x="495" y="64" width="88" height="64" rx="8" fill="#eef2f4" stroke="#cfd8dc"></rect>
+          <text x="539" y="86" text-anchor="middle" fill="#2c343b">G3</text>
+          <text x="539" y="103" text-anchor="middle" font-size="10.5" font-weight="400" fill="#586069"><tspan class="l-en">route +</tspan><tspan class="l-de">Route +</tspan></text>
+          <text x="539" y="116" text-anchor="middle" font-size="10.5" font-weight="400" fill="#586069"><tspan class="l-en">privacy evidence</tspan><tspan class="l-de">Privacy-Evidenz</tspan></text></g>
+      </g>
+      <circle id="token" cx="205" cy="96" r="11" fill="#1f6f8b"></circle>
+    </svg>
+  </figure>
+  <div class="demo" id="gatedemo" role="group" aria-label="Example records" data-meta-en="Example records" data-meta-de="Beispiel-Records">
+    <button data-ex="0" aria-pressed="false"><span class="l-en">Anonymous survey</span><span class="l-de">Anonyme Umfrage</span></button>
+    <button data-ex="1" aria-pressed="false"><span class="l-en">Consent withdrawn</span><span class="l-de">Einwilligung widerrufen</span></button>
+    <button data-ex="2" aria-pressed="false"><span class="l-en">Sent to a hosted LLM</span><span class="l-de">An gehostetes LLM</span></button>
+  </div>
+  <div class="verdict" id="verdict" aria-live="polite">
+    <span data-v="0" hidden><span class="ok">✓ </span><span class="l-en">Technically admitted — the required machine-checkable evidence passed. This is not by itself a legal determination.</span><span class="l-de">Technisch zugelassen — die erforderliche maschinenprüfbare Evidenz wurde bestanden. Dies ist für sich keine rechtliche Feststellung.</span></span>
+    <span data-v="1" hidden><span class="no">✕ </span><span class="l-en">Refused at G2 — </span><span class="l-de">Verweigert bei G2 — </span><code>consent-withdrawn</code></span>
+    <span data-v="2" hidden><span class="no">✕ </span><span class="l-en">Refused at G3 — </span><span class="l-de">Verweigert bei G3 — </span><code>route-policy-disallowed</code></span>
+  </div>
+  <div class="tracks">
+    <div class="track t-plain"><span class="tag"><span class="l-en">For everyone</span><span class="l-de">Für alle</span></span>
+      <p class="l-en">Before record checks begin, the system verifies the evidence declared for the whole run. It then checks each record in three stages. Missing or inconsistent machine-checkable evidence leads to refusal, and the reason is logged. The checks make prerequisites visible; they do not replace human legal or ethical judgement.</p>
+      <p class="l-de">Vor den Record-Prüfungen verifiziert das System die für den gesamten Lauf erklärte Evidenz. Danach prüft es jeden Record in drei Stufen. Fehlende oder inkonsistente maschinenprüfbare Evidenz führt zur Verweigerung; der Grund wird protokolliert. Die Prüfungen machen Voraussetzungen sichtbar, ersetzen aber kein menschliches rechtliches oder ethisches Urteil.</p>
+    </div>
+    <div class="track t-tech"><span class="tag"><span class="l-en">Researchers &amp; tech</span><span class="l-de">Forschung &amp; Technik</span></span>
+      <p class="l-en">The default-deny order in code is: run-level attestation first, then <code>G1</code> schema, <code>G2</code> consent and purpose, and <code>G3</code> route plus privacy evidence. There is no <code>G4</code>. Attestation findings are assigned to the relevant G2/G3 category. Several refusal codes cannot be overridden.</p>
+      <p class="l-de">Die Default-deny-Reihenfolge im Code lautet: zuerst Lauf-Attestierung, danach <code>G1</code> Schema, <code>G2</code> Consent und Zweck sowie <code>G3</code> Route plus Privacy-Evidenz. Ein <code>G4</code> existiert nicht. Attestierungsbefunde werden der jeweils einschlägigen G2-/G3-Kategorie zugeordnet. Mehrere Verweigerungscodes sind nicht übersteuerbar.</p>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="s4h">
+  <h2 id="s4h"><span class="num">4</span><span class="l-en">What the machine does — and what people decide</span><span class="l-de">Was die Maschine tut — und was Menschen entscheiden</span></h2>
+  <div class="split">
+    <div class="col machine">
+      <h3><span class="l-en">The system enforces or verifies</span><span class="l-de">Das System erzwingt oder prüft</span><span class="ic"><span class="l-en">machine-checkable controls</span><span class="l-de">maschinenprüfbare Kontrollen</span></span></h3>
+      <div class="chips">
+        <span class="chip"><span class="l-en">Validate the record</span><span class="l-de">Datensatz validieren</span></span>
+        <span class="chip"><span class="l-en">Check consent &amp; purpose</span><span class="l-de">Consent &amp; Zweck prüfen</span></span>
+        <span class="chip"><span class="l-en">Verify pseudonymisation &amp; review evidence</span><span class="l-de">Pseudonymisierungs- &amp; Review-Evidenz prüfen</span></span>
+        <span class="chip"><span class="l-en">Block unapproved processing routes</span><span class="l-de">Nicht freigegebene Routen sperren</span></span>
+        <span class="chip"><span class="l-en">Bind evidence and audit references</span><span class="l-de">Evidenz und Audit-Referenzen binden</span></span>
+        <span class="chip"><span class="l-en">Refuse automatically</span><span class="l-de">Automatisch verweigern</span></span>
+      </div>
+    </div>
+    <div class="col human">
+      <h3><span class="l-en">People decide</span><span class="l-de">Menschen entscheiden</span><span class="ic"><span class="l-en">judgement &amp; accountability</span><span class="l-de">Urteil &amp; Verantwortung</span></span></h3>
+      <div class="chips">
+        <span class="chip"><span class="l-en">Is it truly anonymous?</span><span class="l-de">Ist es wirklich anonym?</span></span>
+        <span class="chip"><span class="l-en">Choose the lawful basis</span><span class="l-de">Rechtsgrundlage wählen</span></span>
+        <span class="chip"><span class="l-en">Run the impact assessment</span><span class="l-de">Folgenabschätzung machen</span></span>
+        <span class="chip"><span class="l-en">Review free text for re-identification</span><span class="l-de">Freitext auf Re-Identifikation prüfen</span></span>
+        <span class="chip"><span class="l-en">Code &amp; interpret</span><span class="l-de">Codieren &amp; deuten</span></span>
+        <span class="chip"><span class="l-en">Sign the release</span><span class="l-de">Freigabe unterschreiben</span></span>
+      </div>
+    </div>
+  </div>
+  <div class="tracks">
+    <div class="track t-plain"><span class="tag"><span class="l-en">For everyone</span><span class="l-de">Für alle</span></span>
+      <p class="l-en">The computer can enforce technical limits and verify that required evidence has been supplied. It does not perform every process named in that evidence, and it is not the legal or scholarly decision-maker.</p>
+      <p class="l-de">Der Computer kann technische Grenzen erzwingen und prüfen, ob geforderte Evidenz vorliegt. Er führt nicht jeden in dieser Evidenz benannten Prozess selbst aus und ist weder rechtlicher noch wissenschaftlicher Entscheidungsträger.</p>
+    </div>
+    <div class="track t-tech"><span class="tag"><span class="l-en">Researchers &amp; tech</span><span class="l-de">Forschung &amp; Technik</span></span>
+      <p class="l-en">Accountability stays human: the controller decides, the DPO advises, and researchers interpret. The software enforces selected technical constraints and verifies references, status fields and hashes. It cannot determine anonymity, validate the substance of consent, choose the lawful basis, complete the impact assessment or authorise release.</p>
+      <p class="l-de">Die Verantwortung bleibt menschlich: Die verantwortliche Stelle entscheidet, die/der DPO berät und Forschende interpretieren. Die Software erzwingt ausgewählte technische Constraints und prüft Referenzen, Statusfelder und Hashes. Sie kann weder Anonymität feststellen noch den Inhalt einer Einwilligung validieren, die Rechtsgrundlage wählen, die DSFA durchführen oder eine Freigabe erteilen.</p>
+    </div>
+  </div>
+</section>
+
+<div class="footer">
+  <p><span class="l-en">Part of <strong>DINOH — Digital Infrastructure for Oral History</strong>, C²DH, University of Luxembourg. This page explains a research infrastructure; it is not legal advice.</span><span class="l-de">Teil von <strong>DINOH — Digital Infrastructure for Oral History</strong>, C²DH, Universität Luxemburg. Diese Seite erklärt eine Forschungsinfrastruktur; sie ist keine Rechtsberatung.</span></p>
+</div>
+</div>
+
+<script>
+(function(){
+  var root=document.getElementById('life-explainer');
+  function seg(id,attr,cls){
+    var box=document.getElementById(id);
+    box.addEventListener('click',function(e){
+      var b=e.target.closest('button'); if(!b)return;
+      box.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed', x===b?'true':'false');});
+      root.classList.remove(cls+'-en',cls+'-de',cls+'-everyone',cls+'-tech',cls+'-both');
+      root.classList.add(cls+'-'+b.getAttribute(attr));
+      if(cls==='lang') syncLanguage(b.getAttribute(attr));
+    });
+  }
+  function syncLanguage(lang){
+    document.documentElement.lang=lang;
+    root.querySelectorAll('[data-meta-en][data-meta-de]').forEach(function(x){
+      var value=x.getAttribute('data-meta-'+lang);
+      if(x.tagName.toLowerCase()==='title'||x.tagName.toLowerCase()==='desc') x.textContent=value;
+      else x.setAttribute('aria-label',value);
+    });
+  }
+  seg('langseg','data-lang','lang');
+  seg('trackseg','data-track','track');
+
+  var token=document.getElementById('token');
+  var demo=document.getElementById('gatedemo');
+  var verdict=document.getElementById('verdict');
+  var stopX=[620,409,539];     // pass-through end, G2 centre, G3 centre
+  var ok=[true,false,false];
+  var raf;
+  function moveTo(target,good){
+    cancelAnimationFrame(raf);
+    var start=parseFloat(token.getAttribute('cx'))||205, t0=null, dur=900;
+    var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    token.setAttribute('fill','var(--accent)');
+    if(reduce){token.setAttribute('cx',target);token.setAttribute('fill',good?'#2e7d32':'#b3261e');return;}
+    function step(ts){
+      if(t0===null)t0=ts; var p=Math.min(1,(ts-t0)/dur);
+      token.setAttribute('cx', start+(target-start)*p);
+      if(p<1){raf=requestAnimationFrame(step);} else {token.setAttribute('fill',good?'#2e7d32':'#b3261e');}
+    }
+    raf=requestAnimationFrame(step);
+  }
+  demo.addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b)return;
+    var i=+b.getAttribute('data-ex');
+    demo.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed', x===b?'true':'false');});
+    verdict.querySelectorAll('[data-v]').forEach(function(v){v.hidden = (+v.getAttribute('data-v')!==i);});
+    moveTo(stopX[i], ok[i]);
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdoc>
+  <record>
+    <record_id>2025-09-16_CDH_0005</record_id>
+    <title>Synthetic EN-01: Daily crossings at the Channel</title>
+    <date>2025-09-16</date>
+    <interviewer>[INTERVIEWER_1]</interviewer>
+    <language>eng</language>
+    <coverage>Folkestone</coverage>
+    <usage>restricted</usage>
+    <consent_status>research-only</consent_status>
+    <keywords>Channel, ferry, work, border</keywords>
+    <synopsis />
+    <index>
+      <point>
+        <time>0</time>
+        <title>Morning routine on the ferry</title>
+      </point>
+      <point>
+        <time>30</time>
+        <title>Eased checks over time</title>
+      </point>
+      <point>
+        <time>65</time>
+        <title>Easy way becomes normal way</title>
+      </point>
+      <point>
+        <time>95</time>
+        <title>Brexit prompts retrospection</title>
+      </point>
+    </index>
+  </record>
+</cdoc>

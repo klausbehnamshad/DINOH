@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdoc>
+  <record>
+    <record_id>2025-09-28_CDH_0017</record_id>
+    <title>Sintético ES-01: Cruzando la frontera en Irún</title>
+    <date>2025-09-28</date>
+    <interviewer>[INTERVIEWER_1]</interviewer>
+    <language>spa</language>
+    <coverage>Irún</coverage>
+    <usage>restricted</usage>
+    <consent_status>research-only</consent_status>
+    <keywords>frontera, Irún, Francia, trabajo</keywords>
+    <synopsis />
+    <index>
+      <point>
+        <time>0</time>
+        <title>Cruce diario en los años ochenta</title>
+      </point>
+      <point>
+        <time>30</time>
+        <title>Discrecionalidad del control</title>
+      </point>
+      <point>
+        <time>65</time>
+        <title>Schengen: la frontera se marcha</title>
+      </point>
+      <point>
+        <time>105</time>
+        <title>Hijos sin frontera real</title>
+      </point>
+    </index>
+  </record>
+</cdoc>

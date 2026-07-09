@@ -1,0 +1,841 @@
+model,language,record_id,field,gold,pred,match,precision,recall,f1,gold_len,pred_len,review_required
+mistral-7b-instruct-v0.3,deu,2025-09-12_CDH_0001,record_id,2025-09-12_CDH_0001,2025-09-12_CDH_0001,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-12_CDH_0001,interview_date,2025-09-12,2025-09-12,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-12_CDH_0001,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-12_CDH_0001,language,deu,deu,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-12_CDH_0001,spatial,Saarbrücken,Saarbrücken,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-12_CDH_0001,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-12_CDH_0001,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-12_CDH_0001,keywords,"['Arbeit', 'Grenze', 'Pendeln', 'Saarland']","['Arbeit', 'Grenze']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,deu,2025-09-12_CDH_0001,title__free,,,,,,,58.0,58.0,True
+mistral-7b-instruct-v0.3,deu,2025-09-12_CDH_0001,abstract__free,,,,,,,176.0,0.0,True
+mistral-7b-instruct-v0.3,deu,2025-09-13_CDH_0002,record_id,2025-09-13_CDH_0002,2025-09-13_CDH_0002,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-13_CDH_0002,interview_date,2025-09-13,2025-09-13,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-13_CDH_0002,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-13_CDH_0002,language,deu,deu,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-13_CDH_0002,spatial,Trier,Trier,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-13_CDH_0002,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-13_CDH_0002,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-13_CDH_0002,keywords,"['EU', 'Erinnerung', 'Großregion', 'Mobilität']","['EU', 'Mobilität']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,deu,2025-09-13_CDH_0002,title__free,,,,,,,67.0,67.0,True
+mistral-7b-instruct-v0.3,deu,2025-09-13_CDH_0002,abstract__free,,,,,,,106.0,0.0,True
+mistral-7b-instruct-v0.3,deu,2025-09-14_CDH_0003,record_id,2025-09-14_CDH_0003,2025-09-14_CDH_0003,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-14_CDH_0003,interview_date,2025-09-14,2025-09-14,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-14_CDH_0003,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-14_CDH_0003,language,deu,deu,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-14_CDH_0003,spatial,Völklingen,Völklingen,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-14_CDH_0003,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-14_CDH_0003,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-14_CDH_0003,keywords,"['Industrie', 'Schichtarbeit', 'Stahl', 'Strukturwandel']","['Schichtarbeit', 'Stahl']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,deu,2025-09-14_CDH_0003,title__free,,,,,,,54.0,54.0,True
+mistral-7b-instruct-v0.3,deu,2025-09-14_CDH_0003,abstract__free,,,,,,,125.0,0.0,True
+mistral-7b-instruct-v0.3,deu,2025-09-15_CDH_0004,record_id,2025-09-15_CDH_0004,2025-09-15_CDH_0004,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-15_CDH_0004,interview_date,2025-09-15,2025-09-15,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-15_CDH_0004,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-15_CDH_0004,language,deu,deu,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-15_CDH_0004,spatial,Heidelberg,Heidelberg,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-15_CDH_0004,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-15_CDH_0004,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,deu,2025-09-15_CDH_0004,keywords,"['Karriere', 'Mobilität', 'Prekarität', 'Wissenschaft']","['Prekarität', 'Wissenschaft']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,deu,2025-09-15_CDH_0004,title__free,,,,,,,61.0,61.0,True
+mistral-7b-instruct-v0.3,deu,2025-09-15_CDH_0004,abstract__free,,,,,,,137.0,0.0,True
+mistral-7b-instruct-v0.3,eng,2025-09-16_CDH_0005,record_id,2025-09-16_CDH_0005,2025-09-16_CDH_0005,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-16_CDH_0005,interview_date,2025-09-16,2025-09-16,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-16_CDH_0005,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-16_CDH_0005,language,eng,eng,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-16_CDH_0005,spatial,Folkestone,Folkestone,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-16_CDH_0005,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-16_CDH_0005,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-16_CDH_0005,keywords,"['Channel', 'border', 'ferry', 'work']","['Channel', 'ferry']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,eng,2025-09-16_CDH_0005,title__free,,,,,,,47.0,47.0,True
+mistral-7b-instruct-v0.3,eng,2025-09-16_CDH_0005,abstract__free,,,,,,,126.0,0.0,True
+mistral-7b-instruct-v0.3,eng,2025-09-17_CDH_0006,record_id,2025-09-17_CDH_0006,2025-09-17_CDH_0006,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-17_CDH_0006,interview_date,2025-09-17,2025-09-17,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-17_CDH_0006,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-17_CDH_0006,language,eng,eng,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-17_CDH_0006,spatial,Edinburgh,Edinburgh,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-17_CDH_0006,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-17_CDH_0006,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-17_CDH_0006,keywords,"['identity', 'migration', 'reflection', 'transatlantic']","['identity', 'migration']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,eng,2025-09-17_CDH_0006,title__free,,,,,,,51.0,51.0,True
+mistral-7b-instruct-v0.3,eng,2025-09-17_CDH_0006,abstract__free,,,,,,,82.0,0.0,True
+mistral-7b-instruct-v0.3,eng,2025-09-18_CDH_0007,record_id,2025-09-18_CDH_0007,2025-09-18_CDH_0007,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-18_CDH_0007,interview_date,2025-09-18,2025-09-18,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-18_CDH_0007,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-18_CDH_0007,language,eng,eng,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-18_CDH_0007,spatial,Liverpool,Liverpool,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-18_CDH_0007,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-18_CDH_0007,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-18_CDH_0007,keywords,"['Liverpool', 'docks', 'labour', 'strike']","['Liverpool', 'docks']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,eng,2025-09-18_CDH_0007,title__free,,,,,,,47.0,47.0,True
+mistral-7b-instruct-v0.3,eng,2025-09-18_CDH_0007,abstract__free,,,,,,,84.0,0.0,True
+mistral-7b-instruct-v0.3,eng,2025-09-19_CDH_0008,record_id,2025-09-19_CDH_0008,2025-09-19_CDH_0008,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-19_CDH_0008,interview_date,2025-09-19,2025-09-19,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-19_CDH_0008,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-19_CDH_0008,language,eng,eng,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-19_CDH_0008,spatial,Manchester,Manchester,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-19_CDH_0008,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-19_CDH_0008,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,eng,2025-09-19_CDH_0008,keywords,"['NHS', 'care', 'nursing', 'vocation']","['NHS', 'nursing']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,eng,2025-09-19_CDH_0008,title__free,,,,,,,50.0,50.0,True
+mistral-7b-instruct-v0.3,eng,2025-09-19_CDH_0008,abstract__free,,,,,,,73.0,0.0,True
+mistral-7b-instruct-v0.3,fra,2025-09-20_CDH_0009,record_id,2025-09-20_CDH_0009,2025-09-20_CDH_0009,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-20_CDH_0009,interview_date,2025-09-20,2025-09-20,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-20_CDH_0009,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-20_CDH_0009,language,fra,fra,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-20_CDH_0009,spatial,Longwy,Longwy,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-20_CDH_0009,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-20_CDH_0009,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-20_CDH_0009,keywords,"['Longwy', 'Luxembourg', 'frontière', 'travail']","['Longwy', 'frontière']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,fra,2025-09-20_CDH_0009,title__free,,,,,,,54.0,54.0,True
+mistral-7b-instruct-v0.3,fra,2025-09-20_CDH_0009,abstract__free,,,,,,,110.0,0.0,True
+mistral-7b-instruct-v0.3,fra,2025-09-21_CDH_0010,record_id,2025-09-21_CDH_0010,2025-09-21_CDH_0010,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-21_CDH_0010,interview_date,2025-09-21,2025-09-21,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-21_CDH_0010,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-21_CDH_0010,language,fra,fra,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-21_CDH_0010,spatial,Strasbourg,Strasbourg,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-21_CDH_0010,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-21_CDH_0010,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-21_CDH_0010,keywords,"['Europe', 'Strasbourg', 'identité', 'mémoire']","['Europe', 'Strasbourg']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,fra,2025-09-21_CDH_0010,title__free,,,,,,,56.0,56.0,True
+mistral-7b-instruct-v0.3,fra,2025-09-21_CDH_0010,abstract__free,,,,,,,102.0,0.0,True
+mistral-7b-instruct-v0.3,fra,2025-09-22_CDH_0011,record_id,2025-09-22_CDH_0011,2025-09-22_CDH_0011,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-22_CDH_0011,interview_date,2025-09-22,2025-09-22,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-22_CDH_0011,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-22_CDH_0011,language,fra,fra,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-22_CDH_0011,spatial,Forbach,Forbach,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-22_CDH_0011,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-22_CDH_0011,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-22_CDH_0011,keywords,"['Lorraine', 'fermeture', 'mine', 'travail']","['Lorraine', 'mine']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,fra,2025-09-22_CDH_0011,title__free,,,,,,,52.0,52.0,True
+mistral-7b-instruct-v0.3,fra,2025-09-22_CDH_0011,abstract__free,,,,,,,98.0,0.0,True
+mistral-7b-instruct-v0.3,fra,2025-09-23_CDH_0012,record_id,2025-09-23_CDH_0012,2025-09-23_CDH_0012,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-23_CDH_0012,interview_date,2025-09-23,2025-09-23,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-23_CDH_0012,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-23_CDH_0012,language,fra,fra,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-23_CDH_0012,spatial,Nancy,Nancy,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-23_CDH_0012,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-23_CDH_0012,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,fra,2025-09-23_CDH_0012,keywords,"['enseignement', 'réforme', 'vocation', 'école']","['enseignement', 'école']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,fra,2025-09-23_CDH_0012,title__free,,,,,,,69.0,69.0,True
+mistral-7b-instruct-v0.3,fra,2025-09-23_CDH_0012,abstract__free,,,,,,,99.0,0.0,True
+mistral-7b-instruct-v0.3,ita,2025-09-24_CDH_0013,record_id,2025-09-24_CDH_0013,2025-09-24_CDH_0013,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-24_CDH_0013,interview_date,2025-09-24,2025-09-24,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-24_CDH_0013,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-24_CDH_0013,language,ita,ita,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-24_CDH_0013,spatial,Como,Como,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-24_CDH_0013,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-24_CDH_0013,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-24_CDH_0013,keywords,"['Como', 'Svizzera', 'frontiera', 'pendolare']","['Como', 'frontiera']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,ita,2025-09-24_CDH_0013,title__free,,,,,,,58.0,58.0,True
+mistral-7b-instruct-v0.3,ita,2025-09-24_CDH_0013,abstract__free,,,,,,,98.0,0.0,True
+mistral-7b-instruct-v0.3,ita,2025-09-25_CDH_0014,record_id,2025-09-25_CDH_0014,2025-09-25_CDH_0014,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-25_CDH_0014,interview_date,2025-09-25,2025-09-25,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-25_CDH_0014,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-25_CDH_0014,language,ita,ita,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-25_CDH_0014,spatial,Palermo,Palermo,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-25_CDH_0014,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-25_CDH_0014,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-25_CDH_0014,keywords,"['Germania', 'emigrazione', 'memoria', 'ritorno']","['emigrazione', 'ritorno']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,ita,2025-09-25_CDH_0014,title__free,,,,,,,53.0,53.0,True
+mistral-7b-instruct-v0.3,ita,2025-09-25_CDH_0014,abstract__free,,,,,,,86.0,0.0,True
+mistral-7b-instruct-v0.3,ita,2025-09-26_CDH_0015,record_id,2025-09-26_CDH_0015,2025-09-26_CDH_0015,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-26_CDH_0015,interview_date,2025-09-26,2025-09-26,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-26_CDH_0015,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-26_CDH_0015,language,ita,ita,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-26_CDH_0015,spatial,Prato,Prato,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-26_CDH_0015,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-26_CDH_0015,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-26_CDH_0015,keywords,"['Veneto', 'fabbrica', 'operaia', 'tessile']","['operaia', 'tessile']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,ita,2025-09-26_CDH_0015,title__free,,,,,,,42.0,42.0,True
+mistral-7b-instruct-v0.3,ita,2025-09-26_CDH_0015,abstract__free,,,,,,,100.0,0.0,True
+mistral-7b-instruct-v0.3,ita,2025-09-27_CDH_0016,record_id,2025-09-27_CDH_0016,2025-09-27_CDH_0016,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-27_CDH_0016,interview_date,2025-09-27,2025-09-27,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-27_CDH_0016,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-27_CDH_0016,language,ita,ita,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-27_CDH_0016,spatial,Bologna,Bologna,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-27_CDH_0016,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-27_CDH_0016,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,ita,2025-09-27_CDH_0016,keywords,"['medicina', 'ospedale', 'professione', 'sanità']","['medicina', 'ospedale']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,ita,2025-09-27_CDH_0016,title__free,,,,,,,62.0,62.0,True
+mistral-7b-instruct-v0.3,ita,2025-09-27_CDH_0016,abstract__free,,,,,,,105.0,0.0,True
+mistral-7b-instruct-v0.3,spa,2025-09-28_CDH_0017,record_id,2025-09-28_CDH_0017,2025-09-28_CDH_0017,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-09-28_CDH_0017,interview_date,2025-09-28,2025-09-28,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-09-28_CDH_0017,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-09-28_CDH_0017,language,spa,spa,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-09-28_CDH_0017,spatial,Irún,Irún,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-09-28_CDH_0017,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-09-28_CDH_0017,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-09-28_CDH_0017,keywords,"['Francia', 'Irún', 'frontera', 'trabajo']","['Irún', 'frontera']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,spa,2025-09-28_CDH_0017,title__free,,,,,,,45.0,45.0,True
+mistral-7b-instruct-v0.3,spa,2025-09-28_CDH_0017,abstract__free,,,,,,,100.0,0.0,True
+mistral-7b-instruct-v0.3,spa,2025-09-29_CDH_0018,record_id,2025-09-29_CDH_0018,2025-09-29_CDH_0018,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-09-29_CDH_0018,interview_date,2025-09-29,2025-09-29,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-09-29_CDH_0018,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-09-29_CDH_0018,language,spa,spa,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-09-29_CDH_0018,spatial,Madrid,Madrid,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-09-29_CDH_0018,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-09-29_CDH_0018,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-09-29_CDH_0018,keywords,"['democracia', 'exilio', 'memoria', 'regreso']","['exilio', 'regreso']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,spa,2025-09-29_CDH_0018,title__free,,,,,,,55.0,55.0,True
+mistral-7b-instruct-v0.3,spa,2025-09-29_CDH_0018,abstract__free,,,,,,,94.0,0.0,True
+mistral-7b-instruct-v0.3,spa,2025-09-30_CDH_0019,record_id,2025-09-30_CDH_0019,2025-09-30_CDH_0019,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-09-30_CDH_0019,interview_date,2025-09-30,2025-09-30,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-09-30_CDH_0019,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-09-30_CDH_0019,language,spa,spa,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-09-30_CDH_0019,spatial,Santoña,Santoña,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-09-30_CDH_0019,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-09-30_CDH_0019,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-09-30_CDH_0019,keywords,"['Cantábrico', 'mujeres', 'pesca', 'rederas']","['Cantábrico', 'pesca']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,spa,2025-09-30_CDH_0019,title__free,,,,,,,49.0,49.0,True
+mistral-7b-instruct-v0.3,spa,2025-09-30_CDH_0019,abstract__free,,,,,,,108.0,0.0,True
+mistral-7b-instruct-v0.3,spa,2025-10-01_CDH_0020,record_id,2025-10-01_CDH_0020,2025-10-01_CDH_0020,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-10-01_CDH_0020,interview_date,2025-10-01,2025-10-01,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-10-01_CDH_0020,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-10-01_CDH_0020,language,spa,spa,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-10-01_CDH_0020,spatial,Barcelona,Barcelona,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-10-01_CDH_0020,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-10-01_CDH_0020,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,spa,2025-10-01_CDH_0020,keywords,"['arquitectura', 'profesión', 'vivienda', 'ética']","['arquitectura', 'vivienda']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,spa,2025-10-01_CDH_0020,title__free,,,,,,,71.0,71.0,True
+mistral-7b-instruct-v0.3,spa,2025-10-01_CDH_0020,abstract__free,,,,,,,111.0,0.0,True
+mistral-7b-instruct-v0.3,ltz,2025-10-02_CDH_0021,record_id,2025-10-02_CDH_0021,2025-10-02_CDH_0021,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-02_CDH_0021,interview_date,2025-10-02,2025-10-02,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-02_CDH_0021,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-02_CDH_0021,language,ltz,ltz,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-02_CDH_0021,spatial,Esch-sur-Alzette,Esch-sur-Alzette,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-02_CDH_0021,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-02_CDH_0021,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-02_CDH_0021,keywords,"['Esch', 'Frankräich', 'Grenz', 'Schaffen']","['Esch', 'Grenz']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-02_CDH_0021,title__free,,,,,,,47.0,47.0,True
+mistral-7b-instruct-v0.3,ltz,2025-10-02_CDH_0021,abstract__free,,,,,,,87.0,0.0,True
+mistral-7b-instruct-v0.3,ltz,2025-10-03_CDH_0022,record_id,2025-10-03_CDH_0022,2025-10-03_CDH_0022,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-03_CDH_0022,interview_date,2025-10-03,2025-10-03,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-03_CDH_0022,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-03_CDH_0022,language,ltz,ltz,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-03_CDH_0022,spatial,Lëtzebuerg-Stad,Lëtzebuerg-Stad,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-03_CDH_0022,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-03_CDH_0022,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-03_CDH_0022,keywords,"['Identitéit', 'Lëtzebuerg', 'Méisproochegkeet', 'Reflexioun']","['Identitéit', 'Méisproochegkeet']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-03_CDH_0022,title__free,,,,,,,61.0,61.0,True
+mistral-7b-instruct-v0.3,ltz,2025-10-03_CDH_0022,abstract__free,,,,,,,85.0,0.0,True
+mistral-7b-instruct-v0.3,ltz,2025-10-04_CDH_0023,record_id,2025-10-04_CDH_0023,2025-10-04_CDH_0023,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-04_CDH_0023,interview_date,2025-10-04,2025-10-04,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-04_CDH_0023,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-04_CDH_0023,language,ltz,ltz,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-04_CDH_0023,spatial,Dudelange,Dudelange,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-04_CDH_0023,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-04_CDH_0023,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-04_CDH_0023,keywords,"['Aarbecht', 'Diddeleng', 'Stol', 'Strukturwandel']","['Diddeleng', 'Stol']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-04_CDH_0023,title__free,,,,,,,46.0,46.0,True
+mistral-7b-instruct-v0.3,ltz,2025-10-04_CDH_0023,abstract__free,,,,,,,81.0,0.0,True
+mistral-7b-instruct-v0.3,ltz,2025-10-05_CDH_0024,record_id,2025-10-05_CDH_0024,2025-10-05_CDH_0024,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-05_CDH_0024,interview_date,2025-10-05,2025-10-05,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-05_CDH_0024,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-05_CDH_0024,language,ltz,ltz,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-05_CDH_0024,spatial,Lëtzebuerg-Stad,Lëtzebuerg-Stad,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-05_CDH_0024,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-05_CDH_0024,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-05_CDH_0024,keywords,"['Beamten', 'Reflexioun', 'Reform', 'ëffentleche Service']","['Beamten', 'ëffentleche Service']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,ltz,2025-10-05_CDH_0024,title__free,,,,,,,69.0,69.0,True
+mistral-7b-instruct-v0.3,ltz,2025-10-05_CDH_0024,abstract__free,,,,,,,104.0,0.0,True
+mistral-7b-instruct-v0.3,por,2025-10-06_CDH_0025,record_id,2025-10-06_CDH_0025,2025-10-06_CDH_0025,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-06_CDH_0025,interview_date,2025-10-06,2025-10-06,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-06_CDH_0025,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-06_CDH_0025,language,por,por,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-06_CDH_0025,spatial,Esch-sur-Alzette,Esch-sur-Alzette,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-06_CDH_0025,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-06_CDH_0025,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-06_CDH_0025,keywords,"['Luxemburgo', 'Portugal', 'chegada', 'migração']","['Portugal', 'migração']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,por,2025-10-06_CDH_0025,title__free,,,,,,,48.0,48.0,True
+mistral-7b-instruct-v0.3,por,2025-10-06_CDH_0025,abstract__free,,,,,,,108.0,0.0,True
+mistral-7b-instruct-v0.3,por,2025-10-07_CDH_0026,record_id,2025-10-07_CDH_0026,2025-10-07_CDH_0026,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-07_CDH_0026,interview_date,2025-10-07,2025-10-07,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-07_CDH_0026,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-07_CDH_0026,language,por,por,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-07_CDH_0026,spatial,Luxembourg-Ville,Luxembourg-Ville,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-07_CDH_0026,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-07_CDH_0026,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-07_CDH_0026,keywords,"['Luxemburgo', 'Portugal', 'identidade', 'segunda geração']","['identidade', 'segunda geração']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,por,2025-10-07_CDH_0026,title__free,,,,,,,59.0,59.0,True
+mistral-7b-instruct-v0.3,por,2025-10-07_CDH_0026,abstract__free,,,,,,,114.0,0.0,True
+mistral-7b-instruct-v0.3,por,2025-10-08_CDH_0027,record_id,2025-10-08_CDH_0027,2025-10-08_CDH_0027,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-08_CDH_0027,interview_date,2025-10-08,2025-10-08,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-08_CDH_0027,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-08_CDH_0027,language,por,por,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-08_CDH_0027,spatial,Differdange,Differdange,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-08_CDH_0027,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-08_CDH_0027,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-08_CDH_0027,keywords,"['invisibilidade', 'migração', 'mulheres', 'trabalho doméstico']","['mulheres', 'trabalho doméstico']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,por,2025-10-08_CDH_0027,title__free,,,,,,,50.0,50.0,True
+mistral-7b-instruct-v0.3,por,2025-10-08_CDH_0027,abstract__free,,,,,,,128.0,0.0,True
+mistral-7b-instruct-v0.3,por,2025-10-09_CDH_0028,record_id,2025-10-09_CDH_0028,2025-10-09_CDH_0028,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-09_CDH_0028,interview_date,2025-10-09,2025-10-09,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-09_CDH_0028,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-09_CDH_0028,language,por,por,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-09_CDH_0028,spatial,Luxembourg-Ville,Luxembourg-Ville,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-09_CDH_0028,consent_status,research-only,research-only,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-09_CDH_0028,accessRights,restricted,restricted,True,,,,,,
+mistral-7b-instruct-v0.3,por,2025-10-09_CDH_0028,keywords,"['Luxemburgo', 'classe social', 'engenharia', 'trajectória']","['engenharia', 'trajectória']",,1.0,0.5,0.6666666666666666,,,
+mistral-7b-instruct-v0.3,por,2025-10-09_CDH_0028,title__free,,,,,,,61.0,61.0,True
+mistral-7b-instruct-v0.3,por,2025-10-09_CDH_0028,abstract__free,,,,,,,138.0,0.0,True
+olmo-2-7b-instruct,deu,2025-09-12_CDH_0001,record_id,2025-09-12_CDH_0001,2025-09-12_CDH_0001,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-12_CDH_0001,interview_date,2025-09-12,2025-09-12,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-12_CDH_0001,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-12_CDH_0001,language,deu,deu,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-12_CDH_0001,spatial,Saarbrücken,Saarbrücken,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-12_CDH_0001,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-12_CDH_0001,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-12_CDH_0001,keywords,"['Arbeit', 'Grenze', 'Pendeln', 'Saarland']","['Arbeit', 'Grenze']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,deu,2025-09-12_CDH_0001,title__free,,,,,,,58.0,58.0,True
+olmo-2-7b-instruct,deu,2025-09-12_CDH_0001,abstract__free,,,,,,,176.0,0.0,True
+olmo-2-7b-instruct,deu,2025-09-13_CDH_0002,record_id,2025-09-13_CDH_0002,2025-09-13_CDH_0002,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-13_CDH_0002,interview_date,2025-09-13,2025-09-13,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-13_CDH_0002,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-13_CDH_0002,language,deu,deu,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-13_CDH_0002,spatial,Trier,Trier,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-13_CDH_0002,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-13_CDH_0002,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-13_CDH_0002,keywords,"['EU', 'Erinnerung', 'Großregion', 'Mobilität']","['EU', 'Mobilität']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,deu,2025-09-13_CDH_0002,title__free,,,,,,,67.0,67.0,True
+olmo-2-7b-instruct,deu,2025-09-13_CDH_0002,abstract__free,,,,,,,106.0,0.0,True
+olmo-2-7b-instruct,deu,2025-09-14_CDH_0003,record_id,2025-09-14_CDH_0003,2025-09-14_CDH_0003,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-14_CDH_0003,interview_date,2025-09-14,2025-09-14,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-14_CDH_0003,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-14_CDH_0003,language,deu,deu,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-14_CDH_0003,spatial,Völklingen,Völklingen,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-14_CDH_0003,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-14_CDH_0003,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-14_CDH_0003,keywords,"['Industrie', 'Schichtarbeit', 'Stahl', 'Strukturwandel']","['Schichtarbeit', 'Stahl']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,deu,2025-09-14_CDH_0003,title__free,,,,,,,54.0,54.0,True
+olmo-2-7b-instruct,deu,2025-09-14_CDH_0003,abstract__free,,,,,,,125.0,0.0,True
+olmo-2-7b-instruct,deu,2025-09-15_CDH_0004,record_id,2025-09-15_CDH_0004,2025-09-15_CDH_0004,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-15_CDH_0004,interview_date,2025-09-15,2025-09-15,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-15_CDH_0004,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-15_CDH_0004,language,deu,deu,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-15_CDH_0004,spatial,Heidelberg,Heidelberg,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-15_CDH_0004,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-15_CDH_0004,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,deu,2025-09-15_CDH_0004,keywords,"['Karriere', 'Mobilität', 'Prekarität', 'Wissenschaft']","['Prekarität', 'Wissenschaft']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,deu,2025-09-15_CDH_0004,title__free,,,,,,,61.0,61.0,True
+olmo-2-7b-instruct,deu,2025-09-15_CDH_0004,abstract__free,,,,,,,137.0,0.0,True
+olmo-2-7b-instruct,eng,2025-09-16_CDH_0005,record_id,2025-09-16_CDH_0005,2025-09-16_CDH_0005,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-16_CDH_0005,interview_date,2025-09-16,2025-09-16,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-16_CDH_0005,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-16_CDH_0005,language,eng,eng,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-16_CDH_0005,spatial,Folkestone,Folkestone,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-16_CDH_0005,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-16_CDH_0005,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-16_CDH_0005,keywords,"['Channel', 'border', 'ferry', 'work']","['Channel', 'ferry']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,eng,2025-09-16_CDH_0005,title__free,,,,,,,47.0,47.0,True
+olmo-2-7b-instruct,eng,2025-09-16_CDH_0005,abstract__free,,,,,,,126.0,0.0,True
+olmo-2-7b-instruct,eng,2025-09-17_CDH_0006,record_id,2025-09-17_CDH_0006,2025-09-17_CDH_0006,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-17_CDH_0006,interview_date,2025-09-17,2025-09-17,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-17_CDH_0006,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-17_CDH_0006,language,eng,eng,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-17_CDH_0006,spatial,Edinburgh,Edinburgh,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-17_CDH_0006,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-17_CDH_0006,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-17_CDH_0006,keywords,"['identity', 'migration', 'reflection', 'transatlantic']","['identity', 'migration']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,eng,2025-09-17_CDH_0006,title__free,,,,,,,51.0,51.0,True
+olmo-2-7b-instruct,eng,2025-09-17_CDH_0006,abstract__free,,,,,,,82.0,0.0,True
+olmo-2-7b-instruct,eng,2025-09-18_CDH_0007,record_id,2025-09-18_CDH_0007,2025-09-18_CDH_0007,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-18_CDH_0007,interview_date,2025-09-18,2025-09-18,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-18_CDH_0007,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-18_CDH_0007,language,eng,eng,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-18_CDH_0007,spatial,Liverpool,Liverpool,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-18_CDH_0007,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-18_CDH_0007,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-18_CDH_0007,keywords,"['Liverpool', 'docks', 'labour', 'strike']","['Liverpool', 'docks']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,eng,2025-09-18_CDH_0007,title__free,,,,,,,47.0,47.0,True
+olmo-2-7b-instruct,eng,2025-09-18_CDH_0007,abstract__free,,,,,,,84.0,0.0,True
+olmo-2-7b-instruct,eng,2025-09-19_CDH_0008,record_id,2025-09-19_CDH_0008,2025-09-19_CDH_0008,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-19_CDH_0008,interview_date,2025-09-19,2025-09-19,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-19_CDH_0008,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-19_CDH_0008,language,eng,eng,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-19_CDH_0008,spatial,Manchester,Manchester,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-19_CDH_0008,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-19_CDH_0008,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,eng,2025-09-19_CDH_0008,keywords,"['NHS', 'care', 'nursing', 'vocation']","['NHS', 'nursing']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,eng,2025-09-19_CDH_0008,title__free,,,,,,,50.0,50.0,True
+olmo-2-7b-instruct,eng,2025-09-19_CDH_0008,abstract__free,,,,,,,73.0,0.0,True
+olmo-2-7b-instruct,fra,2025-09-20_CDH_0009,record_id,2025-09-20_CDH_0009,2025-09-20_CDH_0009,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-20_CDH_0009,interview_date,2025-09-20,2025-09-20,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-20_CDH_0009,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-20_CDH_0009,language,fra,fra,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-20_CDH_0009,spatial,Longwy,Longwy,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-20_CDH_0009,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-20_CDH_0009,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-20_CDH_0009,keywords,"['Longwy', 'Luxembourg', 'frontière', 'travail']","['Longwy', 'frontière']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,fra,2025-09-20_CDH_0009,title__free,,,,,,,54.0,54.0,True
+olmo-2-7b-instruct,fra,2025-09-20_CDH_0009,abstract__free,,,,,,,110.0,0.0,True
+olmo-2-7b-instruct,fra,2025-09-21_CDH_0010,record_id,2025-09-21_CDH_0010,2025-09-21_CDH_0010,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-21_CDH_0010,interview_date,2025-09-21,2025-09-21,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-21_CDH_0010,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-21_CDH_0010,language,fra,fra,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-21_CDH_0010,spatial,Strasbourg,Strasbourg,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-21_CDH_0010,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-21_CDH_0010,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-21_CDH_0010,keywords,"['Europe', 'Strasbourg', 'identité', 'mémoire']","['Europe', 'Strasbourg']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,fra,2025-09-21_CDH_0010,title__free,,,,,,,56.0,56.0,True
+olmo-2-7b-instruct,fra,2025-09-21_CDH_0010,abstract__free,,,,,,,102.0,0.0,True
+olmo-2-7b-instruct,fra,2025-09-22_CDH_0011,record_id,2025-09-22_CDH_0011,2025-09-22_CDH_0011,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-22_CDH_0011,interview_date,2025-09-22,2025-09-22,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-22_CDH_0011,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-22_CDH_0011,language,fra,fra,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-22_CDH_0011,spatial,Forbach,Forbach,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-22_CDH_0011,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-22_CDH_0011,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-22_CDH_0011,keywords,"['Lorraine', 'fermeture', 'mine', 'travail']","['Lorraine', 'mine']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,fra,2025-09-22_CDH_0011,title__free,,,,,,,52.0,52.0,True
+olmo-2-7b-instruct,fra,2025-09-22_CDH_0011,abstract__free,,,,,,,98.0,0.0,True
+olmo-2-7b-instruct,fra,2025-09-23_CDH_0012,record_id,2025-09-23_CDH_0012,2025-09-23_CDH_0012,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-23_CDH_0012,interview_date,2025-09-23,2025-09-23,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-23_CDH_0012,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-23_CDH_0012,language,fra,fra,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-23_CDH_0012,spatial,Nancy,Nancy,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-23_CDH_0012,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-23_CDH_0012,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,fra,2025-09-23_CDH_0012,keywords,"['enseignement', 'réforme', 'vocation', 'école']","['enseignement', 'école']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,fra,2025-09-23_CDH_0012,title__free,,,,,,,69.0,69.0,True
+olmo-2-7b-instruct,fra,2025-09-23_CDH_0012,abstract__free,,,,,,,99.0,0.0,True
+olmo-2-7b-instruct,ita,2025-09-24_CDH_0013,record_id,2025-09-24_CDH_0013,2025-09-24_CDH_0013,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-24_CDH_0013,interview_date,2025-09-24,2025-09-24,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-24_CDH_0013,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-24_CDH_0013,language,ita,ita,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-24_CDH_0013,spatial,Como,Como,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-24_CDH_0013,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-24_CDH_0013,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-24_CDH_0013,keywords,"['Como', 'Svizzera', 'frontiera', 'pendolare']","['Como', 'frontiera']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,ita,2025-09-24_CDH_0013,title__free,,,,,,,58.0,58.0,True
+olmo-2-7b-instruct,ita,2025-09-24_CDH_0013,abstract__free,,,,,,,98.0,0.0,True
+olmo-2-7b-instruct,ita,2025-09-25_CDH_0014,record_id,2025-09-25_CDH_0014,2025-09-25_CDH_0014,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-25_CDH_0014,interview_date,2025-09-25,2025-09-25,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-25_CDH_0014,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-25_CDH_0014,language,ita,ita,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-25_CDH_0014,spatial,Palermo,Palermo,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-25_CDH_0014,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-25_CDH_0014,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-25_CDH_0014,keywords,"['Germania', 'emigrazione', 'memoria', 'ritorno']","['emigrazione', 'ritorno']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,ita,2025-09-25_CDH_0014,title__free,,,,,,,53.0,53.0,True
+olmo-2-7b-instruct,ita,2025-09-25_CDH_0014,abstract__free,,,,,,,86.0,0.0,True
+olmo-2-7b-instruct,ita,2025-09-26_CDH_0015,record_id,2025-09-26_CDH_0015,2025-09-26_CDH_0015,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-26_CDH_0015,interview_date,2025-09-26,2025-09-26,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-26_CDH_0015,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-26_CDH_0015,language,ita,ita,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-26_CDH_0015,spatial,Prato,Prato,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-26_CDH_0015,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-26_CDH_0015,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-26_CDH_0015,keywords,"['Veneto', 'fabbrica', 'operaia', 'tessile']","['operaia', 'tessile']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,ita,2025-09-26_CDH_0015,title__free,,,,,,,42.0,42.0,True
+olmo-2-7b-instruct,ita,2025-09-26_CDH_0015,abstract__free,,,,,,,100.0,0.0,True
+olmo-2-7b-instruct,ita,2025-09-27_CDH_0016,record_id,2025-09-27_CDH_0016,2025-09-27_CDH_0016,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-27_CDH_0016,interview_date,2025-09-27,2025-09-27,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-27_CDH_0016,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-27_CDH_0016,language,ita,ita,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-27_CDH_0016,spatial,Bologna,Bologna,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-27_CDH_0016,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-27_CDH_0016,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,ita,2025-09-27_CDH_0016,keywords,"['medicina', 'ospedale', 'professione', 'sanità']","['medicina', 'ospedale']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,ita,2025-09-27_CDH_0016,title__free,,,,,,,62.0,62.0,True
+olmo-2-7b-instruct,ita,2025-09-27_CDH_0016,abstract__free,,,,,,,105.0,0.0,True
+olmo-2-7b-instruct,spa,2025-09-28_CDH_0017,record_id,2025-09-28_CDH_0017,2025-09-28_CDH_0017,True,,,,,,
+olmo-2-7b-instruct,spa,2025-09-28_CDH_0017,interview_date,2025-09-28,2025-09-28,True,,,,,,
+olmo-2-7b-instruct,spa,2025-09-28_CDH_0017,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,spa,2025-09-28_CDH_0017,language,spa,spa,True,,,,,,
+olmo-2-7b-instruct,spa,2025-09-28_CDH_0017,spatial,Irún,Irún,True,,,,,,
+olmo-2-7b-instruct,spa,2025-09-28_CDH_0017,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,spa,2025-09-28_CDH_0017,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,spa,2025-09-28_CDH_0017,keywords,"['Francia', 'Irún', 'frontera', 'trabajo']","['Irún', 'frontera']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,spa,2025-09-28_CDH_0017,title__free,,,,,,,45.0,45.0,True
+olmo-2-7b-instruct,spa,2025-09-28_CDH_0017,abstract__free,,,,,,,100.0,0.0,True
+olmo-2-7b-instruct,spa,2025-09-29_CDH_0018,record_id,2025-09-29_CDH_0018,2025-09-29_CDH_0018,True,,,,,,
+olmo-2-7b-instruct,spa,2025-09-29_CDH_0018,interview_date,2025-09-29,2025-09-29,True,,,,,,
+olmo-2-7b-instruct,spa,2025-09-29_CDH_0018,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,spa,2025-09-29_CDH_0018,language,spa,spa,True,,,,,,
+olmo-2-7b-instruct,spa,2025-09-29_CDH_0018,spatial,Madrid,Madrid,True,,,,,,
+olmo-2-7b-instruct,spa,2025-09-29_CDH_0018,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,spa,2025-09-29_CDH_0018,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,spa,2025-09-29_CDH_0018,keywords,"['democracia', 'exilio', 'memoria', 'regreso']","['exilio', 'regreso']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,spa,2025-09-29_CDH_0018,title__free,,,,,,,55.0,55.0,True
+olmo-2-7b-instruct,spa,2025-09-29_CDH_0018,abstract__free,,,,,,,94.0,0.0,True
+olmo-2-7b-instruct,spa,2025-09-30_CDH_0019,record_id,2025-09-30_CDH_0019,2025-09-30_CDH_0019,True,,,,,,
+olmo-2-7b-instruct,spa,2025-09-30_CDH_0019,interview_date,2025-09-30,2025-09-30,True,,,,,,
+olmo-2-7b-instruct,spa,2025-09-30_CDH_0019,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,spa,2025-09-30_CDH_0019,language,spa,spa,True,,,,,,
+olmo-2-7b-instruct,spa,2025-09-30_CDH_0019,spatial,Santoña,Santoña,True,,,,,,
+olmo-2-7b-instruct,spa,2025-09-30_CDH_0019,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,spa,2025-09-30_CDH_0019,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,spa,2025-09-30_CDH_0019,keywords,"['Cantábrico', 'mujeres', 'pesca', 'rederas']","['Cantábrico', 'pesca']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,spa,2025-09-30_CDH_0019,title__free,,,,,,,49.0,49.0,True
+olmo-2-7b-instruct,spa,2025-09-30_CDH_0019,abstract__free,,,,,,,108.0,0.0,True
+olmo-2-7b-instruct,spa,2025-10-01_CDH_0020,record_id,2025-10-01_CDH_0020,2025-10-01_CDH_0020,True,,,,,,
+olmo-2-7b-instruct,spa,2025-10-01_CDH_0020,interview_date,2025-10-01,2025-10-01,True,,,,,,
+olmo-2-7b-instruct,spa,2025-10-01_CDH_0020,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,spa,2025-10-01_CDH_0020,language,spa,spa,True,,,,,,
+olmo-2-7b-instruct,spa,2025-10-01_CDH_0020,spatial,Barcelona,Barcelona,True,,,,,,
+olmo-2-7b-instruct,spa,2025-10-01_CDH_0020,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,spa,2025-10-01_CDH_0020,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,spa,2025-10-01_CDH_0020,keywords,"['arquitectura', 'profesión', 'vivienda', 'ética']","['arquitectura', 'vivienda']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,spa,2025-10-01_CDH_0020,title__free,,,,,,,71.0,71.0,True
+olmo-2-7b-instruct,spa,2025-10-01_CDH_0020,abstract__free,,,,,,,111.0,0.0,True
+olmo-2-7b-instruct,ltz,2025-10-02_CDH_0021,record_id,2025-10-02_CDH_0021,2025-10-02_CDH_0021,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-02_CDH_0021,interview_date,2025-10-02,2025-10-02,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-02_CDH_0021,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-02_CDH_0021,language,ltz,ltz,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-02_CDH_0021,spatial,Esch-sur-Alzette,Esch-sur-Alzette,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-02_CDH_0021,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-02_CDH_0021,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-02_CDH_0021,keywords,"['Esch', 'Frankräich', 'Grenz', 'Schaffen']","['Esch', 'Grenz']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,ltz,2025-10-02_CDH_0021,title__free,,,,,,,47.0,47.0,True
+olmo-2-7b-instruct,ltz,2025-10-02_CDH_0021,abstract__free,,,,,,,87.0,0.0,True
+olmo-2-7b-instruct,ltz,2025-10-03_CDH_0022,record_id,2025-10-03_CDH_0022,2025-10-03_CDH_0022,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-03_CDH_0022,interview_date,2025-10-03,2025-10-03,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-03_CDH_0022,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-03_CDH_0022,language,ltz,ltz,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-03_CDH_0022,spatial,Lëtzebuerg-Stad,Lëtzebuerg-Stad,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-03_CDH_0022,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-03_CDH_0022,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-03_CDH_0022,keywords,"['Identitéit', 'Lëtzebuerg', 'Méisproochegkeet', 'Reflexioun']","['Identitéit', 'Méisproochegkeet']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,ltz,2025-10-03_CDH_0022,title__free,,,,,,,61.0,61.0,True
+olmo-2-7b-instruct,ltz,2025-10-03_CDH_0022,abstract__free,,,,,,,85.0,0.0,True
+olmo-2-7b-instruct,ltz,2025-10-04_CDH_0023,record_id,2025-10-04_CDH_0023,2025-10-04_CDH_0023,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-04_CDH_0023,interview_date,2025-10-04,2025-10-04,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-04_CDH_0023,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-04_CDH_0023,language,ltz,ltz,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-04_CDH_0023,spatial,Dudelange,Dudelange,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-04_CDH_0023,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-04_CDH_0023,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-04_CDH_0023,keywords,"['Aarbecht', 'Diddeleng', 'Stol', 'Strukturwandel']","['Diddeleng', 'Stol']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,ltz,2025-10-04_CDH_0023,title__free,,,,,,,46.0,46.0,True
+olmo-2-7b-instruct,ltz,2025-10-04_CDH_0023,abstract__free,,,,,,,81.0,0.0,True
+olmo-2-7b-instruct,ltz,2025-10-05_CDH_0024,record_id,2025-10-05_CDH_0024,2025-10-05_CDH_0024,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-05_CDH_0024,interview_date,2025-10-05,2025-10-05,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-05_CDH_0024,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-05_CDH_0024,language,ltz,ltz,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-05_CDH_0024,spatial,Lëtzebuerg-Stad,Lëtzebuerg-Stad,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-05_CDH_0024,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-05_CDH_0024,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,ltz,2025-10-05_CDH_0024,keywords,"['Beamten', 'Reflexioun', 'Reform', 'ëffentleche Service']","['Beamten', 'ëffentleche Service']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,ltz,2025-10-05_CDH_0024,title__free,,,,,,,69.0,69.0,True
+olmo-2-7b-instruct,ltz,2025-10-05_CDH_0024,abstract__free,,,,,,,104.0,0.0,True
+olmo-2-7b-instruct,por,2025-10-06_CDH_0025,record_id,2025-10-06_CDH_0025,2025-10-06_CDH_0025,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-06_CDH_0025,interview_date,2025-10-06,2025-10-06,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-06_CDH_0025,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,por,2025-10-06_CDH_0025,language,por,por,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-06_CDH_0025,spatial,Esch-sur-Alzette,Esch-sur-Alzette,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-06_CDH_0025,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-06_CDH_0025,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-06_CDH_0025,keywords,"['Luxemburgo', 'Portugal', 'chegada', 'migração']","['Portugal', 'migração']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,por,2025-10-06_CDH_0025,title__free,,,,,,,48.0,48.0,True
+olmo-2-7b-instruct,por,2025-10-06_CDH_0025,abstract__free,,,,,,,108.0,0.0,True
+olmo-2-7b-instruct,por,2025-10-07_CDH_0026,record_id,2025-10-07_CDH_0026,2025-10-07_CDH_0026,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-07_CDH_0026,interview_date,2025-10-07,2025-10-07,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-07_CDH_0026,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,por,2025-10-07_CDH_0026,language,por,por,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-07_CDH_0026,spatial,Luxembourg-Ville,Luxembourg-Ville,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-07_CDH_0026,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-07_CDH_0026,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-07_CDH_0026,keywords,"['Luxemburgo', 'Portugal', 'identidade', 'segunda geração']","['identidade', 'segunda geração']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,por,2025-10-07_CDH_0026,title__free,,,,,,,59.0,59.0,True
+olmo-2-7b-instruct,por,2025-10-07_CDH_0026,abstract__free,,,,,,,114.0,0.0,True
+olmo-2-7b-instruct,por,2025-10-08_CDH_0027,record_id,2025-10-08_CDH_0027,2025-10-08_CDH_0027,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-08_CDH_0027,interview_date,2025-10-08,2025-10-08,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-08_CDH_0027,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,por,2025-10-08_CDH_0027,language,por,por,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-08_CDH_0027,spatial,Differdange,Differdange,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-08_CDH_0027,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-08_CDH_0027,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-08_CDH_0027,keywords,"['invisibilidade', 'migração', 'mulheres', 'trabalho doméstico']","['mulheres', 'trabalho doméstico']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,por,2025-10-08_CDH_0027,title__free,,,,,,,50.0,50.0,True
+olmo-2-7b-instruct,por,2025-10-08_CDH_0027,abstract__free,,,,,,,128.0,0.0,True
+olmo-2-7b-instruct,por,2025-10-09_CDH_0028,record_id,2025-10-09_CDH_0028,2025-10-09_CDH_0028,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-09_CDH_0028,interview_date,2025-10-09,2025-10-09,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-09_CDH_0028,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+olmo-2-7b-instruct,por,2025-10-09_CDH_0028,language,por,por,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-09_CDH_0028,spatial,Luxembourg-Ville,Luxembourg-Ville,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-09_CDH_0028,consent_status,research-only,research-only,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-09_CDH_0028,accessRights,restricted,restricted,True,,,,,,
+olmo-2-7b-instruct,por,2025-10-09_CDH_0028,keywords,"['Luxemburgo', 'classe social', 'engenharia', 'trajectória']","['engenharia', 'trajectória']",,1.0,0.5,0.6666666666666666,,,
+olmo-2-7b-instruct,por,2025-10-09_CDH_0028,title__free,,,,,,,61.0,61.0,True
+olmo-2-7b-instruct,por,2025-10-09_CDH_0028,abstract__free,,,,,,,138.0,0.0,True
+gemma-3-12b-it,deu,2025-09-12_CDH_0001,record_id,2025-09-12_CDH_0001,2025-09-12_CDH_0001,True,,,,,,
+gemma-3-12b-it,deu,2025-09-12_CDH_0001,interview_date,2025-09-12,2025-09-12,True,,,,,,
+gemma-3-12b-it,deu,2025-09-12_CDH_0001,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,deu,2025-09-12_CDH_0001,language,deu,deu,True,,,,,,
+gemma-3-12b-it,deu,2025-09-12_CDH_0001,spatial,Saarbrücken,Saarbrücken,True,,,,,,
+gemma-3-12b-it,deu,2025-09-12_CDH_0001,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,deu,2025-09-12_CDH_0001,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,deu,2025-09-12_CDH_0001,keywords,"['Arbeit', 'Grenze', 'Pendeln', 'Saarland']","['Arbeit', 'Grenze']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,deu,2025-09-12_CDH_0001,title__free,,,,,,,58.0,58.0,True
+gemma-3-12b-it,deu,2025-09-12_CDH_0001,abstract__free,,,,,,,176.0,0.0,True
+gemma-3-12b-it,deu,2025-09-13_CDH_0002,record_id,2025-09-13_CDH_0002,2025-09-13_CDH_0002,True,,,,,,
+gemma-3-12b-it,deu,2025-09-13_CDH_0002,interview_date,2025-09-13,2025-09-13,True,,,,,,
+gemma-3-12b-it,deu,2025-09-13_CDH_0002,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,deu,2025-09-13_CDH_0002,language,deu,deu,True,,,,,,
+gemma-3-12b-it,deu,2025-09-13_CDH_0002,spatial,Trier,Trier,True,,,,,,
+gemma-3-12b-it,deu,2025-09-13_CDH_0002,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,deu,2025-09-13_CDH_0002,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,deu,2025-09-13_CDH_0002,keywords,"['EU', 'Erinnerung', 'Großregion', 'Mobilität']","['EU', 'Mobilität']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,deu,2025-09-13_CDH_0002,title__free,,,,,,,67.0,67.0,True
+gemma-3-12b-it,deu,2025-09-13_CDH_0002,abstract__free,,,,,,,106.0,0.0,True
+gemma-3-12b-it,deu,2025-09-14_CDH_0003,record_id,2025-09-14_CDH_0003,2025-09-14_CDH_0003,True,,,,,,
+gemma-3-12b-it,deu,2025-09-14_CDH_0003,interview_date,2025-09-14,2025-09-14,True,,,,,,
+gemma-3-12b-it,deu,2025-09-14_CDH_0003,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,deu,2025-09-14_CDH_0003,language,deu,deu,True,,,,,,
+gemma-3-12b-it,deu,2025-09-14_CDH_0003,spatial,Völklingen,Völklingen,True,,,,,,
+gemma-3-12b-it,deu,2025-09-14_CDH_0003,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,deu,2025-09-14_CDH_0003,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,deu,2025-09-14_CDH_0003,keywords,"['Industrie', 'Schichtarbeit', 'Stahl', 'Strukturwandel']","['Schichtarbeit', 'Stahl']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,deu,2025-09-14_CDH_0003,title__free,,,,,,,54.0,54.0,True
+gemma-3-12b-it,deu,2025-09-14_CDH_0003,abstract__free,,,,,,,125.0,0.0,True
+gemma-3-12b-it,deu,2025-09-15_CDH_0004,record_id,2025-09-15_CDH_0004,2025-09-15_CDH_0004,True,,,,,,
+gemma-3-12b-it,deu,2025-09-15_CDH_0004,interview_date,2025-09-15,2025-09-15,True,,,,,,
+gemma-3-12b-it,deu,2025-09-15_CDH_0004,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,deu,2025-09-15_CDH_0004,language,deu,deu,True,,,,,,
+gemma-3-12b-it,deu,2025-09-15_CDH_0004,spatial,Heidelberg,Heidelberg,True,,,,,,
+gemma-3-12b-it,deu,2025-09-15_CDH_0004,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,deu,2025-09-15_CDH_0004,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,deu,2025-09-15_CDH_0004,keywords,"['Karriere', 'Mobilität', 'Prekarität', 'Wissenschaft']","['Prekarität', 'Wissenschaft']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,deu,2025-09-15_CDH_0004,title__free,,,,,,,61.0,61.0,True
+gemma-3-12b-it,deu,2025-09-15_CDH_0004,abstract__free,,,,,,,137.0,0.0,True
+gemma-3-12b-it,eng,2025-09-16_CDH_0005,record_id,2025-09-16_CDH_0005,2025-09-16_CDH_0005,True,,,,,,
+gemma-3-12b-it,eng,2025-09-16_CDH_0005,interview_date,2025-09-16,2025-09-16,True,,,,,,
+gemma-3-12b-it,eng,2025-09-16_CDH_0005,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,eng,2025-09-16_CDH_0005,language,eng,eng,True,,,,,,
+gemma-3-12b-it,eng,2025-09-16_CDH_0005,spatial,Folkestone,Folkestone,True,,,,,,
+gemma-3-12b-it,eng,2025-09-16_CDH_0005,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,eng,2025-09-16_CDH_0005,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,eng,2025-09-16_CDH_0005,keywords,"['Channel', 'border', 'ferry', 'work']","['Channel', 'ferry']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,eng,2025-09-16_CDH_0005,title__free,,,,,,,47.0,47.0,True
+gemma-3-12b-it,eng,2025-09-16_CDH_0005,abstract__free,,,,,,,126.0,0.0,True
+gemma-3-12b-it,eng,2025-09-17_CDH_0006,record_id,2025-09-17_CDH_0006,2025-09-17_CDH_0006,True,,,,,,
+gemma-3-12b-it,eng,2025-09-17_CDH_0006,interview_date,2025-09-17,2025-09-17,True,,,,,,
+gemma-3-12b-it,eng,2025-09-17_CDH_0006,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,eng,2025-09-17_CDH_0006,language,eng,eng,True,,,,,,
+gemma-3-12b-it,eng,2025-09-17_CDH_0006,spatial,Edinburgh,Edinburgh,True,,,,,,
+gemma-3-12b-it,eng,2025-09-17_CDH_0006,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,eng,2025-09-17_CDH_0006,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,eng,2025-09-17_CDH_0006,keywords,"['identity', 'migration', 'reflection', 'transatlantic']","['identity', 'migration']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,eng,2025-09-17_CDH_0006,title__free,,,,,,,51.0,51.0,True
+gemma-3-12b-it,eng,2025-09-17_CDH_0006,abstract__free,,,,,,,82.0,0.0,True
+gemma-3-12b-it,eng,2025-09-18_CDH_0007,record_id,2025-09-18_CDH_0007,2025-09-18_CDH_0007,True,,,,,,
+gemma-3-12b-it,eng,2025-09-18_CDH_0007,interview_date,2025-09-18,2025-09-18,True,,,,,,
+gemma-3-12b-it,eng,2025-09-18_CDH_0007,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,eng,2025-09-18_CDH_0007,language,eng,eng,True,,,,,,
+gemma-3-12b-it,eng,2025-09-18_CDH_0007,spatial,Liverpool,Liverpool,True,,,,,,
+gemma-3-12b-it,eng,2025-09-18_CDH_0007,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,eng,2025-09-18_CDH_0007,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,eng,2025-09-18_CDH_0007,keywords,"['Liverpool', 'docks', 'labour', 'strike']","['Liverpool', 'docks']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,eng,2025-09-18_CDH_0007,title__free,,,,,,,47.0,47.0,True
+gemma-3-12b-it,eng,2025-09-18_CDH_0007,abstract__free,,,,,,,84.0,0.0,True
+gemma-3-12b-it,eng,2025-09-19_CDH_0008,record_id,2025-09-19_CDH_0008,2025-09-19_CDH_0008,True,,,,,,
+gemma-3-12b-it,eng,2025-09-19_CDH_0008,interview_date,2025-09-19,2025-09-19,True,,,,,,
+gemma-3-12b-it,eng,2025-09-19_CDH_0008,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,eng,2025-09-19_CDH_0008,language,eng,eng,True,,,,,,
+gemma-3-12b-it,eng,2025-09-19_CDH_0008,spatial,Manchester,Manchester,True,,,,,,
+gemma-3-12b-it,eng,2025-09-19_CDH_0008,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,eng,2025-09-19_CDH_0008,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,eng,2025-09-19_CDH_0008,keywords,"['NHS', 'care', 'nursing', 'vocation']","['NHS', 'nursing']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,eng,2025-09-19_CDH_0008,title__free,,,,,,,50.0,50.0,True
+gemma-3-12b-it,eng,2025-09-19_CDH_0008,abstract__free,,,,,,,73.0,0.0,True
+gemma-3-12b-it,fra,2025-09-20_CDH_0009,record_id,2025-09-20_CDH_0009,2025-09-20_CDH_0009,True,,,,,,
+gemma-3-12b-it,fra,2025-09-20_CDH_0009,interview_date,2025-09-20,2025-09-20,True,,,,,,
+gemma-3-12b-it,fra,2025-09-20_CDH_0009,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,fra,2025-09-20_CDH_0009,language,fra,fra,True,,,,,,
+gemma-3-12b-it,fra,2025-09-20_CDH_0009,spatial,Longwy,Longwy,True,,,,,,
+gemma-3-12b-it,fra,2025-09-20_CDH_0009,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,fra,2025-09-20_CDH_0009,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,fra,2025-09-20_CDH_0009,keywords,"['Longwy', 'Luxembourg', 'frontière', 'travail']","['Longwy', 'frontière']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,fra,2025-09-20_CDH_0009,title__free,,,,,,,54.0,54.0,True
+gemma-3-12b-it,fra,2025-09-20_CDH_0009,abstract__free,,,,,,,110.0,0.0,True
+gemma-3-12b-it,fra,2025-09-21_CDH_0010,record_id,2025-09-21_CDH_0010,2025-09-21_CDH_0010,True,,,,,,
+gemma-3-12b-it,fra,2025-09-21_CDH_0010,interview_date,2025-09-21,2025-09-21,True,,,,,,
+gemma-3-12b-it,fra,2025-09-21_CDH_0010,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,fra,2025-09-21_CDH_0010,language,fra,fra,True,,,,,,
+gemma-3-12b-it,fra,2025-09-21_CDH_0010,spatial,Strasbourg,Strasbourg,True,,,,,,
+gemma-3-12b-it,fra,2025-09-21_CDH_0010,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,fra,2025-09-21_CDH_0010,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,fra,2025-09-21_CDH_0010,keywords,"['Europe', 'Strasbourg', 'identité', 'mémoire']","['Europe', 'Strasbourg']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,fra,2025-09-21_CDH_0010,title__free,,,,,,,56.0,56.0,True
+gemma-3-12b-it,fra,2025-09-21_CDH_0010,abstract__free,,,,,,,102.0,0.0,True
+gemma-3-12b-it,fra,2025-09-22_CDH_0011,record_id,2025-09-22_CDH_0011,2025-09-22_CDH_0011,True,,,,,,
+gemma-3-12b-it,fra,2025-09-22_CDH_0011,interview_date,2025-09-22,2025-09-22,True,,,,,,
+gemma-3-12b-it,fra,2025-09-22_CDH_0011,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,fra,2025-09-22_CDH_0011,language,fra,fra,True,,,,,,
+gemma-3-12b-it,fra,2025-09-22_CDH_0011,spatial,Forbach,Forbach,True,,,,,,
+gemma-3-12b-it,fra,2025-09-22_CDH_0011,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,fra,2025-09-22_CDH_0011,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,fra,2025-09-22_CDH_0011,keywords,"['Lorraine', 'fermeture', 'mine', 'travail']","['Lorraine', 'mine']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,fra,2025-09-22_CDH_0011,title__free,,,,,,,52.0,52.0,True
+gemma-3-12b-it,fra,2025-09-22_CDH_0011,abstract__free,,,,,,,98.0,0.0,True
+gemma-3-12b-it,fra,2025-09-23_CDH_0012,record_id,2025-09-23_CDH_0012,2025-09-23_CDH_0012,True,,,,,,
+gemma-3-12b-it,fra,2025-09-23_CDH_0012,interview_date,2025-09-23,2025-09-23,True,,,,,,
+gemma-3-12b-it,fra,2025-09-23_CDH_0012,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,fra,2025-09-23_CDH_0012,language,fra,fra,True,,,,,,
+gemma-3-12b-it,fra,2025-09-23_CDH_0012,spatial,Nancy,Nancy,True,,,,,,
+gemma-3-12b-it,fra,2025-09-23_CDH_0012,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,fra,2025-09-23_CDH_0012,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,fra,2025-09-23_CDH_0012,keywords,"['enseignement', 'réforme', 'vocation', 'école']","['enseignement', 'école']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,fra,2025-09-23_CDH_0012,title__free,,,,,,,69.0,69.0,True
+gemma-3-12b-it,fra,2025-09-23_CDH_0012,abstract__free,,,,,,,99.0,0.0,True
+gemma-3-12b-it,ita,2025-09-24_CDH_0013,record_id,2025-09-24_CDH_0013,2025-09-24_CDH_0013,True,,,,,,
+gemma-3-12b-it,ita,2025-09-24_CDH_0013,interview_date,2025-09-24,2025-09-24,True,,,,,,
+gemma-3-12b-it,ita,2025-09-24_CDH_0013,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,ita,2025-09-24_CDH_0013,language,ita,ita,True,,,,,,
+gemma-3-12b-it,ita,2025-09-24_CDH_0013,spatial,Como,Como,True,,,,,,
+gemma-3-12b-it,ita,2025-09-24_CDH_0013,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,ita,2025-09-24_CDH_0013,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,ita,2025-09-24_CDH_0013,keywords,"['Como', 'Svizzera', 'frontiera', 'pendolare']","['Como', 'frontiera']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,ita,2025-09-24_CDH_0013,title__free,,,,,,,58.0,58.0,True
+gemma-3-12b-it,ita,2025-09-24_CDH_0013,abstract__free,,,,,,,98.0,0.0,True
+gemma-3-12b-it,ita,2025-09-25_CDH_0014,record_id,2025-09-25_CDH_0014,2025-09-25_CDH_0014,True,,,,,,
+gemma-3-12b-it,ita,2025-09-25_CDH_0014,interview_date,2025-09-25,2025-09-25,True,,,,,,
+gemma-3-12b-it,ita,2025-09-25_CDH_0014,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,ita,2025-09-25_CDH_0014,language,ita,ita,True,,,,,,
+gemma-3-12b-it,ita,2025-09-25_CDH_0014,spatial,Palermo,Palermo,True,,,,,,
+gemma-3-12b-it,ita,2025-09-25_CDH_0014,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,ita,2025-09-25_CDH_0014,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,ita,2025-09-25_CDH_0014,keywords,"['Germania', 'emigrazione', 'memoria', 'ritorno']","['emigrazione', 'ritorno']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,ita,2025-09-25_CDH_0014,title__free,,,,,,,53.0,53.0,True
+gemma-3-12b-it,ita,2025-09-25_CDH_0014,abstract__free,,,,,,,86.0,0.0,True
+gemma-3-12b-it,ita,2025-09-26_CDH_0015,record_id,2025-09-26_CDH_0015,2025-09-26_CDH_0015,True,,,,,,
+gemma-3-12b-it,ita,2025-09-26_CDH_0015,interview_date,2025-09-26,2025-09-26,True,,,,,,
+gemma-3-12b-it,ita,2025-09-26_CDH_0015,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,ita,2025-09-26_CDH_0015,language,ita,ita,True,,,,,,
+gemma-3-12b-it,ita,2025-09-26_CDH_0015,spatial,Prato,Prato,True,,,,,,
+gemma-3-12b-it,ita,2025-09-26_CDH_0015,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,ita,2025-09-26_CDH_0015,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,ita,2025-09-26_CDH_0015,keywords,"['Veneto', 'fabbrica', 'operaia', 'tessile']","['operaia', 'tessile']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,ita,2025-09-26_CDH_0015,title__free,,,,,,,42.0,42.0,True
+gemma-3-12b-it,ita,2025-09-26_CDH_0015,abstract__free,,,,,,,100.0,0.0,True
+gemma-3-12b-it,ita,2025-09-27_CDH_0016,record_id,2025-09-27_CDH_0016,2025-09-27_CDH_0016,True,,,,,,
+gemma-3-12b-it,ita,2025-09-27_CDH_0016,interview_date,2025-09-27,2025-09-27,True,,,,,,
+gemma-3-12b-it,ita,2025-09-27_CDH_0016,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,ita,2025-09-27_CDH_0016,language,ita,ita,True,,,,,,
+gemma-3-12b-it,ita,2025-09-27_CDH_0016,spatial,Bologna,Bologna,True,,,,,,
+gemma-3-12b-it,ita,2025-09-27_CDH_0016,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,ita,2025-09-27_CDH_0016,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,ita,2025-09-27_CDH_0016,keywords,"['medicina', 'ospedale', 'professione', 'sanità']","['medicina', 'ospedale']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,ita,2025-09-27_CDH_0016,title__free,,,,,,,62.0,62.0,True
+gemma-3-12b-it,ita,2025-09-27_CDH_0016,abstract__free,,,,,,,105.0,0.0,True
+gemma-3-12b-it,spa,2025-09-28_CDH_0017,record_id,2025-09-28_CDH_0017,2025-09-28_CDH_0017,True,,,,,,
+gemma-3-12b-it,spa,2025-09-28_CDH_0017,interview_date,2025-09-28,2025-09-28,True,,,,,,
+gemma-3-12b-it,spa,2025-09-28_CDH_0017,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,spa,2025-09-28_CDH_0017,language,spa,spa,True,,,,,,
+gemma-3-12b-it,spa,2025-09-28_CDH_0017,spatial,Irún,Irún,True,,,,,,
+gemma-3-12b-it,spa,2025-09-28_CDH_0017,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,spa,2025-09-28_CDH_0017,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,spa,2025-09-28_CDH_0017,keywords,"['Francia', 'Irún', 'frontera', 'trabajo']","['Irún', 'frontera']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,spa,2025-09-28_CDH_0017,title__free,,,,,,,45.0,45.0,True
+gemma-3-12b-it,spa,2025-09-28_CDH_0017,abstract__free,,,,,,,100.0,0.0,True
+gemma-3-12b-it,spa,2025-09-29_CDH_0018,record_id,2025-09-29_CDH_0018,2025-09-29_CDH_0018,True,,,,,,
+gemma-3-12b-it,spa,2025-09-29_CDH_0018,interview_date,2025-09-29,2025-09-29,True,,,,,,
+gemma-3-12b-it,spa,2025-09-29_CDH_0018,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,spa,2025-09-29_CDH_0018,language,spa,spa,True,,,,,,
+gemma-3-12b-it,spa,2025-09-29_CDH_0018,spatial,Madrid,Madrid,True,,,,,,
+gemma-3-12b-it,spa,2025-09-29_CDH_0018,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,spa,2025-09-29_CDH_0018,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,spa,2025-09-29_CDH_0018,keywords,"['democracia', 'exilio', 'memoria', 'regreso']","['exilio', 'regreso']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,spa,2025-09-29_CDH_0018,title__free,,,,,,,55.0,55.0,True
+gemma-3-12b-it,spa,2025-09-29_CDH_0018,abstract__free,,,,,,,94.0,0.0,True
+gemma-3-12b-it,spa,2025-09-30_CDH_0019,record_id,2025-09-30_CDH_0019,2025-09-30_CDH_0019,True,,,,,,
+gemma-3-12b-it,spa,2025-09-30_CDH_0019,interview_date,2025-09-30,2025-09-30,True,,,,,,
+gemma-3-12b-it,spa,2025-09-30_CDH_0019,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,spa,2025-09-30_CDH_0019,language,spa,spa,True,,,,,,
+gemma-3-12b-it,spa,2025-09-30_CDH_0019,spatial,Santoña,Santoña,True,,,,,,
+gemma-3-12b-it,spa,2025-09-30_CDH_0019,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,spa,2025-09-30_CDH_0019,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,spa,2025-09-30_CDH_0019,keywords,"['Cantábrico', 'mujeres', 'pesca', 'rederas']","['Cantábrico', 'pesca']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,spa,2025-09-30_CDH_0019,title__free,,,,,,,49.0,49.0,True
+gemma-3-12b-it,spa,2025-09-30_CDH_0019,abstract__free,,,,,,,108.0,0.0,True
+gemma-3-12b-it,spa,2025-10-01_CDH_0020,record_id,2025-10-01_CDH_0020,2025-10-01_CDH_0020,True,,,,,,
+gemma-3-12b-it,spa,2025-10-01_CDH_0020,interview_date,2025-10-01,2025-10-01,True,,,,,,
+gemma-3-12b-it,spa,2025-10-01_CDH_0020,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,spa,2025-10-01_CDH_0020,language,spa,spa,True,,,,,,
+gemma-3-12b-it,spa,2025-10-01_CDH_0020,spatial,Barcelona,Barcelona,True,,,,,,
+gemma-3-12b-it,spa,2025-10-01_CDH_0020,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,spa,2025-10-01_CDH_0020,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,spa,2025-10-01_CDH_0020,keywords,"['arquitectura', 'profesión', 'vivienda', 'ética']","['arquitectura', 'vivienda']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,spa,2025-10-01_CDH_0020,title__free,,,,,,,71.0,71.0,True
+gemma-3-12b-it,spa,2025-10-01_CDH_0020,abstract__free,,,,,,,111.0,0.0,True
+gemma-3-12b-it,ltz,2025-10-02_CDH_0021,record_id,2025-10-02_CDH_0021,2025-10-02_CDH_0021,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-02_CDH_0021,interview_date,2025-10-02,2025-10-02,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-02_CDH_0021,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,ltz,2025-10-02_CDH_0021,language,ltz,ltz,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-02_CDH_0021,spatial,Esch-sur-Alzette,Esch-sur-Alzette,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-02_CDH_0021,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-02_CDH_0021,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-02_CDH_0021,keywords,"['Esch', 'Frankräich', 'Grenz', 'Schaffen']","['Esch', 'Grenz']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,ltz,2025-10-02_CDH_0021,title__free,,,,,,,47.0,47.0,True
+gemma-3-12b-it,ltz,2025-10-02_CDH_0021,abstract__free,,,,,,,87.0,0.0,True
+gemma-3-12b-it,ltz,2025-10-03_CDH_0022,record_id,2025-10-03_CDH_0022,2025-10-03_CDH_0022,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-03_CDH_0022,interview_date,2025-10-03,2025-10-03,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-03_CDH_0022,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,ltz,2025-10-03_CDH_0022,language,ltz,ltz,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-03_CDH_0022,spatial,Lëtzebuerg-Stad,Lëtzebuerg-Stad,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-03_CDH_0022,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-03_CDH_0022,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-03_CDH_0022,keywords,"['Identitéit', 'Lëtzebuerg', 'Méisproochegkeet', 'Reflexioun']","['Identitéit', 'Méisproochegkeet']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,ltz,2025-10-03_CDH_0022,title__free,,,,,,,61.0,61.0,True
+gemma-3-12b-it,ltz,2025-10-03_CDH_0022,abstract__free,,,,,,,85.0,0.0,True
+gemma-3-12b-it,ltz,2025-10-04_CDH_0023,record_id,2025-10-04_CDH_0023,2025-10-04_CDH_0023,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-04_CDH_0023,interview_date,2025-10-04,2025-10-04,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-04_CDH_0023,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,ltz,2025-10-04_CDH_0023,language,ltz,ltz,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-04_CDH_0023,spatial,Dudelange,Dudelange,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-04_CDH_0023,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-04_CDH_0023,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-04_CDH_0023,keywords,"['Aarbecht', 'Diddeleng', 'Stol', 'Strukturwandel']","['Diddeleng', 'Stol']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,ltz,2025-10-04_CDH_0023,title__free,,,,,,,46.0,46.0,True
+gemma-3-12b-it,ltz,2025-10-04_CDH_0023,abstract__free,,,,,,,81.0,0.0,True
+gemma-3-12b-it,ltz,2025-10-05_CDH_0024,record_id,2025-10-05_CDH_0024,2025-10-05_CDH_0024,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-05_CDH_0024,interview_date,2025-10-05,2025-10-05,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-05_CDH_0024,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,ltz,2025-10-05_CDH_0024,language,ltz,ltz,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-05_CDH_0024,spatial,Lëtzebuerg-Stad,Lëtzebuerg-Stad,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-05_CDH_0024,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-05_CDH_0024,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,ltz,2025-10-05_CDH_0024,keywords,"['Beamten', 'Reflexioun', 'Reform', 'ëffentleche Service']","['Beamten', 'ëffentleche Service']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,ltz,2025-10-05_CDH_0024,title__free,,,,,,,69.0,69.0,True
+gemma-3-12b-it,ltz,2025-10-05_CDH_0024,abstract__free,,,,,,,104.0,0.0,True
+gemma-3-12b-it,por,2025-10-06_CDH_0025,record_id,2025-10-06_CDH_0025,2025-10-06_CDH_0025,True,,,,,,
+gemma-3-12b-it,por,2025-10-06_CDH_0025,interview_date,2025-10-06,2025-10-06,True,,,,,,
+gemma-3-12b-it,por,2025-10-06_CDH_0025,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,por,2025-10-06_CDH_0025,language,por,por,True,,,,,,
+gemma-3-12b-it,por,2025-10-06_CDH_0025,spatial,Esch-sur-Alzette,Esch-sur-Alzette,True,,,,,,
+gemma-3-12b-it,por,2025-10-06_CDH_0025,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,por,2025-10-06_CDH_0025,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,por,2025-10-06_CDH_0025,keywords,"['Luxemburgo', 'Portugal', 'chegada', 'migração']","['Portugal', 'migração']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,por,2025-10-06_CDH_0025,title__free,,,,,,,48.0,48.0,True
+gemma-3-12b-it,por,2025-10-06_CDH_0025,abstract__free,,,,,,,108.0,0.0,True
+gemma-3-12b-it,por,2025-10-07_CDH_0026,record_id,2025-10-07_CDH_0026,2025-10-07_CDH_0026,True,,,,,,
+gemma-3-12b-it,por,2025-10-07_CDH_0026,interview_date,2025-10-07,2025-10-07,True,,,,,,
+gemma-3-12b-it,por,2025-10-07_CDH_0026,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,por,2025-10-07_CDH_0026,language,por,por,True,,,,,,
+gemma-3-12b-it,por,2025-10-07_CDH_0026,spatial,Luxembourg-Ville,Luxembourg-Ville,True,,,,,,
+gemma-3-12b-it,por,2025-10-07_CDH_0026,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,por,2025-10-07_CDH_0026,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,por,2025-10-07_CDH_0026,keywords,"['Luxemburgo', 'Portugal', 'identidade', 'segunda geração']","['identidade', 'segunda geração']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,por,2025-10-07_CDH_0026,title__free,,,,,,,59.0,59.0,True
+gemma-3-12b-it,por,2025-10-07_CDH_0026,abstract__free,,,,,,,114.0,0.0,True
+gemma-3-12b-it,por,2025-10-08_CDH_0027,record_id,2025-10-08_CDH_0027,2025-10-08_CDH_0027,True,,,,,,
+gemma-3-12b-it,por,2025-10-08_CDH_0027,interview_date,2025-10-08,2025-10-08,True,,,,,,
+gemma-3-12b-it,por,2025-10-08_CDH_0027,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,por,2025-10-08_CDH_0027,language,por,por,True,,,,,,
+gemma-3-12b-it,por,2025-10-08_CDH_0027,spatial,Differdange,Differdange,True,,,,,,
+gemma-3-12b-it,por,2025-10-08_CDH_0027,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,por,2025-10-08_CDH_0027,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,por,2025-10-08_CDH_0027,keywords,"['invisibilidade', 'migração', 'mulheres', 'trabalho doméstico']","['mulheres', 'trabalho doméstico']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,por,2025-10-08_CDH_0027,title__free,,,,,,,50.0,50.0,True
+gemma-3-12b-it,por,2025-10-08_CDH_0027,abstract__free,,,,,,,128.0,0.0,True
+gemma-3-12b-it,por,2025-10-09_CDH_0028,record_id,2025-10-09_CDH_0028,2025-10-09_CDH_0028,True,,,,,,
+gemma-3-12b-it,por,2025-10-09_CDH_0028,interview_date,2025-10-09,2025-10-09,True,,,,,,
+gemma-3-12b-it,por,2025-10-09_CDH_0028,interviewer,[INTERVIEWER_1],[INTERVIEWER_1],True,,,,,,
+gemma-3-12b-it,por,2025-10-09_CDH_0028,language,por,por,True,,,,,,
+gemma-3-12b-it,por,2025-10-09_CDH_0028,spatial,Luxembourg-Ville,Luxembourg-Ville,True,,,,,,
+gemma-3-12b-it,por,2025-10-09_CDH_0028,consent_status,research-only,research-only,True,,,,,,
+gemma-3-12b-it,por,2025-10-09_CDH_0028,accessRights,restricted,restricted,True,,,,,,
+gemma-3-12b-it,por,2025-10-09_CDH_0028,keywords,"['Luxemburgo', 'classe social', 'engenharia', 'trajectória']","['engenharia', 'trajectória']",,1.0,0.5,0.6666666666666666,,,
+gemma-3-12b-it,por,2025-10-09_CDH_0028,title__free,,,,,,,61.0,61.0,True
+gemma-3-12b-it,por,2025-10-09_CDH_0028,abstract__free,,,,,,,138.0,0.0,True

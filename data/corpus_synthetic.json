@@ -1,0 +1,2975 @@
+{
+ "records": [
+  {
+   "record_id": "2025-09-12_CDH_0001",
+   "interview_date": "2025-09-12",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Synthetisch DE-01: Grenzüberschreitende Arbeit im Saarland",
+   "interviewee_display": "DE-Sprecher*in 01 (synthetisch)",
+   "language": "deu",
+   "spatial": "Saarbrücken",
+   "keywords": [
+    "Grenze",
+    "Arbeit",
+    "Pendeln",
+    "Saarland"
+   ],
+   "abstract": "Synthetischer Ausschnitt: Erinnerung an das tägliche Pendeln über die deutsch-französische Grenze in den 1980er Jahren, mit Fokus auf alltägliche Routinen und kleine Reibungen.",
+   "synthetic": true,
+   "transcript": "Also, das war ja so: Morgens um halb sechs raus, Brot in die Tasche, und dann mit dem Auto rüber. Die Zöllner kannten uns alle, irgendwann haben sie nur noch gewunken. Aber wenn ein Neuer da war, dann hat der natürlich erstmal gefragt. Und ich hab gesagt, ich fahr zur Arbeit, wie jeden Tag. Mein Kollege, der Pierre, der hat immer gelacht und gesagt, ich sei schon halb Franzose. Aber so war das ja nicht. Ich war Saarländer, ich bin Saarländer. Ich hab nur drüben gearbeitet, weil das Geld besser war. Und manchmal, wenn ich abends zurückkam, dann war die Grenze schon ganz leer. Da hat keiner mehr gestanden. Das war irgendwie schön und unheimlich zugleich. Schön, weil man einfach durchfahren konnte. Unheimlich, weil man dachte: Was, wenn jetzt was passiert? Aber es passierte nie was. Nie. Bis dann irgendwann auch tagsüber keiner mehr da war. Da haben wir gemerkt, dass sich was geändert hat. Nicht von heut auf morgen, aber langsam. Mein Vater, der hätte das nie geglaubt, dass das mal so wird.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:35",
+     "label": "Tagesroutine: Aufbruch und Grenzübertritt",
+     "analytical_annotations": {
+      "selected_topic": "border crossing",
+      "selected_frame": "everyday routine",
+      "selected_rhetorical_pattern": "enumeration",
+      "selected_discursive_position": "habitualised commuter",
+      "gold_rationale": "Aufzählung typischer Handlungen (raus, Brot, Auto, rüber) markiert die Habitualisierung der Grenze als Alltagsroutine.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:35",
+     "end": "00:01:10",
+     "label": "Zöllner-Interaktion und Identitätszuschreibung",
+     "analytical_annotations": {
+      "selected_topic": "border crossing",
+      "selected_frame": "identity attribution",
+      "selected_rhetorical_pattern": "reported speech",
+      "selected_discursive_position": "ambivalent identity",
+      "gold_rationale": "Wiedergabe der Aussage des Kollegen Pierre und die explizite Korrektur ('Ich war Saarländer') konstruieren eine identitäre Positionierung gegen die Zuschreibung.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:10",
+     "end": "00:01:45",
+     "label": "Leere Grenze: ambivalente Affektlage",
+     "analytical_annotations": {
+      "selected_topic": "border transformation",
+      "selected_frame": "affective ambivalence",
+      "selected_rhetorical_pattern": "antithesis",
+      "selected_discursive_position": "reflective observer",
+      "gold_rationale": "Antithese 'schön und unheimlich zugleich' organisiert das Segment um eine affektive Spannung; markiert den Übergang vom Alltag zum Reflexionsmodus.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:45",
+     "end": "00:02:15",
+     "label": "Generationenkontrast: Vater",
+     "analytical_annotations": {
+      "selected_topic": "intergenerational change",
+      "selected_frame": "historical rupture",
+      "selected_rhetorical_pattern": "generational contrast",
+      "selected_discursive_position": "witness to transformation",
+      "gold_rationale": "Verweis auf den Vater funktioniert als generationelle Kontrastfigur, die die wahrgenommene Veränderung historisiert.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "Vom habitualisierten Pendelalltag zur reflektierten Wahrnehmung historischer Veränderung.",
+    "central_tension": "Spannung zwischen Identitätszuschreibung (französisch/saarländisch) und der eigenen Selbstverortung im Grenzraum.",
+    "positioning_summary": "Sprecher positioniert sich gleichzeitig als alltäglicher Akteur und als reflektierender Zeuge eines schleichenden Wandels.",
+    "gold_rationale": "Die Erzählung schreitet von konkret-handelnd zu reflektierend-historisierend; Bamberg-Positionierung über Pierre-Episode und Vater-Verweis.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-09-12_CDH_0001.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "259e1c92f038765a4e24ba3f751a3d7dbb55bcd0f9dc448eee808707b5285e07"
+   }
+  },
+  {
+   "record_id": "2025-09-13_CDH_0002",
+   "interview_date": "2025-09-13",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Synthetisch DE-02: Reflexion über Mobilität nach der EU-Erweiterung",
+   "interviewee_display": "DE-Sprecher*in 02 (synthetisch)",
+   "language": "deu",
+   "spatial": "Trier",
+   "keywords": [
+    "Mobilität",
+    "EU",
+    "Erinnerung",
+    "Großregion"
+   ],
+   "abstract": "Synthetischer Ausschnitt: reflektierte Rückschau auf den Wandel von Mobilität in der Großregion nach 2004.",
+   "synthetic": true,
+   "transcript": "Wenn ich heute zurückblicke, dann erscheint mir das alles wie zwei verschiedene Welten. Vor dem Beitritt war Mobilität etwas, das man sich erarbeiten musste. Man brauchte Papiere, man brauchte Erlaubnis, man brauchte oft auch jemanden, der für einen sprach. Das war nicht nur bürokratisch, das war auch psychologisch. Man fühlte sich als Bittsteller. Und dann, nach 2004, war das plötzlich anders. Nicht über Nacht, das wäre übertrieben. Aber innerhalb von zwei, drei Jahren hat sich die Selbstwahrnehmung verschoben. Man war nicht mehr Gast, man war Bewohner. Das ist ein fundamentaler Unterschied, finde ich. Heute sehe ich junge Leute, die ganz selbstverständlich zwischen Trier, Luxemburg und Metz hin- und herfahren, und für die ist das normal. Für mich ist das eine Errungenschaft. Aber ich weiß auch: Das, was als Errungenschaft empfunden wird, wird in der nächsten Generation als gegeben hingenommen. Das ist die Logik von historischen Veränderungen. Und manchmal frage ich mich, ob wir das ausreichend dokumentieren. Ob wir die Erinnerung daran, wie es vorher war, wachhalten können. Oder ob das einfach verschwindet.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:30",
+     "label": "Vor dem Beitritt: Mobilität als Privileg",
+     "analytical_annotations": {
+      "selected_topic": "mobility regime",
+      "selected_frame": "moral economy",
+      "selected_rhetorical_pattern": "contrast",
+      "selected_discursive_position": "retrospective witness",
+      "gold_rationale": "Konstruktion eines 'Vorher' als bürokratisch-psychologisches Bittsteller-Verhältnis; Frame der moralischen Ökonomie der Erlaubnis.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:30",
+     "end": "00:01:05",
+     "label": "Nach 2004: verschobene Selbstwahrnehmung",
+     "analytical_annotations": {
+      "selected_topic": "mobility regime",
+      "selected_frame": "transformation",
+      "selected_rhetorical_pattern": "antithesis",
+      "selected_discursive_position": "reflective citizen",
+      "gold_rationale": "Vom Gast zum Bewohner — diese Reformulierung der Subjektposition markiert den interpretativen Kern des Segments.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:05",
+     "end": "00:01:40",
+     "label": "Generationenvergleich heute",
+     "analytical_annotations": {
+      "selected_topic": "intergenerational change",
+      "selected_frame": "naturalisation",
+      "selected_rhetorical_pattern": "exemplification",
+      "selected_discursive_position": "historical mediator",
+      "gold_rationale": "Beispiel der jungen Pendler*innen funktioniert als Beleg für die Naturalisierung der neuen Mobilität.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:40",
+     "end": "00:02:10",
+     "label": "Dokumentationsfrage und Sorge um Vergessen",
+     "analytical_annotations": {
+      "selected_topic": "memory work",
+      "selected_frame": "epistemic concern",
+      "selected_rhetorical_pattern": "rhetorical question",
+      "selected_discursive_position": "memory advocate",
+      "gold_rationale": "Rhetorische Fragen am Ende formulieren eine epistemische Sorge — der Sprecher positioniert sich explizit als jemand, dem Erinnerungspolitik wichtig ist.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "Reflektierte Periodisierung der eigenen Mobilitätserfahrung vor und nach der EU-Erweiterung.",
+    "central_tension": "Spannung zwischen errungener Mobilität und der Befürchtung, dass die Erinnerung an deren Bedingungen verloren geht.",
+    "positioning_summary": "Sprecher positioniert sich als historischer Vermittler zwischen Generationen, mit explizitem epistemischem Engagement.",
+    "gold_rationale": "Doppelte Bewegung: erst Konstruktion eines Vorher/Nachher, dann Reflexion auf die Tradierbarkeit dieser Erfahrung.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-09-13_CDH_0002.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "0d8de3af1e39c53f31beef62fab2dafec1e7366d5f8b2fb67c427f5773b033bd"
+   }
+  },
+  {
+   "record_id": "2025-09-14_CDH_0003",
+   "interview_date": "2025-09-14",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Synthetisch DE-03: Schichtarbeit in der Stahlindustrie",
+   "interviewee_display": "DE-Sprecher*in 03 (synthetisch)",
+   "language": "deu",
+   "spatial": "Völklingen",
+   "keywords": [
+    "Stahl",
+    "Schichtarbeit",
+    "Industrie",
+    "Strukturwandel"
+   ],
+   "abstract": "Synthetischer Ausschnitt: alltagssprachliche Erinnerung an die Schichtarbeit in der Stahlindustrie und das Ende des Betriebs.",
+   "synthetic": true,
+   "transcript": "Schicht war Schicht. Da gab's nichts dran zu rütteln. Wenn du Frühschicht hattest, dann warst du um vier Uhr raus, und um zwanzig nach fünf bist du in der Halle gestanden. Punkt. Mein Vater hat das genauso gemacht, mein Großvater auch. Drei Generationen, alle bei demselben Werk. Das war normal, das hat keiner hinterfragt. Wenn dich einer gefragt hat, was du machst, dann hast du gesagt: Ich bin bei der Hütte. Mehr brauchte es nicht. Jeder wusste, was du meinst. Und dann, neunundachtzig, da hieß es auf einmal: Wird zugemacht. Einfach so. Wir haben das nicht geglaubt. Ich erinnere mich, ich bin nach Hause gekommen und hab meiner Frau gesagt: Die spinnen. Das machen die nicht. Aber sie haben's gemacht. Und dann standen wir da. Ich war einundvierzig. Wo gehst du hin, wenn du dein ganzes Leben in der Hütte warst? Manche sind gegangen, weg von hier. Ich nicht. Ich konnte nicht. Meine Eltern, die Häuser, alles war hier. Ich hab dann umgeschult, Lager und so. War nicht dasselbe. Wird auch nie dasselbe sein.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:30",
+     "label": "Schicht als unverhandelbare Ordnung",
+     "analytical_annotations": {
+      "selected_topic": "labour discipline",
+      "selected_frame": "habitualisation",
+      "selected_rhetorical_pattern": "repetition",
+      "selected_discursive_position": "embedded worker",
+      "gold_rationale": "Wiederholung 'Schicht war Schicht', Verwendung präziser Zeitangaben — Konstruktion einer als selbstverständlich gerahmten Arbeitsordnung.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:30",
+     "end": "00:01:05",
+     "label": "Generationelle Kontinuität",
+     "analytical_annotations": {
+      "selected_topic": "labour biography",
+      "selected_frame": "tradition",
+      "selected_rhetorical_pattern": "enumeration",
+      "selected_discursive_position": "tradition-bearer",
+      "gold_rationale": "Aufzählung 'mein Vater, mein Großvater' etabliert eine generationelle Werks-Identität als Frame für das eigene Arbeitsleben.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:05",
+     "end": "00:01:45",
+     "label": "Werksschließung 1989: Unglauben",
+     "analytical_annotations": {
+      "selected_topic": "deindustrialisation",
+      "selected_frame": "rupture",
+      "selected_rhetorical_pattern": "reported speech",
+      "selected_discursive_position": "disrupted subject",
+      "gold_rationale": "Wiedergabe der eigenen Aussage 'Die spinnen' markiert den Bruch in der Selbstverständlichkeit; Frame der Disruption.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:45",
+     "end": "00:02:25",
+     "label": "Verbleib und Umschulung",
+     "analytical_annotations": {
+      "selected_topic": "labour biography",
+      "selected_frame": "rootedness",
+      "selected_rhetorical_pattern": "antithesis",
+      "selected_discursive_position": "rooted survivor",
+      "gold_rationale": "Antithese 'Manche sind gegangen. Ich nicht' positioniert den Sprecher als Verwurzelten; abschließende Aussage 'Wird auch nie dasselbe sein' markiert Verlust.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "Von der habitualisierten Werks-Identität zur Disruption durch Schließung und zum Verbleib unter Verlust.",
+    "central_tension": "Spannung zwischen Verwurzelung am Ort und Verlust der konstitutiven Arbeitsidentität.",
+    "positioning_summary": "Sprecher positioniert sich als Verwurzelter, dessen Identität durch die Schließung beschädigt, aber nicht ausgelöscht wurde.",
+    "gold_rationale": "Drei narrative Phasen: Stabilität — Bruch — Persistenz unter veränderten Bedingungen; klassische Schütze-Stegreifstruktur.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-09-14_CDH_0003.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "d2eab10439e15c7921152c4066261917ae566690fb4dda2d9064a139e780445a"
+   }
+  },
+  {
+   "record_id": "2025-09-15_CDH_0004",
+   "interview_date": "2025-09-15",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Synthetisch DE-04: Akademische Laufbahn und prekäre Mobilität",
+   "interviewee_display": "DE-Sprecher*in 04 (synthetisch)",
+   "language": "deu",
+   "spatial": "Heidelberg",
+   "keywords": [
+    "Wissenschaft",
+    "Prekarität",
+    "Mobilität",
+    "Karriere"
+   ],
+   "abstract": "Synthetischer Ausschnitt: reflektierende Rückschau auf eine akademische Laufbahn zwischen mehreren Universitäten und befristeten Stellen.",
+   "synthetic": true,
+   "transcript": "Im Rückblick verstehe ich erst, wie sehr mein Berufsweg durch eine ganz bestimmte Form von Mobilität geprägt war — eine Mobilität, die nicht gewählt, sondern verlangt wurde. Jedes neue Projekt, jede neue Stelle bedeutete einen Umzug. Manchmal innerhalb Deutschlands, manchmal über die Grenze hinaus. Ich habe in Heidelberg promoviert, dann eine Postdoc-Stelle in Leuven, dann zwei Jahre in Birmingham, dann wieder zurück. Wenn ich das so erzähle, klingt es wie eine internationale Karriere. Aus der Innenperspektive war es eher eine Aneinanderreihung von Befristungen, jede mit dem Verfallsdatum auf der Stirn. Was ich heute reflektieren kann, ist, was das mit Zugehörigkeit macht. Ich habe in jedem Ort Freundschaften geschlossen, die nach drei Jahren wieder zu Fernfreundschaften wurden. Ich habe vier Sprachen einigermaßen gelernt, keine richtig. Und vor allem: Ich habe gelernt, mich nicht zu sehr einzurichten. Das ist eine Überlebensstrategie, aber sie hat ihren Preis. Wenn jüngere Kolleg*innen mich fragen, ob sich das lohnt, dann zögere ich. Ich sage nicht nein, aber ich sage auch nicht ohne Weiteres ja. Ich sage: Es kommt darauf an, was du bereit bist, dafür aufzugeben.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:30",
+     "label": "Mobilität als strukturelle Anforderung",
+     "analytical_annotations": {
+      "selected_topic": "academic precarity",
+      "selected_frame": "structural constraint",
+      "selected_rhetorical_pattern": "qualification",
+      "selected_discursive_position": "reflective subject",
+      "gold_rationale": "Doppelte Formulierung 'nicht gewählt, sondern verlangt' qualifiziert die Mobilität als nicht-volitional und etabliert den strukturellen Frame.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:30",
+     "end": "00:01:05",
+     "label": "Stationenkette: Innen- vs. Außenperspektive",
+     "analytical_annotations": {
+      "selected_topic": "academic career",
+      "selected_frame": "perspective shift",
+      "selected_rhetorical_pattern": "antithesis",
+      "selected_discursive_position": "ambivalent narrator",
+      "gold_rationale": "Antithese 'klingt wie eine internationale Karriere' vs. 'Aneinanderreihung von Befristungen' organisiert die Selbstdarstellung als bewusste Korrektur einer Außenperspektive.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:05",
+     "end": "00:01:40",
+     "label": "Folgen für Zugehörigkeit und Sprache",
+     "analytical_annotations": {
+      "selected_topic": "belonging",
+      "selected_frame": "cumulative loss",
+      "selected_rhetorical_pattern": "enumeration",
+      "selected_discursive_position": "displaced intellectual",
+      "gold_rationale": "Aufzählung 'Freundschaften, Sprachen, Sich-nicht-einrichten' als kumulative Bilanz; Frame der affektiven Kosten.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:40",
+     "end": "00:02:15",
+     "label": "Beratung jüngerer Kolleg*innen",
+     "analytical_annotations": {
+      "selected_topic": "intergenerational advice",
+      "selected_frame": "ethical caution",
+      "selected_rhetorical_pattern": "conditional advice",
+      "selected_discursive_position": "cautious mentor",
+      "gold_rationale": "Konditionale Beratung ('Es kommt darauf an') positioniert den Sprecher als reflektierenden, nicht-präskriptiven Mentor.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "Von der retrospektiven Erkenntnis struktureller Mobilität zur konditionalen Weitergabe von Erfahrungswissen.",
+    "central_tension": "Spannung zwischen formal erfolgreicher Karriere und subjektiver Erfahrung von Prekarität und affektivem Verlust.",
+    "positioning_summary": "Sprecher positioniert sich als reflektierender Subjekt, der die eigene Erfahrung in struktureller Begrifflichkeit rahmt, ohne Opferdarstellung.",
+    "gold_rationale": "Bamberg-typische Doppelpositionierung: gegenüber der Außenperspektive auf akademische Mobilität und gegenüber jüngeren Kolleg*innen als Mentor.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-09-15_CDH_0004.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "7d3f923baee36665f7f84a4ae5c1d2923595068a5f64476bb5fe975d7472d07e"
+   }
+  },
+  {
+   "record_id": "2025-09-16_CDH_0005",
+   "interview_date": "2025-09-16",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Synthetic EN-01: Daily crossings at the Channel",
+   "interviewee_display": "EN-Speaker 01 (synthetic)",
+   "language": "eng",
+   "spatial": "Folkestone",
+   "keywords": [
+    "Channel",
+    "ferry",
+    "work",
+    "border"
+   ],
+   "abstract": "Synthetic excerpt: colloquial recollection of daily ferry crossings for work between Folkestone and Calais in the early 1990s.",
+   "synthetic": true,
+   "transcript": "We used to do the boat every morning, me and three others from the yard. Five o'clock you'd be up, six fifteen on the ferry, and you'd have your tea on the deck. Same crew, same faces. The lads at the gate over in Calais, they got to know us. They'd just wave us through, most days. Wasn't always like that, mind. When I started, in eighty-eight or so, they checked everything. Bags, papers, the lot. But by ninety-two, ninety-three, it was different. You'd hand over the card and that was it. We didn't think much about why. We just thought, well, things are easier now. Good thing. More money in the pocket because you weren't spending half your morning queuing. Funny thing is, looking back, I couldn't tell you exactly when it changed. It just did. One day you noticed the queues weren't there anymore. And then later, when all this Brexit business started, my missus said to me, do you remember how it used to be? And I had to think. I genuinely had to sit and think. Because the easy way had become the normal way.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:30",
+     "label": "Morning routine on the ferry",
+     "analytical_annotations": {
+      "selected_topic": "border crossing",
+      "selected_frame": "everyday routine",
+      "selected_rhetorical_pattern": "enumeration",
+      "selected_discursive_position": "habitualised commuter",
+      "gold_rationale": "Sequence of times and concrete actions ('five o'clock', 'six fifteen', 'tea on the deck') marks routinisation.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:30",
+     "end": "00:01:05",
+     "label": "Eased checks over time",
+     "analytical_annotations": {
+      "selected_topic": "border transformation",
+      "selected_frame": "gradual change",
+      "selected_rhetorical_pattern": "contrast",
+      "selected_discursive_position": "observer of change",
+      "gold_rationale": "Explicit before/after contrast (1988 vs 1992/93) without dramatic framing — register of casual observation.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:05",
+     "end": "00:01:35",
+     "label": "Easy way becomes normal way",
+     "analytical_annotations": {
+      "selected_topic": "naturalisation",
+      "selected_frame": "imperceptible change",
+      "selected_rhetorical_pattern": "aphorism",
+      "selected_discursive_position": "naturalising subject",
+      "gold_rationale": "Closing aphorism 'the easy way had become the normal way' compresses the segment's interpretive content.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:35",
+     "end": "00:02:05",
+     "label": "Brexit prompts retrospection",
+     "analytical_annotations": {
+      "selected_topic": "memory work",
+      "selected_frame": "rupture-induced reflection",
+      "selected_rhetorical_pattern": "reported speech",
+      "selected_discursive_position": "prompted rememberer",
+      "gold_rationale": "Wife's question functions as a narrative trigger that forces the explicit re-historisation of habitual experience.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "From habitualised crossing to politically-triggered retrospection on its conditions.",
+    "central_tension": "Tension between gradual naturalisation of mobility and the cognitive effort required to remember its earlier conditions.",
+    "positioning_summary": "Speaker positions himself as a habitual subject only retrospectively made reflective by an external prompt (Brexit, wife's question).",
+    "gold_rationale": "Trigger-narrative structure: routine — gradual change — externally triggered reflection.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-09-16_CDH_0005.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "421537702549f7238bcc32c2a9dcd95f73de78ab2af080b722dd1806c5dcc50a"
+   }
+  },
+  {
+   "record_id": "2025-09-17_CDH_0006",
+   "interview_date": "2025-09-17",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Synthetic EN-02: Reflecting on a transatlantic life",
+   "interviewee_display": "EN-Speaker 02 (synthetic)",
+   "language": "eng",
+   "spatial": "Edinburgh",
+   "keywords": [
+    "migration",
+    "identity",
+    "transatlantic",
+    "reflection"
+   ],
+   "abstract": "Synthetic excerpt: reflective account of a life lived between Scotland and Canada.",
+   "synthetic": true,
+   "transcript": "If you ask me where home is, I genuinely don't have an easy answer. I was born in Edinburgh, my parents moved us to Halifax when I was eleven, and I came back to Scotland in my late thirties. So there's a long Canadian middle to my life that doesn't really show up in how people read me here. They hear the accent and they think: Scottish, obviously. They don't hear the years in between. And I've come to think that this invisibility is one of the more interesting things about migration over time. Not the visible kind, not the immediate marking-out as different. But the way that a long stretch of your life can become inaudible to the people around you, because it doesn't fit the categories they have available. My partner says I have two settings: the Scottish me and the Canadian me. I think she's right, but I'd add a third — the one that's aware of switching. That's the one I'd like to talk about, because I think it's the one oral history doesn't usually capture. The switching itself, the consciousness of it. The way you adjust your vocabulary depending on who's in the room, not deceitfully, just practically.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:30",
+     "label": "Where is home — refusing the easy answer",
+     "analytical_annotations": {
+      "selected_topic": "belonging",
+      "selected_frame": "complexity assertion",
+      "selected_rhetorical_pattern": "rhetorical question",
+      "selected_discursive_position": "complex belonger",
+      "gold_rationale": "Opening with refusal of the easy answer programmatically frames the segment around irreducibility of belonging.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:30",
+     "end": "00:01:05",
+     "label": "Invisible biographical middle",
+     "analytical_annotations": {
+      "selected_topic": "migration",
+      "selected_frame": "epistemic invisibility",
+      "selected_rhetorical_pattern": "antithesis",
+      "selected_discursive_position": "unseen migrant",
+      "gold_rationale": "Antithesis between audible accent and inaudible middle period theorises the speaker's own opacity to others.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:05",
+     "end": "00:01:40",
+     "label": "Two settings, plus a third",
+     "analytical_annotations": {
+      "selected_topic": "identity",
+      "selected_frame": "self-theorisation",
+      "selected_rhetorical_pattern": "enumeration",
+      "selected_discursive_position": "self-analytical subject",
+      "gold_rationale": "Partner's two-settings framing is taken up and refined ('I'd add a third') — speaker repositions himself as a self-analytical subject.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:40",
+     "end": "00:02:15",
+     "label": "What oral history misses",
+     "analytical_annotations": {
+      "selected_topic": "methodological reflection",
+      "selected_frame": "epistemic critique",
+      "selected_rhetorical_pattern": "qualification",
+      "selected_discursive_position": "meta-reflexive participant",
+      "gold_rationale": "Direct meta-comment on oral history methodology positions the speaker as a knowing participant in the research situation.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "From a refused 'easy answer' to a meta-reflexive critique of how migration biographies are normally rendered.",
+    "central_tension": "Tension between visible markers (accent) and inaudible biographical depth.",
+    "positioning_summary": "Speaker positions himself simultaneously as a migrant subject and as a methodological commentator on oral history practice.",
+    "gold_rationale": "Strong meta-positioning: the speaker explicitly steps outside the interview frame to comment on what the genre tends to capture.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-09-17_CDH_0006.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "5bd963ffa6f9480338dd5b6a4550a4ad24d10a44c8eb232a365b0dcd45d0f3cf"
+   }
+  },
+  {
+   "record_id": "2025-09-18_CDH_0007",
+   "interview_date": "2025-09-18",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Synthetic EN-03: Working the docks in Liverpool",
+   "interviewee_display": "EN-Speaker 03 (synthetic)",
+   "language": "eng",
+   "spatial": "Liverpool",
+   "keywords": [
+    "docks",
+    "Liverpool",
+    "labour",
+    "strike"
+   ],
+   "abstract": "Synthetic excerpt: colloquial account of dock work in Liverpool and the 1995 strike.",
+   "synthetic": true,
+   "transcript": "Docks were everything. Father, uncles, all the lads on our street, all dockers. You went in at sixteen if you could. I went in at seventeen. They put me on the gangs, you learn fast or you don't last. Wasn't gentle, but it was fair. You knew where you stood. And the lads looked out for each other, that's the thing people don't always get. Wasn't a charity, it was a brotherhood, but it worked. Then ninety-five comes along, and the whole lot's on strike, and I'm out on the gate. Two years, near enough. Two years. You think you can do two years and come back to normal, but you can't. Normal's gone. Some of the lads, they couldn't take it. Marriages went, some lads went off the rails. I held on, just about. Got back in eventually, but it wasn't the same place. Newer fellas, didn't know the history, didn't want to know. To them I was the old bloke banging on about the strike. And maybe I was. Maybe I am. But you don't forget. You can't forget.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:30",
+     "label": "Docks as inherited world",
+     "analytical_annotations": {
+      "selected_topic": "labour biography",
+      "selected_frame": "tradition",
+      "selected_rhetorical_pattern": "enumeration",
+      "selected_discursive_position": "embedded heir",
+      "gold_rationale": "Enumeration of male relatives establishes docks as inherited social world; succession framing.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:30",
+     "end": "00:01:05",
+     "label": "Brotherhood and rules",
+     "analytical_annotations": {
+      "selected_topic": "workplace culture",
+      "selected_frame": "moral economy",
+      "selected_rhetorical_pattern": "qualification",
+      "selected_discursive_position": "loyal insider",
+      "gold_rationale": "Speaker corrects an anticipated misreading ('Wasn't a charity, it was a brotherhood') — defensive framing of workplace solidarity.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:05",
+     "end": "00:01:45",
+     "label": "The 1995 strike and its costs",
+     "analytical_annotations": {
+      "selected_topic": "industrial conflict",
+      "selected_frame": "rupture",
+      "selected_rhetorical_pattern": "repetition",
+      "selected_discursive_position": "scarred participant",
+      "gold_rationale": "Repetition 'Two years. Two years' rhetorically emphasises duration; itemisation of personal costs (marriages, derailments).",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:45",
+     "end": "00:02:25",
+     "label": "Return and generational gap",
+     "analytical_annotations": {
+      "selected_topic": "memory transmission",
+      "selected_frame": "generational disconnect",
+      "selected_rhetorical_pattern": "self-irony",
+      "selected_discursive_position": "memory-keeper",
+      "gold_rationale": "Self-ironic 'old bloke banging on' coexists with categorical 'You can't forget' — speaker holds both positions simultaneously.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "From inherited belonging to scarred persistence and contested memory transmission.",
+    "central_tension": "Tension between obligation to remember and generational rejection of that memory by newer colleagues.",
+    "positioning_summary": "Speaker positions himself as wounded but persistent memory-keeper, ironically aware of his own role as the 'old bloke'.",
+    "gold_rationale": "Classic three-phase biographical narrative with strong affective dwelling on the rupture phase.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-09-18_CDH_0007.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "c9006382d496f2d656f93fe681418ee8aba337380ca766488b3d63b63a606fa5"
+   }
+  },
+  {
+   "record_id": "2025-09-19_CDH_0008",
+   "interview_date": "2025-09-19",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Synthetic EN-04: Reflecting on a career in nursing",
+   "interviewee_display": "EN-Speaker 04 (synthetic)",
+   "language": "eng",
+   "spatial": "Manchester",
+   "keywords": [
+    "nursing",
+    "NHS",
+    "care",
+    "vocation"
+   ],
+   "abstract": "Synthetic excerpt: reflective account of a nursing career within the NHS.",
+   "synthetic": true,
+   "transcript": "I trained in nineteen eighty-two, and what strikes me looking back is how much the language has changed. We talked about patients then. Now we talk about service users, clients, sometimes customers. Each of those words carries a different idea of what we're doing, and I think the idea has shifted in a way I haven't always liked. When I started, the assumption was that nursing was vocational. You did it because you wanted to care for people. The word vocation now sounds either old-fashioned or suspicious, depending who you talk to. Old-fashioned because we're supposed to be professionalised now. Suspicious because vocation is sometimes used to justify underpaying people who have a calling. I understand both criticisms. I share the second one quite strongly. But I also worry that we've thrown out something with the bathwater. Something about the moral weight of the job. I don't have a tidy way to resolve this. I just notice that the people I worked with who lasted longest were the ones who carried that moral weight, and the ones who burned out fastest were often the ones who'd been told it was just a job like any other. Make of that what you will.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:30",
+     "label": "Changing language of care",
+     "analytical_annotations": {
+      "selected_topic": "professional discourse",
+      "selected_frame": "lexical shift",
+      "selected_rhetorical_pattern": "enumeration",
+      "selected_discursive_position": "linguistic observer",
+      "gold_rationale": "Enumeration of terms (patients/service users/clients/customers) makes lexical change the analytical lever.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:30",
+     "end": "00:01:10",
+     "label": "Vocation: old-fashioned or suspicious",
+     "analytical_annotations": {
+      "selected_topic": "vocation",
+      "selected_frame": "ambivalent valuation",
+      "selected_rhetorical_pattern": "antithesis",
+      "selected_discursive_position": "ambivalent reflector",
+      "gold_rationale": "Doubled framing of 'vocation' as either old-fashioned or suspicious sets up a deliberate analytical ambivalence.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:10",
+     "end": "00:01:45",
+     "label": "Critiques accepted, but with reservation",
+     "analytical_annotations": {
+      "selected_topic": "ethical reflection",
+      "selected_frame": "qualified concession",
+      "selected_rhetorical_pattern": "qualification",
+      "selected_discursive_position": "qualified critic",
+      "gold_rationale": "Speaker concedes both critiques but introduces a 'but I also worry' that holds open the moral-weight question.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:45",
+     "end": "00:02:25",
+     "label": "Burnout pattern and refusal of tidy conclusion",
+     "analytical_annotations": {
+      "selected_topic": "professional longevity",
+      "selected_frame": "empirical observation",
+      "selected_rhetorical_pattern": "anti-resolution",
+      "selected_discursive_position": "non-prescriptive observer",
+      "gold_rationale": "Refusal of resolution ('Make of that what you will') positions speaker as non-prescriptive; empirical observation about burnout as evidence.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "From linguistic observation to a non-resolved reflection on the moral weight of care work.",
+    "central_tension": "Tension between legitimate critique of vocational framing and the empirical correlation of moral weight with professional longevity.",
+    "positioning_summary": "Speaker positions herself as a careful reflector who refuses both nostalgic and dismissive framings of vocation.",
+    "gold_rationale": "Argumentative structure rather than narrative arc: claim — counter-claim — non-resolution; characteristic of reflective register.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-09-19_CDH_0008.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "71b06767fd5fef0182d4b6b2299a1c1bc301ddef3f5481d98b30a0da1ee6ac53"
+   }
+  },
+  {
+   "record_id": "2025-09-20_CDH_0009",
+   "interview_date": "2025-09-20",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Synthétique FR-01: Le passage de la frontière à Longwy",
+   "interviewee_display": "FR-Locuteur·rice 01 (synthétique)",
+   "language": "fra",
+   "spatial": "Longwy",
+   "keywords": [
+    "frontière",
+    "Longwy",
+    "Luxembourg",
+    "travail"
+   ],
+   "abstract": "Extrait synthétique : souvenir familier du passage quotidien de la frontière entre la France et le Luxembourg.",
+   "synthetic": true,
+   "transcript": "Bon, alors moi, j'ai commencé à passer la frontière en quatre-vingt-huit. Tous les matins, six heures, je prenais ma voiture, et je montais sur Luxembourg. Au début, il y avait les douaniers, on devait montrer les papiers, des fois ils regardaient le coffre, des fois non. Ça dépendait de qui était de service. Il y en avait un, je me souviens, on l'appelait Monsieur Bonjour, parce que c'est tout ce qu'il disait. Bonjour, et puis hop, tu passes. Les autres, c'était plus long. Et puis Schengen est arrivé, et tout ça s'est dissous. Du jour au lendemain, presque. Plus de douaniers, plus de queue, rien. C'était bizarre au début. On avait l'habitude, tu vois. C'est comme quand tu déménages et que ton meuble n'est plus à sa place, tu te cognes encore pendant des mois. Pareil avec la frontière. Je ralentissais toujours, automatiquement, pendant peut-être un an. Et puis non. Plus rien à ralentir pour. Mes enfants, ils n'ont jamais connu ça. Pour eux, Luxembourg c'est comme Metz, c'est juste un endroit où on va.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:30",
+     "label": "Routine matinale et douaniers",
+     "analytical_annotations": {
+      "selected_topic": "border crossing",
+      "selected_frame": "everyday routine",
+      "selected_rhetorical_pattern": "enumeration",
+      "selected_discursive_position": "habitualised commuter",
+      "gold_rationale": "Énumération d'actions quotidiennes installe le cadre de la routine.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:30",
+     "end": "00:01:05",
+     "label": "Monsieur Bonjour : personnalisation du contrôle",
+     "analytical_annotations": {
+      "selected_topic": "border personnel",
+      "selected_frame": "personalisation",
+      "selected_rhetorical_pattern": "anecdote",
+      "selected_discursive_position": "narrator of small encounters",
+      "gold_rationale": "Surnom 'Monsieur Bonjour' personnalise le dispositif frontalier ; anecdote comme dispositif rhétorique.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:05",
+     "end": "00:01:45",
+     "label": "Schengen et désorientation corporelle",
+     "analytical_annotations": {
+      "selected_topic": "border dissolution",
+      "selected_frame": "embodied habit",
+      "selected_rhetorical_pattern": "simile",
+      "selected_discursive_position": "displaced habituee",
+      "gold_rationale": "Comparaison avec le déménagement ('tu te cognes encore') traduit la frontière comme habitude corporelle persistant après sa disparition.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:45",
+     "end": "00:02:15",
+     "label": "Génération suivante",
+     "analytical_annotations": {
+      "selected_topic": "intergenerational change",
+      "selected_frame": "naturalisation",
+      "selected_rhetorical_pattern": "contrast",
+      "selected_discursive_position": "witness to normalisation",
+      "gold_rationale": "Contraste générationnel ('Mes enfants, ils n'ont jamais connu ça') marque la naturalisation comme effet historique.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "De la routine personnalisée à la dissolution corporellement perceptible et à la naturalisation générationnelle.",
+    "central_tension": "Tension entre la persistance du corps habitué et la disparition de l'objet qui l'a formé.",
+    "positioning_summary": "Locuteur·rice se positionne comme témoin somatique d'une transformation, par contraste avec la génération suivante.",
+    "gold_rationale": "Structure narrative classique avec dispositif comparatif (déménagement) comme cœur interprétatif.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-09-20_CDH_0009.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "63bbc2bb02759a6b967c0f127c7279dc64adfd1b9e793cf692f1b7b0adc984ee"
+   }
+  },
+  {
+   "record_id": "2025-09-21_CDH_0010",
+   "interview_date": "2025-09-21",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Synthétique FR-02: Réflexion sur l'européanisation vécue",
+   "interviewee_display": "FR-Locuteur·rice 02 (synthétique)",
+   "language": "fra",
+   "spatial": "Strasbourg",
+   "keywords": [
+    "Europe",
+    "Strasbourg",
+    "identité",
+    "mémoire"
+   ],
+   "abstract": "Extrait synthétique : réflexion sur la construction européenne telle qu'elle a été vécue à Strasbourg.",
+   "synthetic": true,
+   "transcript": "Ce qui me frappe, avec le recul, c'est à quel point l'Europe — l'institution, je veux dire — a été présente sans être visible. J'ai grandi à Strasbourg dans les années soixante-dix et quatre-vingt. Le Parlement européen était là, le Conseil de l'Europe était là, les fonctionnaires étaient là, et pourtant pour nous, gamins du quartier, c'était un peu comme un décor. On savait que c'était important, parce qu'on nous le disait à l'école, mais on ne l'éprouvait pas. Je crois que c'est seulement quand j'ai commencé à travailler avec des collègues d'autres pays, dans les années deux mille, que j'ai commencé à comprendre ce que ça voulait dire concrètement. Non pas les institutions, mais la trame qu'elles produisent. Les normes communes, les programmes d'échange, les façons de se reconnaître mutuellement comme légitimes. Ce que je ne peux pas savoir, et c'est peut-être la chose la plus honnête à dire, c'est si cette trame est solide ou si elle est très fine. Elle paraît solide tant qu'on n'appuie pas dessus. Mais on a vu, ces dernières années, qu'elle pouvait être interrogée. Et alors on découvre qu'on tenait à elle sans le savoir.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:35",
+     "label": "Europe présente mais non éprouvée",
+     "analytical_annotations": {
+      "selected_topic": "European integration",
+      "selected_frame": "presence without experience",
+      "selected_rhetorical_pattern": "antithesis",
+      "selected_discursive_position": "retrospective observer",
+      "gold_rationale": "Antithèse 'présente sans être visible' organise tout le segment ; cadre de l'institution comme décor.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:35",
+     "end": "00:01:15",
+     "label": "Compréhension différée par le travail collaboratif",
+     "analytical_annotations": {
+      "selected_topic": "European integration",
+      "selected_frame": "delayed comprehension",
+      "selected_rhetorical_pattern": "qualification",
+      "selected_discursive_position": "mature European subject",
+      "gold_rationale": "Qualification temporelle ('c'est seulement quand') marque une compréhension qui n'est ni native ni immédiate.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:15",
+     "end": "00:01:50",
+     "label": "La trame : ni les institutions ni rien",
+     "analytical_annotations": {
+      "selected_topic": "European integration",
+      "selected_frame": "infrastructural metaphor",
+      "selected_rhetorical_pattern": "metaphor",
+      "selected_discursive_position": "theorist of integration",
+      "gold_rationale": "Métaphore de la 'trame' propose une théorisation lay-sociologique de ce que produisent les institutions.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:50",
+     "end": "00:02:25",
+     "label": "Solidité incertaine et attachement révélé",
+     "analytical_annotations": {
+      "selected_topic": "political fragility",
+      "selected_frame": "discovered attachment",
+      "selected_rhetorical_pattern": "paradox",
+      "selected_discursive_position": "concerned witness",
+      "gold_rationale": "Paradoxe 'on tenait à elle sans le savoir' livre la pointe interprétative ; positionnement comme témoin concerné mais incertain.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "D'une présence européenne non éprouvée à une compréhension différée et à la révélation d'un attachement par la menace.",
+    "central_tension": "Tension entre la solidité apparente d'une intégration et l'incertitude quant à sa robustesse réelle.",
+    "positioning_summary": "Locuteur·rice se positionne comme sujet européen mûri par l'expérience professionnelle, prudent quant à ses propres certitudes.",
+    "gold_rationale": "Mouvement argumentatif en trois temps : invisibilité — compréhension différée — révélation par la mise en cause.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-09-21_CDH_0010.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "014f777229883e1ee8c727215e75fa8e16ff92ef7fa321e370d95341ca931721"
+   }
+  },
+  {
+   "record_id": "2025-09-22_CDH_0011",
+   "interview_date": "2025-09-22",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Synthétique FR-03: Mineur dans le bassin de Lorraine",
+   "interviewee_display": "FR-Locuteur·rice 03 (synthétique)",
+   "language": "fra",
+   "spatial": "Forbach",
+   "keywords": [
+    "mine",
+    "Lorraine",
+    "fermeture",
+    "travail"
+   ],
+   "abstract": "Extrait synthétique : récit familier d'une vie de mineur en Lorraine et de la fermeture des puits.",
+   "synthetic": true,
+   "transcript": "La mine, c'était ma vie. Je suis descendu pour la première fois à seize ans, avec mon père. On descendait ensemble, le matin, dans la cage. Il ne parlait pas beaucoup, mon père. Mais il regardait que je sois bien, que je tienne. Au fond, ça change un homme, tu sais. La première fois, tu as peur, c'est normal. Après, tu t'habitues. Tu ne t'habitues jamais vraiment, mais tu fais comme si. Et puis ils ont commencé à parler de fermer. Ça a duré des années, ces discussions. Tantôt on fermait, tantôt non. À la fin, c'était quatre-vingt-quatre, quatre-vingt-cinq, on savait que c'était fini. Mais on continuait. Parce que qu'est-ce qu'on pouvait faire d'autre. Quand le dernier jour est arrivé, les gars ont pleuré. Des grands gaillards, à pleurer comme des enfants. Moi aussi. Je l'avoue. On ne pleure pas une mine, on pleure une vie. Aujourd'hui on parle de transition. Reconversion. Tous ces mots. Pour nous, il n'y a pas eu de transition. Il y a eu un trou. On est tombé dedans, et on s'en est sorti comme on a pu.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:30",
+     "label": "Première descente avec le père",
+     "analytical_annotations": {
+      "selected_topic": "labour biography",
+      "selected_frame": "initiation",
+      "selected_rhetorical_pattern": "intergenerational scene",
+      "selected_discursive_position": "inheritor",
+      "gold_rationale": "Scène initiatique père-fils ; cadre de la transmission générationnelle de la mine.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:30",
+     "end": "00:01:05",
+     "label": "Habituation paradoxale",
+     "analytical_annotations": {
+      "selected_topic": "workplace experience",
+      "selected_frame": "embodied adaptation",
+      "selected_rhetorical_pattern": "paradox",
+      "selected_discursive_position": "embodied survivor",
+      "gold_rationale": "Paradoxe 'tu ne t'habitues jamais vraiment, mais tu fais comme si' formule la dimension corporelle de l'expérience.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:05",
+     "end": "00:01:45",
+     "label": "Années d'incertitude et fermeture",
+     "analytical_annotations": {
+      "selected_topic": "deindustrialisation",
+      "selected_frame": "prolonged uncertainty",
+      "selected_rhetorical_pattern": "anaphora",
+      "selected_discursive_position": "subject of structural decline",
+      "gold_rationale": "Répétition 'Tantôt... tantôt' rend la temporalité erratique de la fermeture ; cadre du déclin structurel.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:45",
+     "end": "00:02:25",
+     "label": "Pleurer une vie ; le trou",
+     "analytical_annotations": {
+      "selected_topic": "loss",
+      "selected_frame": "rejection of euphemism",
+      "selected_rhetorical_pattern": "metaphor",
+      "selected_discursive_position": "rejector of official vocabulary",
+      "gold_rationale": "Rejet explicite du vocabulaire institutionnel ('Tous ces mots') et substitution par 'le trou' — positionnement contre la langue officielle.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "De l'initiation filiale à la perte collective rendue par le rejet du vocabulaire institutionnel.",
+    "central_tension": "Tension entre l'expérience vécue de la fermeture comme effondrement et son traitement administratif comme 'transition'.",
+    "positioning_summary": "Locuteur·rice se positionne contre la langue institutionnelle en imposant son propre vocabulaire ('trou' contre 'reconversion').",
+    "gold_rationale": "Trois phases : initiation — érosion — perte ; positionnement final explicitement contre-discursif.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-09-22_CDH_0011.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "3728429f66445589902cfb034222986590204e92ee1e659fdc31d3451047b4ba"
+   }
+  },
+  {
+   "record_id": "2025-09-23_CDH_0012",
+   "interview_date": "2025-09-23",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Synthétique FR-04: Enseignante du secondaire, retour sur quarante ans",
+   "interviewee_display": "FR-Locuteur·rice 04 (synthétique)",
+   "language": "fra",
+   "spatial": "Nancy",
+   "keywords": [
+    "enseignement",
+    "école",
+    "vocation",
+    "réforme"
+   ],
+   "abstract": "Extrait synthétique : retour réflexif d'une enseignante du secondaire sur quarante ans de carrière.",
+   "synthetic": true,
+   "transcript": "Quand j'essaie de penser à mes quarante ans d'enseignement, je résiste à deux récits faciles. Le premier, c'est celui du déclin : tout était mieux avant, les élèves étaient plus disciplinés, les programmes plus rigoureux. Ce récit-là est partout, et il est partiellement vrai, ce qui le rend dangereux. Le second, c'est celui du progrès : on est passé d'un enseignement magistral à des pédagogies plus inclusives, c'est mieux. Lui aussi est partiellement vrai. Ce qui me préoccupe, c'est qu'on doive choisir entre les deux. Parce que ce que j'ai observé, c'est que les transformations sont rarement uniformes. Certaines choses se sont améliorées — l'attention portée aux élèves en difficulté, par exemple. D'autres se sont dégradées — la confiance que la société accorde aux enseignants, par exemple. Et beaucoup de choses se sont simplement déplacées, sans devenir meilleures ou pires, juste autres. La fatigue, je la situe à l'intersection de ces déplacements. Pas dans le travail lui-même, qui reste le même, mais dans l'effort qu'il faut faire pour tenir une position cohérente entre tant de récits contradictoires sur ce qu'on fait.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:35",
+     "label": "Résistance aux deux récits faciles",
+     "analytical_annotations": {
+      "selected_topic": "professional discourse",
+      "selected_frame": "narrative refusal",
+      "selected_rhetorical_pattern": "antithesis",
+      "selected_discursive_position": "non-aligned reflector",
+      "gold_rationale": "Refus explicite des deux récits dominants pose un positionnement non-aligné dès l'ouverture.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:35",
+     "end": "00:01:15",
+     "label": "Décomposition des transformations",
+     "analytical_annotations": {
+      "selected_topic": "educational change",
+      "selected_frame": "differentiation",
+      "selected_rhetorical_pattern": "enumeration",
+      "selected_discursive_position": "fine-grained analyst",
+      "gold_rationale": "Énumération différenciée ('certaines... d'autres... beaucoup') refuse la totalisation.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:15",
+     "end": "00:01:55",
+     "label": "Localisation de la fatigue",
+     "analytical_annotations": {
+      "selected_topic": "professional fatigue",
+      "selected_frame": "interpretive relocation",
+      "selected_rhetorical_pattern": "qualification",
+      "selected_discursive_position": "self-analytical practitioner",
+      "gold_rationale": "Relocalisation de la fatigue 'pas dans le travail mais dans l'effort de tenir une position' constitue une auto-analyse précise.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:55",
+     "end": "00:02:25",
+     "label": "Effort de cohérence narrative",
+     "analytical_annotations": {
+      "selected_topic": "professional identity",
+      "selected_frame": "narrative labour",
+      "selected_rhetorical_pattern": "meta-reflection",
+      "selected_discursive_position": "narratively burdened subject",
+      "gold_rationale": "Méta-réflexion sur le poids des récits contradictoires comme charge professionnelle distincte du travail lui-même.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "Du refus des récits dominants à la relocalisation de la fatigue dans le travail narratif lui-même.",
+    "central_tension": "Tension entre la complexité observée des transformations et l'exigence sociale de récits simples.",
+    "positioning_summary": "Locuteur·rice se positionne comme praticienne refusant les deux récits hégémoniques, et théorise sa propre fatigue.",
+    "gold_rationale": "Structure argumentative : refus binaire — différenciation — diagnostic ; registre clairement réflexif-analytique.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-09-23_CDH_0012.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "006aa7a0c8c0c1f7cacc41fc96345556937877dd2d34ca0bae76e57400e2608a"
+   }
+  },
+  {
+   "record_id": "2025-09-24_CDH_0013",
+   "interview_date": "2025-09-24",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Sintetico IT-01: Pendolare sulla frontiera con la Svizzera",
+   "interviewee_display": "IT-Parlante 01 (sintetico)",
+   "language": "ita",
+   "spatial": "Como",
+   "keywords": [
+    "frontiera",
+    "Como",
+    "Svizzera",
+    "pendolare"
+   ],
+   "abstract": "Estratto sintetico: ricordo colloquiale del pendolarismo quotidiano dalla Lombardia alla Svizzera.",
+   "synthetic": true,
+   "transcript": "Io ho fatto il frontaliere per ventidue anni. Tutte le mattine, alle cinque e mezza, in macchina, e via verso Chiasso. La dogana la conoscevo come casa mia. I doganieri pure. C'era il vecchio Mario, italiano, che lavorava di là — anche lui ogni mattina, anche lui per anni. Ci si salutava. Una vita. Però ti dico una cosa: noi frontalieri, noi non siamo né di qua né di là. Stiamo in mezzo. La sera torni in Italia, ma la tua giornata l'hai fatta in Svizzera. E pian piano ti accorgi che cambi anche tu. Non diventi svizzero, no, ma non sei più solo italiano. È strano spiegarlo. Mia moglie diceva che ero diventato 'mezzo crucco', rideva. Però aveva ragione, in un certo senso. Mi ero abituato alle loro abitudini. La puntualità, l'ordine, certi modi di fare. Quando sono andato in pensione, è stato un sollievo, ma anche un piccolo lutto. Perché quella vita lì, anche se faticava, ti definiva. Adesso che sto a casa, devo ridefinirmi un po'.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:30",
+     "label": "Ventidue anni di pendolarismo",
+     "analytical_annotations": {
+      "selected_topic": "border crossing",
+      "selected_frame": "labour duration",
+      "selected_rhetorical_pattern": "enumeration",
+      "selected_discursive_position": "long-term frontaliere",
+      "gold_rationale": "Specificazione temporale ('ventidue anni') e routine quotidiana stabiliscono il quadro biografico.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:30",
+     "end": "00:01:05",
+     "label": "Doganieri come figure familiari",
+     "analytical_annotations": {
+      "selected_topic": "border personnel",
+      "selected_frame": "familiarisation",
+      "selected_rhetorical_pattern": "anecdote",
+      "selected_discursive_position": "habitualised border-subject",
+      "gold_rationale": "Aneddoto su Mario il doganiere italiano funziona come dispositivo di familiarizzazione del confine.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:05",
+     "end": "00:01:45",
+     "label": "Né di qua né di là: la condizione frontaliera",
+     "analytical_annotations": {
+      "selected_topic": "identity",
+      "selected_frame": "in-between condition",
+      "selected_rhetorical_pattern": "self-theorisation",
+      "selected_discursive_position": "in-between subject",
+      "gold_rationale": "Auto-teorizzazione esplicita ('noi frontalieri, noi non siamo né di qua né di là') propone una categoria sociologica laica.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:45",
+     "end": "00:02:25",
+     "label": "Pensione: sollievo e lutto",
+     "analytical_annotations": {
+      "selected_topic": "retirement",
+      "selected_frame": "ambivalent transition",
+      "selected_rhetorical_pattern": "antithesis",
+      "selected_discursive_position": "subject in re-definition",
+      "gold_rationale": "Antitesi 'sollievo, ma anche piccolo lutto' apre uno spazio di ridefinizione identitaria post-lavorativa.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "Dalla routine pendolare alla teorizzazione laica di una condizione 'in mezzo' e al lutto della sua perdita.",
+    "central_tension": "Tensione tra la fatica del pendolarismo e la sua funzione costitutiva dell'identità.",
+    "positioning_summary": "Parlante si posiziona come soggetto consapevolmente in-between, ora costretto a ridefinirsi.",
+    "gold_rationale": "Narrazione biografica con auto-teorizzazione al centro; tipica struttura di riflessione su una vita di mobilità.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-09-24_CDH_0013.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "4b770a3dbde2a91b203ffc61918234e821b2a8fb8d8872eab900d2c2caec2c54"
+   }
+  },
+  {
+   "record_id": "2025-09-25_CDH_0014",
+   "interview_date": "2025-09-25",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Sintetico IT-02: Riflessione su emigrazione e ritorno",
+   "interviewee_display": "IT-Parlante 02 (sintetico)",
+   "language": "ita",
+   "spatial": "Palermo",
+   "keywords": [
+    "emigrazione",
+    "ritorno",
+    "Germania",
+    "memoria"
+   ],
+   "abstract": "Estratto sintetico: riflessione di un emigrato di ritorno dalla Germania alla Sicilia.",
+   "synthetic": true,
+   "transcript": "Quando sono partito, nel sessantotto, non ho pensato che sarebbe stato per quarant'anni. Nessuno pensa così. Si parte per due, tre anni, si mette da parte, si torna. Solo che 'da parte' diventa una casa, e poi una famiglia, e poi una vita. E quando torni, non è il posto che hai lasciato. Lo sapevo, lo sanno tutti, eppure quando ti capita davvero, ti sorprende lo stesso. La lingua che parlavo io non si parla più. La Palermo che ricordavo non c'è più. Mia sorella mi dice 'parli da tedesco', e io mi arrabbio, perché mi sembra di parlare in italiano normale, ma evidentemente non è normale, è normale per chi è stato via. Quello che mi colpisce di più, riflettendoci adesso, è che l'emigrazione non si conclude con il ritorno. Si conclude — forse — con la riconciliazione tra le due versioni di te. Quello che è rimasto e quello che è andato. E questa riconciliazione, devo essere onesto, non l'ho ancora del tutto raggiunta. Forse non la raggiungerò mai. Forse l'emigrazione è una condizione che non si chiude.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:30",
+     "label": "Partenza non pensata come definitiva",
+     "analytical_annotations": {
+      "selected_topic": "migration",
+      "selected_frame": "unintended permanence",
+      "selected_rhetorical_pattern": "qualification",
+      "selected_discursive_position": "unwitting emigrant",
+      "gold_rationale": "Qualificazione 'nessuno pensa così' generalizza l'esperienza individuale come pattern.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:30",
+     "end": "00:01:05",
+     "label": "Il ritorno cambia l'oggetto del ritorno",
+     "analytical_annotations": {
+      "selected_topic": "return migration",
+      "selected_frame": "transformed place",
+      "selected_rhetorical_pattern": "paradox",
+      "selected_discursive_position": "displaced returnee",
+      "gold_rationale": "Paradosso del ritorno a un luogo trasformato; sorpresa esplicitamente nominata come tale.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:05",
+     "end": "00:01:40",
+     "label": "Lingua e percezione esterna",
+     "analytical_annotations": {
+      "selected_topic": "linguistic identity",
+      "selected_frame": "external attribution",
+      "selected_rhetorical_pattern": "reported speech",
+      "selected_discursive_position": "linguistically marked subject",
+      "gold_rationale": "Riferimento del 'parli da tedesco' della sorella opera l'attribuzione identitaria esterna che il parlante contesta.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:40",
+     "end": "00:02:20",
+     "label": "Emigrazione come condizione non conclusa",
+     "analytical_annotations": {
+      "selected_topic": "migration",
+      "selected_frame": "unresolved condition",
+      "selected_rhetorical_pattern": "self-theorisation",
+      "selected_discursive_position": "theorist of unresolved migration",
+      "gold_rationale": "Auto-teorizzazione finale ('forse l'emigrazione è una condizione che non si chiude') propone una concettualizzazione laica.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "Dalla partenza non pianificata alla teorizzazione dell'emigrazione come condizione strutturalmente irrisolta.",
+    "central_tension": "Tensione tra il desiderio di chiusura ('riconciliazione') e la sua impossibilità.",
+    "positioning_summary": "Parlante si posiziona come soggetto che riconosce e accetta l'irrisolvibilità della propria condizione, senza romanticizzarla.",
+    "gold_rationale": "Struttura argomentativa con culmine in una concettualizzazione laica dell'emigrazione; registro chiaramente riflessivo.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-09-25_CDH_0014.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "0994df24393c77ed95bf5fb875adc5be5ca04ed6cb8b75d75c1195a5d7a37425"
+   }
+  },
+  {
+   "record_id": "2025-09-26_CDH_0015",
+   "interview_date": "2025-09-26",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Sintetico IT-03: Operaia tessile in Veneto",
+   "interviewee_display": "IT-Parlante 03 (sintetico)",
+   "language": "ita",
+   "spatial": "Prato",
+   "keywords": [
+    "tessile",
+    "operaia",
+    "fabbrica",
+    "Veneto"
+   ],
+   "abstract": "Estratto sintetico: racconto colloquiale di una operaia tessile in Veneto e della crisi del settore.",
+   "synthetic": true,
+   "transcript": "In fabbrica ci sono entrata a quindici anni. Mia madre lavorava già lì, e mi ha portato lei. Erano altri tempi, eh. Si entrava giovani e basta. Le mie mani le ho rovinate nei primi due anni, poi si abituano. Si abituano a tutto, le mani. Lavoravamo otto ore, qualche volta nove, qualche volta dieci. C'era un capo, lo chiamavamo il Signor Niente, perché non diceva mai niente, controllava e basta. Le donne più anziane mi hanno insegnato i trucchi, come stare in piedi senza spaccarsi la schiena, come fare le cose veloci senza farle male. C'era una solidarietà che adesso non si trova più, dicono. Io non lo so se è vero, forse anche allora dicevamo che prima era meglio. Comunque. Negli anni novanta hanno cominciato a chiudere le fabbriche. Una alla volta. La nostra ha tenuto duro fino al duemilasette, poi hanno chiuso anche noi. Io avevo cinquantacinque anni. Troppo vecchia per ricominciare, troppo giovane per la pensione. Mi hanno trovato un posto in un magazzino, ma non è la stessa cosa. Non è proprio la stessa cosa.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:30",
+     "label": "Ingresso in fabbrica con la madre",
+     "analytical_annotations": {
+      "selected_topic": "labour biography",
+      "selected_frame": "intergenerational transmission",
+      "selected_rhetorical_pattern": "scene",
+      "selected_discursive_position": "embedded daughter",
+      "gold_rationale": "Scena di ingresso accompagnato dalla madre stabilisce la trasmissione generazionale del lavoro.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:30",
+     "end": "00:01:10",
+     "label": "Adattamento corporeo e gerarchie",
+     "analytical_annotations": {
+      "selected_topic": "workplace experience",
+      "selected_frame": "embodied adaptation",
+      "selected_rhetorical_pattern": "personification",
+      "selected_discursive_position": "embodied operaia",
+      "gold_rationale": "Personificazione delle mani ('si abituano a tutto, le mani') e soprannome 'Signor Niente' come dispositivi narrativi colloquiali.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:10",
+     "end": "00:01:45",
+     "label": "Solidarietà femminile e cautela epistemica",
+     "analytical_annotations": {
+      "selected_topic": "workplace solidarity",
+      "selected_frame": "epistemic caution",
+      "selected_rhetorical_pattern": "qualification",
+      "selected_discursive_position": "self-skeptical narrator",
+      "gold_rationale": "Auto-qualificazione ('forse anche allora dicevamo che prima era meglio') introduce una cautela epistemica sulla propria nostalgia.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:45",
+     "end": "00:02:30",
+     "label": "Chiusure e ricollocazione insufficiente",
+     "analytical_annotations": {
+      "selected_topic": "deindustrialisation",
+      "selected_frame": "displacement",
+      "selected_rhetorical_pattern": "repetition",
+      "selected_discursive_position": "displaced operaia",
+      "gold_rationale": "Ripetizione finale 'Non è proprio la stessa cosa' chiude il segmento su una perdita non risolvibile.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "Dall'ingresso filiale in fabbrica alla chiusura e a una ricollocazione percepita come insufficiente.",
+    "central_tension": "Tensione tra la consapevolezza critica della propria nostalgia e l'esperienza reale di una perdita non sostituita.",
+    "positioning_summary": "Parlante si posiziona come operaia che riconosce i limiti della propria memoria pur affermando una perdita concreta.",
+    "gold_rationale": "Tre fasi narrative classiche con auto-riflessione epistemica nel terzo segmento — variante consapevole della struttura biografica colloquiale.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-09-26_CDH_0015.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "fba7c60d44ca71d812935bfc7aff45ce7973fd78f82115d14cacc2e700ae8dfb"
+   }
+  },
+  {
+   "record_id": "2025-09-27_CDH_0016",
+   "interview_date": "2025-09-27",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Sintetico IT-04: Medico ospedaliero, riflessione su trent'anni",
+   "interviewee_display": "IT-Parlante 04 (sintetico)",
+   "language": "ita",
+   "spatial": "Bologna",
+   "keywords": [
+    "medicina",
+    "ospedale",
+    "professione",
+    "sanità"
+   ],
+   "abstract": "Estratto sintetico: riflessione di un medico ospedaliero su trent'anni di carriera nel sistema sanitario.",
+   "synthetic": true,
+   "transcript": "Ripercorrendo trent'anni di lavoro in corsia, quello che mi pare più difficile da dire è come sia cambiato il rapporto tra il tempo del medico e il tempo del paziente. Quando ho cominciato, alla fine degli anni novanta, c'era ancora la possibilità — non sempre, ma spesso — di sedersi accanto a un letto e ascoltare. Non si trattava solo di compassione, era diagnostica. Si imparava molto, ascoltando. Adesso quel tempo è eroso da ogni parte: dalla documentazione, dai protocolli, dalle pressioni amministrative. Capisco le ragioni di ognuno di questi vincoli, presi singolarmente. Ma il loro effetto combinato è una professione che ha sempre meno spazio per la sua funzione cognitiva propria. Quello che dico ai più giovani è che la medicina è una pratica interpretativa, e che senza tempo per l'interpretazione si rischia di diventare bravi tecnici di procedure piuttosto che bravi clinici. Non è una nostalgia. È una preoccupazione concreta sulle condizioni in cui si forma il giudizio medico. Se viene a mancare lo spazio per quel giudizio, manca anche la cosa di cui io credo che la nostra professione abbia bisogno per restare quello che dovrebbe essere.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:35",
+     "label": "Tempo del medico e tempo del paziente",
+     "analytical_annotations": {
+      "selected_topic": "medical practice",
+      "selected_frame": "temporal erosion",
+      "selected_rhetorical_pattern": "antithesis",
+      "selected_discursive_position": "reflective clinician",
+      "gold_rationale": "Contrasto temporale 'quando ho cominciato' / 'adesso' organizza il segmento; cadre dell'erosione.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:35",
+     "end": "00:01:15",
+     "label": "Funzione diagnostica dell'ascolto",
+     "analytical_annotations": {
+      "selected_topic": "medical practice",
+      "selected_frame": "cognitive function",
+      "selected_rhetorical_pattern": "qualification",
+      "selected_discursive_position": "epistemological clinician",
+      "gold_rationale": "Qualificazione 'non era solo compassione, era diagnostica' riposiziona l'ascolto come funzione epistemica.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:15",
+     "end": "00:01:50",
+     "label": "Effetto combinato dei vincoli",
+     "analytical_annotations": {
+      "selected_topic": "professional discourse",
+      "selected_frame": "aggregate critique",
+      "selected_rhetorical_pattern": "concession",
+      "selected_discursive_position": "concessive critic",
+      "gold_rationale": "Concessione esplicita ('capisco le ragioni di ognuno') seguita da critica aggregata — strategia argomentativa di concessione e ribaltamento.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:50",
+     "end": "00:02:25",
+     "label": "Distinzione tra nostalgia e preoccupazione",
+     "analytical_annotations": {
+      "selected_topic": "professional concern",
+      "selected_frame": "category distinction",
+      "selected_rhetorical_pattern": "explicit refusal",
+      "selected_discursive_position": "non-nostalgic reflector",
+      "gold_rationale": "Distinzione esplicita 'Non è una nostalgia, è una preoccupazione concreta' posiziona il parlante contro un'interpretazione possibile.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "Dall'osservazione dell'erosione temporale alla teorizzazione della medicina come pratica interpretativa minacciata.",
+    "central_tension": "Tensione tra la legittimità dei singoli vincoli amministrativi e il loro effetto aggregato sulla qualità del giudizio clinico.",
+    "positioning_summary": "Parlante si posiziona esplicitamente come riflettore non-nostalgico, distinguendo critica strutturata da rimpianto.",
+    "gold_rationale": "Struttura argomentativa di concessione-e-ribaltamento; registro fortemente analitico.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-09-27_CDH_0016.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "398054c71152cfffeb155e0f34b49e000b3e36413d4819d3d58375ceefc9d5b3"
+   }
+  },
+  {
+   "record_id": "2025-09-28_CDH_0017",
+   "interview_date": "2025-09-28",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Sintético ES-01: Cruzando la frontera en Irún",
+   "interviewee_display": "ES-Hablante 01 (sintético)",
+   "language": "spa",
+   "spatial": "Irún",
+   "keywords": [
+    "frontera",
+    "Irún",
+    "Francia",
+    "trabajo"
+   ],
+   "abstract": "Extracto sintético: recuerdo coloquial del paso fronterizo entre Irún y Hendaya en los años ochenta.",
+   "synthetic": true,
+   "transcript": "Yo empecé a cruzar la frontera en el ochenta y dos, recién casado. Trabajaba en Hendaya, en un taller. Todas las mañanas, en bici primero, después con un coche viejo que compré. Los guardias civiles de Irún me conocían, los gendarmes de Hendaya también. Era otra época, pero tampoco hace tanto. Algunos días te paraban, otros no. Dependía. Si llevabas algo en la furgoneta tenías que explicar. Si solo ibas tú, te dejaban pasar. Cuando entró España en la Comunidad, en el ochenta y seis, no cambió todo de golpe, no. Cambió poco a poco. Pero cuando vino Schengen, ya en los noventa, ahí sí se notó. De pronto no había nadie en la frontera. Era raro. Como si la frontera se hubiera marchado, pero tú siguieras yendo al mismo sitio. Mis hijos crecieron sin saber lo que era una frontera de verdad. Para ellos cruzar es como cruzar una calle. A veces se lo cuento y se ríen. Dicen que parece de otro mundo. Y es que era otro mundo, en cierto modo.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:30",
+     "label": "Cruce diario en los años ochenta",
+     "analytical_annotations": {
+      "selected_topic": "border crossing",
+      "selected_frame": "everyday routine",
+      "selected_rhetorical_pattern": "enumeration",
+      "selected_discursive_position": "habitualised commuter",
+      "gold_rationale": "Enumeración de medios y rutinas establece el cuadro biográfico cotidiano.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:30",
+     "end": "00:01:05",
+     "label": "Discrecionalidad del control",
+     "analytical_annotations": {
+      "selected_topic": "border control",
+      "selected_frame": "arbitrariness",
+      "selected_rhetorical_pattern": "contrast",
+      "selected_discursive_position": "subject of arbitrary regime",
+      "gold_rationale": "Contraste 'algunos días sí, otros no' tematiza la arbitrariedad del control fronterizo.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:05",
+     "end": "00:01:45",
+     "label": "Schengen: la frontera se marcha",
+     "analytical_annotations": {
+      "selected_topic": "border dissolution",
+      "selected_frame": "spatial disappearance",
+      "selected_rhetorical_pattern": "personification",
+      "selected_discursive_position": "witness to disappearance",
+      "gold_rationale": "Personificación 'como si la frontera se hubiera marchado' figura el cambio como desaparición de un agente.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:45",
+     "end": "00:02:20",
+     "label": "Hijos sin frontera real",
+     "analytical_annotations": {
+      "selected_topic": "intergenerational change",
+      "selected_frame": "world disappearance",
+      "selected_rhetorical_pattern": "qualification",
+      "selected_discursive_position": "narrator of vanished world",
+      "gold_rationale": "Calificación final 'era otro mundo, en cierto modo' modula la afirmación generacional con un giro reflexivo.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "Del cruce cotidiano arbitrario a la desaparición percibida del régimen fronterizo y a la transmisión generacional como otro mundo.",
+    "central_tension": "Tensión entre la persistencia del recuerdo de un régimen y su completa desaparición para la siguiente generación.",
+    "positioning_summary": "Hablante se posiciona como testigo de un mundo desaparecido, con conciencia de la dimensión histórica de su biografía.",
+    "gold_rationale": "Tres fases con figura central de personificación (la frontera que se marcha) como centro interpretativo.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-09-28_CDH_0017.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "042b92d9cd328153cb19aaa2dfd4375549be3b6f33b32fcb6fd87094b2852ae5"
+   }
+  },
+  {
+   "record_id": "2025-09-29_CDH_0018",
+   "interview_date": "2025-09-29",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Sintético ES-02: Reflexión sobre el exilio y el regreso",
+   "interviewee_display": "ES-Hablante 02 (sintético)",
+   "language": "spa",
+   "spatial": "Madrid",
+   "keywords": [
+    "exilio",
+    "regreso",
+    "memoria",
+    "democracia"
+   ],
+   "abstract": "Extracto sintético: reflexión de una persona exiliada que regresó a España tras la Transición.",
+   "synthetic": true,
+   "transcript": "Lo que cuesta más explicar, sobre el exilio, no es la pérdida. La pérdida se entiende, todo el mundo la entiende. Lo que cuesta explicar es la doble vida que se acaba viviendo. Una versión de uno mismo continúa en el lugar de origen, en la imaginación, sin envejecer. La otra versión vive en el lugar de acogida y envejece de verdad. Cuando regresas — yo regresé en el setenta y ocho — descubres que la versión imaginaria ya no encaja en ningún sitio. El país ha cambiado, tú has cambiado, y entre las dos cosas no hay correspondencia. Esto suena trágico contado así, pero no lo viví como una tragedia. Lo viví como un trabajo. El trabajo de aceptar que el regreso no es un retorno. Que es más bien una llegada a un sitio nuevo que se parece al sitio antiguo lo justo para confundirte. Hoy, cuando hablo con jóvenes que emigran por motivos económicos, intento decirles eso. No es lo mismo, no quiero comparar. Pero algo de la mecánica del regreso me parece compartido. La idea de que volver es fácil es uno de los engaños más persistentes de cualquier emigración.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:35",
+     "label": "La doble vida del exilio",
+     "analytical_annotations": {
+      "selected_topic": "exile",
+      "selected_frame": "doubled subjectivity",
+      "selected_rhetorical_pattern": "antithesis",
+      "selected_discursive_position": "theorist of exile",
+      "gold_rationale": "Antítesis entre la versión imaginaria que no envejece y la real que sí envejece — conceptualización laica del exilio.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:35",
+     "end": "00:01:15",
+     "label": "El regreso descubre la falta de correspondencia",
+     "analytical_annotations": {
+      "selected_topic": "return migration",
+      "selected_frame": "non-coincidence",
+      "selected_rhetorical_pattern": "qualification",
+      "selected_discursive_position": "displaced returnee",
+      "gold_rationale": "Calificación 'no hay correspondencia' nombra precisamente lo que no se puede reducir a pérdida.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:15",
+     "end": "00:01:50",
+     "label": "Regreso como trabajo, no tragedia",
+     "analytical_annotations": {
+      "selected_topic": "return migration",
+      "selected_frame": "labour of acceptance",
+      "selected_rhetorical_pattern": "reframing",
+      "selected_discursive_position": "non-tragic reflector",
+      "gold_rationale": "Reformulación explícita 'no como tragedia sino como trabajo' resignifica la experiencia contra una lectura esperada.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:50",
+     "end": "00:02:30",
+     "label": "Transmisión cautelosa a jóvenes emigrantes",
+     "analytical_annotations": {
+      "selected_topic": "intergenerational advice",
+      "selected_frame": "cautious transmission",
+      "selected_rhetorical_pattern": "qualification",
+      "selected_discursive_position": "qualified transmitter",
+      "gold_rationale": "Doble calificación ('no es lo mismo, no quiero comparar') gestiona cuidadosamente la analogía con migrantes contemporáneos.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "De la teorización de la doble vida del exilio a la transmisión cautelosa de su mecánica a las nuevas migraciones.",
+    "central_tension": "Tensión entre la singularidad histórica del exilio político y los aspectos compartidos con otras formas de regreso migratorio.",
+    "positioning_summary": "Hablante se posiciona como teórico no-trágico del exilio y como transmisor que gestiona explícitamente los límites de su analogía.",
+    "gold_rationale": "Estructura argumentativa reflexiva con culminación en la transmisión generacional cualificada.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-09-29_CDH_0018.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "da350d9198ff3f13931a3ec35738a30d43caaf0bef4aa34903527d4cc07d3132"
+   }
+  },
+  {
+   "record_id": "2025-09-30_CDH_0019",
+   "interview_date": "2025-09-30",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Sintético ES-03: Pescadora en la costa cantábrica",
+   "interviewee_display": "ES-Hablante 03 (sintético)",
+   "language": "spa",
+   "spatial": "Santoña",
+   "keywords": [
+    "pesca",
+    "Cantábrico",
+    "mujeres",
+    "rederas"
+   ],
+   "abstract": "Extracto sintético: relato coloquial de una redera de la costa cantábrica y de la transformación del oficio.",
+   "synthetic": true,
+   "transcript": "Yo soy redera. Mi madre era redera, mi abuela también. Tres generaciones, todas en el muelle, todas con las manos en las redes. Empezamos pronto, eh. Yo a los doce ya iba a ayudar. No oficialmente, claro, pero se iba. Las redes son un mundo. Cada barco tiene sus redes, cada red tiene sus mañas. Se aprende mirando. Mi madre no me explicaba mucho, me ponía a su lado y miraba yo. Cuando me equivocaba, deshacía y volvía a empezar. Es como se aprendía. Las cosas han cambiado mucho. Ahora hay menos barcos. Las redes vienen ya hechas muchas veces, industriales. Lo que hacíamos nosotras ya no se hace, o se hace muy poco. Hay quien dice que somos las últimas. No me gusta esa palabra. Las últimas. Como si después de nosotras no fuera a haber nada. Pero algo habrá. Lo que pasa es que no será como nosotras. Será otra cosa. Y a lo mejor está bien que sea otra cosa. No lo sé. A mí lo que me importa es que se acuerde alguien de cómo era. Que no se pierda del todo. Lo demás, los que vengan ya decidirán.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:30",
+     "label": "Tres generaciones de rederas",
+     "analytical_annotations": {
+      "selected_topic": "labour biography",
+      "selected_frame": "matrilineal transmission",
+      "selected_rhetorical_pattern": "enumeration",
+      "selected_discursive_position": "matrilineal heir",
+      "gold_rationale": "Enumeración matrilineal ('madre, abuela') establece transmisión femenina del oficio.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:30",
+     "end": "00:01:05",
+     "label": "Aprendizaje por observación",
+     "analytical_annotations": {
+      "selected_topic": "skill transmission",
+      "selected_frame": "tacit knowledge",
+      "selected_rhetorical_pattern": "scene",
+      "selected_discursive_position": "embedded apprentice",
+      "gold_rationale": "Escena de aprendizaje silencioso describe transmisión de conocimiento tácito.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:05",
+     "end": "00:01:45",
+     "label": "Industrialización y disminución del oficio",
+     "analytical_annotations": {
+      "selected_topic": "deindustrialisation",
+      "selected_frame": "gradual decline",
+      "selected_rhetorical_pattern": "contrast",
+      "selected_discursive_position": "witness to decline",
+      "gold_rationale": "Contraste 'lo que hacíamos / lo que se hace ahora' marca la transformación del oficio.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:45",
+     "end": "00:02:25",
+     "label": "Rechazo de 'las últimas' y memoria como prioridad",
+     "analytical_annotations": {
+      "selected_topic": "memory work",
+      "selected_frame": "category refusal",
+      "selected_rhetorical_pattern": "qualification",
+      "selected_discursive_position": "memory advocate",
+      "gold_rationale": "Rechazo explícito de la categoría 'las últimas' y reformulación de la prioridad como memoria, no continuidad.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "De la transmisión matrilineal del oficio al rechazo de la categoría 'las últimas' y a la afirmación de la memoria como prioridad.",
+    "central_tension": "Tensión entre la consciencia del fin de una forma de trabajo y el rechazo del cierre simbólico que esa categoría conlleva.",
+    "positioning_summary": "Hablante se posiciona como portadora de memoria que rechaza el papel de cierre histórico que se le ofrece.",
+    "gold_rationale": "Estructura biográfica con una posición final explícitamente contra-categorial; voz coloquial pero analíticamente precisa.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-09-30_CDH_0019.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "bcee259880c195b2b846312764f943f0e3e407e0e2726db80c1c93f162b3c945"
+   }
+  },
+  {
+   "record_id": "2025-10-01_CDH_0020",
+   "interview_date": "2025-10-01",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Sintético ES-04: Arquitecto, reflexión sobre la vivienda y la profesión",
+   "interviewee_display": "ES-Hablante 04 (sintético)",
+   "language": "spa",
+   "spatial": "Barcelona",
+   "keywords": [
+    "arquitectura",
+    "vivienda",
+    "ética",
+    "profesión"
+   ],
+   "abstract": "Extracto sintético: reflexión de un arquitecto sobre la relación entre la profesión y la crisis de la vivienda.",
+   "synthetic": true,
+   "transcript": "Llevo treinta y cinco años ejerciendo la arquitectura, y lo que más me cuesta admitir, mirando atrás, es la complicidad. No individual — yo creo haber tomado decisiones razonablemente honestas en lo individual — sino estructural. Mi profesión ha participado, en su conjunto, en la conversión de la vivienda en un activo financiero. No siempre conscientemente. A veces creíamos hacer ciudad, y estábamos haciendo precio. Cuando se construye un edificio bonito en un barrio popular, no se construye solo un edificio. Se construye, también, la expulsión de quienes vivían cerca. Esto es difícil de mirar de frente para alguien que ha pasado décadas dibujando edificios. Lo que intento ahora, en los proyectos que escojo y en lo que enseño, es no eludir esta pregunta. No tengo respuestas limpias. La arquitectura no se hace al margen del mercado, eso lo sé. Pero entre 'no se hace al margen' y 'se hace al servicio' hay un espacio enorme, y yo creo que mi profesión ha permitido que ese espacio se estreche más de lo necesario. Si tuviera que dar un consejo a alguien que empieza, sería: no separes la técnica de la pregunta sobre quién paga el precio.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:35",
+     "label": "Complicidad estructural, no individual",
+     "analytical_annotations": {
+      "selected_topic": "professional ethics",
+      "selected_frame": "structural critique",
+      "selected_rhetorical_pattern": "distinction",
+      "selected_discursive_position": "self-implicating reflector",
+      "gold_rationale": "Distinción explícita individual/estructural permite reconocimiento crítico sin auto-flagelación.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:35",
+     "end": "00:01:15",
+     "label": "Hacer ciudad / hacer precio",
+     "analytical_annotations": {
+      "selected_topic": "urban transformation",
+      "selected_frame": "unintended effect",
+      "selected_rhetorical_pattern": "antithesis",
+      "selected_discursive_position": "critical practitioner",
+      "gold_rationale": "Antítesis 'creíamos hacer ciudad y estábamos haciendo precio' compresa el diagnóstico crítico.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:15",
+     "end": "00:01:50",
+     "label": "Edificio bonito y expulsión",
+     "analytical_annotations": {
+      "selected_topic": "gentrification",
+      "selected_frame": "side-effect analysis",
+      "selected_rhetorical_pattern": "implication",
+      "selected_discursive_position": "ethical practitioner",
+      "gold_rationale": "Análisis del efecto colateral del 'edificio bonito' nombra una mecánica concreta de expulsión.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:50",
+     "end": "00:02:30",
+     "label": "Consejo: no separar técnica y pregunta política",
+     "analytical_annotations": {
+      "selected_topic": "intergenerational advice",
+      "selected_frame": "ethical injunction",
+      "selected_rhetorical_pattern": "imperative",
+      "selected_discursive_position": "ethical mentor",
+      "gold_rationale": "Consejo final imperativo posiciona al hablante como mentor con compromiso ético explícito.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "Del reconocimiento de la complicidad estructural al consejo ético dirigido a la siguiente generación profesional.",
+    "central_tension": "Tensión entre la honestidad individual y la complicidad colectiva, sin colapsar una en la otra.",
+    "positioning_summary": "Hablante se posiciona como práctico-crítico que rechaza tanto la auto-absolución como la auto-flagelación.",
+    "gold_rationale": "Estructura argumentativa de implicación auto-crítica con culminación en consejo prescriptivo.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-10-01_CDH_0020.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "3caa720145bd13daa341ddeca23b9a64a2d4d426ca50f2d600f4325f5415256e"
+   }
+  },
+  {
+   "record_id": "2025-10-02_CDH_0021",
+   "interview_date": "2025-10-02",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Synthetesch LB-01: Iwwer d'Grenz fueren all Dag",
+   "interviewee_display": "LB-Spriecher·in 01 (synthetesch)",
+   "language": "ltz",
+   "spatial": "Esch-sur-Alzette",
+   "keywords": [
+    "Grenz",
+    "Esch",
+    "Frankräich",
+    "Schaffen"
+   ],
+   "abstract": "Synthetescht Extrait: alldeegleche Bericht iwwer d'Pendelen tëschent Esch a Lothringen.",
+   "synthetic": true,
+   "transcript": "Ech sinn zu Esch gebuer ginn, an ech hu meng ganz Schaffenszäit iwwer d'Grenz an Lothringen geschafft. Et war net wäit, e véierel Stonn mam Auto. All Moien, hallef siwen, fortgefuer. D'Douaniere hu mech gewosst, déi vun eis Säit a déi vun de Fransousen. Heiansdo ass et séier gaangen, heiansdo huet et gedauert. Et huet drop ukomm. Mäin Numm steet op enger Lëscht vu Frontaliers, och haut nach. Mir hu Lëtzebuergesch geschwat doheem, awer op der Aarbecht hu mer Franséisch geschwat. Et war ee Liewen op zwou Säiten. Wéi de Schengen-Accord komm ass, do ass et anescht ginn. D'Grenz war do, awer hatt war net méi do, falls dat Sënn mécht. Meng Kanner si gewuesse mat enger anerer Welt. Si fueren op Tréier, op Saarbrécken, op Metz, an et ass kee Ennerscheed fir si. Fir mech ass et nach ëmmer e bësse wéi iwwer eng Grenz ze fueren, och wann do näischt méi ass. D'Gewunnecht bleift, esouguer wann d'Saach selwer ewech ass.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:30",
+     "label": "All Dag iwwer d'Grenz",
+     "analytical_annotations": {
+      "selected_topic": "border crossing",
+      "selected_frame": "everyday routine",
+      "selected_rhetorical_pattern": "enumeration",
+      "selected_discursive_position": "habitualised commuter",
+      "gold_rationale": "Opzielung vun deeglechen Handlungen markéiert d'Routinéierung vum Grenzgang.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:30",
+     "end": "00:01:05",
+     "label": "Zwou Sproochen, zwou Säiten",
+     "analytical_annotations": {
+      "selected_topic": "linguistic biography",
+      "selected_frame": "doubled life",
+      "selected_rhetorical_pattern": "antithesis",
+      "selected_discursive_position": "bilingual subject",
+      "gold_rationale": "Géigeniwwerstellung Doheem (Lëtzebuergesch) / Aarbecht (Franséisch) konfiguréiert eng zweesproocheg Liewensform.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:05",
+     "end": "00:01:40",
+     "label": "Schengen: do an net méi do",
+     "analytical_annotations": {
+      "selected_topic": "border dissolution",
+      "selected_frame": "paradoxical persistence",
+      "selected_rhetorical_pattern": "paradox",
+      "selected_discursive_position": "subject of paradoxical experience",
+      "gold_rationale": "Paradox 'do, awer hatt war net méi do' beschreift de Status vun der opgeléister Grenz.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:40",
+     "end": "00:02:15",
+     "label": "Kanner ouni Grenzerfahrung",
+     "analytical_annotations": {
+      "selected_topic": "intergenerational change",
+      "selected_frame": "persistent habit",
+      "selected_rhetorical_pattern": "contrast",
+      "selected_discursive_position": "embodied rememberer",
+      "gold_rationale": "Kontrast tëschent Kanner an eegener Erfahrung an d'Aussoe vun der bleiwender Gewunnecht.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "Vun der deeglecher Grenzroutine zu der paradoxer Persistenz vun der Gewunnecht no der Opléisung vun der Grenz.",
+    "central_tension": "Spannung tëschent dem Verschwannen vun der Grenz an der bleiwender körperlecher Erënnerung dorun.",
+    "positioning_summary": "Spriecher positionéiert sech als zweesproochege Pendler, dee'n den Iwwergang körperlech registréiert.",
+    "gold_rationale": "Klassesch dräi-phasen-Struktur mat finalem Generatiounskontrast; eng vun de Lëtzebuergesch-Spezifizitéiten ass d'natierlech Méisproochegkeet.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-10-02_CDH_0021.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "4fa1a8190473942a48caf78c4601342177751305e7dd30dc7444ca09a266d205"
+   }
+  },
+  {
+   "record_id": "2025-10-03_CDH_0022",
+   "interview_date": "2025-10-03",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Synthetesch LB-02: Iwwerleeungen iwwer e méisproochegt Liewen",
+   "interviewee_display": "LB-Spriecher·in 02 (synthetesch)",
+   "language": "ltz",
+   "spatial": "Lëtzebuerg-Stad",
+   "keywords": [
+    "Méisproochegkeet",
+    "Identitéit",
+    "Lëtzebuerg",
+    "Reflexioun"
+   ],
+   "abstract": "Synthetescht Extrait: Reflexioun iwwer Méisproochegkeet als Liewensform a Lëtzebuerg.",
+   "synthetic": true,
+   "transcript": "Wann ech haut iwwer meng Sproochen nodenken, kommen ech op eng Saach déi mer eréischt mat den Joeren bewosst gouf. Méisproochegkeet ass net just eng Faherkeet — et ass och eng Form fir an der Welt ze sinn. Ech denken op Lëtzebuergesch wann et perséinlech gëtt, op Franséisch wann ech eppes verhandelen muss, op Däitsch wann ech eppes präzis erklären wëll, op Englesch wann ech mat Auslänner schaffen. Dës Veraendelung passéiert net bewosst. Si passéiert vun selwer, je no Kontext. Ech hu mech laang gefrot ob dat eng Bereicherung ass oder eng Form vun Net-Zougeheierachkeet zu kenger Sprooch. Haut soen ech: et ass béides. Béid Saachen op eemol, ouni dass déi eng déi aner ophiewen. Wat mech awer beschäftegt — an dat heieren ech selten — ass dass d'Méisproochegkeet och eng kognitiv Aarbecht ass, déi sech opsummelt. Et ass kee gratuites Geschenk. Et kascht eppes. Net materiell, mä mental. An ech mengen datt mer als Gesellschaft dee Käschtepunkt selten ernimmen, well d'Méisproochegkeet bei eis sou normal ass datt mer se guer net méi als Praxis erkennen.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:30",
+     "label": "Sproochen no Kontext",
+     "analytical_annotations": {
+      "selected_topic": "linguistic biography",
+      "selected_frame": "context-bound switching",
+      "selected_rhetorical_pattern": "enumeration",
+      "selected_discursive_position": "multilingual subject",
+      "gold_rationale": "Opzielung vun Sproochen no Kontext beschreift dat alldeeglecht Modell vu méisproochegem Bestand.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:30",
+     "end": "00:01:05",
+     "label": "Bereicherung oder Net-Zougeheierachkeet",
+     "analytical_annotations": {
+      "selected_topic": "linguistic identity",
+      "selected_frame": "ambivalent valuation",
+      "selected_rhetorical_pattern": "antithesis",
+      "selected_discursive_position": "ambivalent reflector",
+      "gold_rationale": "Antithese tëschent 'Bereicherung' an 'Net-Zougeheierachkeet' formuléiert eng wuel-bekannten Spannung vu méisproochegen Identitéiten.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:05",
+     "end": "00:01:40",
+     "label": "Béid op eemol, ouni Opléisung",
+     "analytical_annotations": {
+      "selected_topic": "linguistic identity",
+      "selected_frame": "non-resolution",
+      "selected_rhetorical_pattern": "synthesis",
+      "selected_discursive_position": "non-resolving reflector",
+      "gold_rationale": "Synthese 'béides ouni Opléisung' refuséiert béid eendeiteg Léisungen.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:40",
+     "end": "00:02:20",
+     "label": "Méisproochegkeet als kognitiv Aarbecht",
+     "analytical_annotations": {
+      "selected_topic": "cognitive labour",
+      "selected_frame": "invisible cost",
+      "selected_rhetorical_pattern": "qualification",
+      "selected_discursive_position": "critic of naturalisation",
+      "gold_rationale": "Erinnerung un de kognitive Käschtepunkt vu Méisproochegkeet riicht sech géint d'gesellschaftlech Naturaliséierung dovun.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "Vu kontextueller Sproochwiel iwwer eng synthetisch Ambivalenz zu der Nennung vum verstoppte kognitive Käschtepunkt.",
+    "central_tension": "Spannung tëschent der gesellschaftlecher Naturaliséierung vu Méisproochegkeet an hirem konkreten mentale Käschtepunkt.",
+    "positioning_summary": "Spriecher positionéiert sech als reflexiv-méisproochege Subjekt deen e Phänomen sichtbar mécht, dat soss net thematiséiert gëtt.",
+    "gold_rationale": "Argumentativ Struktur an dräi Schrëtt: Beschreiwung — Bewäertung — Sichtbarmaachung vun engem verstoppte Käschtepunkt.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-10-03_CDH_0022.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "2533f49baad6f3b1e005103ddfdfffff63f9bb88e1802a58cba6d1cdefc8400e"
+   }
+  },
+  {
+   "record_id": "2025-10-04_CDH_0023",
+   "interview_date": "2025-10-04",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Synthetesch LB-03: Stolaarbechter zu Diddeleng",
+   "interviewee_display": "LB-Spriecher·in 03 (synthetesch)",
+   "language": "ltz",
+   "spatial": "Dudelange",
+   "keywords": [
+    "Stol",
+    "Diddeleng",
+    "Aarbecht",
+    "Strukturwandel"
+   ],
+   "abstract": "Synthetescht Extrait: alldeegleche Bericht vun engem Stolaarbechter zu Diddeleng.",
+   "synthetic": true,
+   "transcript": "Ech hunn am Stolwierk zu Diddeleng geschafft, zwou-an-drëssig Joer. Mäi Papp huet och do geschafft. Mäi Bopp net, mäi Bopp war Bauer, awer mäi Papp ass an de Stol gaangen wéi vill Bauerejongen deemools. Wéi ech ugefaangen hunn, am Joer uechtzeg, war d'Wierk schonn am Schrumpfen. Mä mir hu nach geduecht, et géif weidergoen. Mir hunn iergendwou geduecht: d'Stol gëtt et ëmmer. Bis et et net méi gouf. Net all op eemol, mä Stéck fir Stéck. Eng Halle no der anerer. Wéi déi lescht zou gemaach gouf, ware mir nach zu zéng Mann do, net méi. Ech ka mech dorun erënneren wéi gëschter. Dat war net nëmme Schaffen, dat war eng Welt. D'Stol war eng eege Welt. Wéi se ewech gaangen ass, ass och d'Welt ewech gaangen. Ech wëll dat net iwwerdriwwen erzielen, et war ëmmer och haart Aarbecht, an heinendrun ware Saachen déi net schéin waren. Mä trotzdem. Wann ech haut un d'Schmelz denken, denken ech och un eng Plaz wou ech wousst wien ech war.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:30",
+     "label": "Zwou-an-drëssig Joer am Stolwierk",
+     "analytical_annotations": {
+      "selected_topic": "labour biography",
+      "selected_frame": "labour duration",
+      "selected_rhetorical_pattern": "enumeration",
+      "selected_discursive_position": "long-tenure worker",
+      "gold_rationale": "Präzis Joerangab a Bezeechnung vum Familljekontext etabléieren e Generatiounsfaktor.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:30",
+     "end": "00:01:05",
+     "label": "Glafe un d'Permanenz vum Stol",
+     "analytical_annotations": {
+      "selected_topic": "labour culture",
+      "selected_frame": "naturalised permanence",
+      "selected_rhetorical_pattern": "reported belief",
+      "selected_discursive_position": "embedded believer",
+      "gold_rationale": "Aussage 'd'Stol gëtt et ëmmer' wéi e geglaten Hannergrond-Bewosstsinn deen duerno duerch d'Realitéit korrigéiert gëtt.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:05",
+     "end": "00:01:40",
+     "label": "Zoumaachen Stéck fir Stéck",
+     "analytical_annotations": {
+      "selected_topic": "deindustrialisation",
+      "selected_frame": "gradual closure",
+      "selected_rhetorical_pattern": "anaphora",
+      "selected_discursive_position": "witness to gradual loss",
+      "gold_rationale": "Beschreiwung vun der schrëttweiser Schléissung 'Halle no der anerer' rythméiert e laangsamen Zerfall.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:40",
+     "end": "00:02:20",
+     "label": "D'Schmelz als Plaz vu Selbstwëssen",
+     "analytical_annotations": {
+      "selected_topic": "labour identity",
+      "selected_frame": "ambivalent reverence",
+      "selected_rhetorical_pattern": "qualification",
+      "selected_discursive_position": "qualified mourner",
+      "gold_rationale": "Bewosst Qualifizéierung ('och haart Aarbecht, Saachen déi net schéin waren') verhënnert eng eendeiteg verklärt Erënnerung an gëtt der finaler Aussoe Gewiicht.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "Vum Glafen un d'Permanenz iwwer d'schrëttweis Schléissung zu der qualifizéierter Erënnerung un d'Aarbechtsplaz als Plaz vu Selbstwëssen.",
+    "central_tension": "Spannung tëschent dem Erkennen vun der haarder Realitéit vun der Aarbecht an dem Verloscht vun engem Selbstverortungspunkt.",
+    "positioning_summary": "Spriecher positionéiert sech als qualifizéierter Erënnerer, deen d'Idealiséierung explizit refuséiert ouni de Verloscht erofzespillen.",
+    "gold_rationale": "Dräi-phasen-Struktur mat reflexiver Selbstkontroll am leschten Segment.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-10-04_CDH_0023.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "f5512bb83cbb18811050a2692531ef3802e1120a9348e1ea8fd1855c6e363532"
+   }
+  },
+  {
+   "record_id": "2025-10-05_CDH_0024",
+   "interview_date": "2025-10-05",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Synthetesch LB-04: Beamtin, Iwwerleeungen iwwer d'ëffentlech Servicer",
+   "interviewee_display": "LB-Spriecher·in 04 (synthetesch)",
+   "language": "ltz",
+   "spatial": "Lëtzebuerg-Stad",
+   "keywords": [
+    "Beamten",
+    "ëffentleche Service",
+    "Reform",
+    "Reflexioun"
+   ],
+   "abstract": "Synthetescht Extrait: Reflexioun vun enger laangjäreger Beamtin iwwer den Etat an d'ëffentlech Servicer.",
+   "synthetic": true,
+   "transcript": "Wann ech zréckkucken op meng siwen-an-drëssig Joer am ëffentleche Service, fält mer eppes op, wat ech net einfach erkläre kann. D'Aarbecht selwer ass net méi schwéier ginn. D'Geräter sinn besser, d'Prozedure sinn dokumentéiert, d'Communicatioun mat de Bierger ass strukturéierter. Trotzdem fillen ech datt et méi schwéier gëtt, eppes méi Wesentleches ze maachen — eng Decisioun ze treffen déi net duerch Reegel virgesinn ass, mä déi e mënschlecht Uerteel verlaangt. Mir hunn d'Reegele verbessert, dat ass richteg. Mä mir hunn d'Plaz fir d'Uerteel vill méi kleng gemaach. An ech mengen, datt déi zwou Saache matenee zesummenhänken op enger Aart a Weis déi mir net genuch nogedoen hunn. Wann all Fall e Reegelfall ass, dann ass kee Fall méi e Fall. Et ass nëmmen eng Ausféierung. An déi Bierger déi an d'ëffentlech Servicer kommen, kommen selten well se eng Ausféierung wëllen. Si kommen well se eng Léisung wëllen, déi op hir Situatioun passt. Dat zwee z'ënner engen Hutt ze bréngen — Reegelméissegkeet a Uerteel — ass déi Aarbecht déi mer eng Generatioun laang ëmmer manner gemeet hunn.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:35",
+     "label": "Aarbecht net méi schwéier, awer manner Wesentleches",
+     "analytical_annotations": {
+      "selected_topic": "professional discourse",
+      "selected_frame": "paradoxical improvement",
+      "selected_rhetorical_pattern": "antithesis",
+      "selected_discursive_position": "reflective civil servant",
+      "gold_rationale": "Antithese 'net méi schwéier ginn, awer méi schwéier eppes Wesentleches ze maachen' organiséiert d'ganzt Segment.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:35",
+     "end": "00:01:15",
+     "label": "Reegelen verbessert, Plaz fir Uerteel verklengert",
+     "analytical_annotations": {
+      "selected_topic": "administrative change",
+      "selected_frame": "trade-off",
+      "selected_rhetorical_pattern": "qualification",
+      "selected_discursive_position": "trade-off analyst",
+      "gold_rationale": "Qualifizéierung der Verbesserung mat enger gläichzäiteger Reduktioun benennt eng Trade-off explizit.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:15",
+     "end": "00:01:45",
+     "label": "Wann all Fall e Reegelfall ass",
+     "analytical_annotations": {
+      "selected_topic": "administrative logic",
+      "selected_frame": "category collapse",
+      "selected_rhetorical_pattern": "aphorism",
+      "selected_discursive_position": "theorist of administration",
+      "gold_rationale": "Aphoristesch Aussoe 'wann all Fall e Reegelfall ass, dann ass kee Fall méi e Fall' verdichtet d'Diagnos.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:45",
+     "end": "00:02:25",
+     "label": "Bierger wëllen eng Léisung, keng Ausféierung",
+     "analytical_annotations": {
+      "selected_topic": "public service",
+      "selected_frame": "citizen perspective",
+      "selected_rhetorical_pattern": "category contrast",
+      "selected_discursive_position": "citizen-oriented critic",
+      "gold_rationale": "Kontrast tëschent 'Ausféierung' an 'Léisung' positionéiert d'Diagnos op der Säit vun den Bierger.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "Vun der Beobachtung administrativer Verbesserung zu der Diagnos vun engem Verloscht vu professionellem Uerteel.",
+    "central_tension": "Spannung tëschent legitimme Verbesserungen (Reegelméissegkeet) an dem reduzéierte Raum fir mënschlecht Uerteel.",
+    "positioning_summary": "Spriecher positionéiert sech als reflektéiert Beamtin, déi eng Trade-off offen mécht ouni d'Verbesserunge ze refuséieren.",
+    "gold_rationale": "Argumentativ Struktur mat aphoristescher Spëtzt; reflexiv-analytesche Register.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-10-05_CDH_0024.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "389151dec0b0d702881b5f2a01303ffebe42c3c0f2e83f581cb55fa2a6ebd59c"
+   }
+  },
+  {
+   "record_id": "2025-10-06_CDH_0025",
+   "interview_date": "2025-10-06",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Sintético PT-01: Chegada a Esch nos anos setenta",
+   "interviewee_display": "PT-Falante 01 (sintético)",
+   "language": "por",
+   "spatial": "Esch-sur-Alzette",
+   "keywords": [
+    "migração",
+    "Portugal",
+    "Luxemburgo",
+    "chegada"
+   ],
+   "abstract": "Excerto sintético: relato coloquial da chegada a Luxemburgo nos anos setenta e dos primeiros tempos em Esch.",
+   "synthetic": true,
+   "transcript": "Eu cheguei aqui em setenta e três, com vinte anos. Vim de comboio, três dias de viagem. Tinha um primo que já cá estava, ele tinha-me arranjado um quarto em Esch, num prédio onde moravam outros portugueses. Cheguei à noite, lembro-me da estação, do frio, e depois do meu primo que me esperava lá fora. Não falava uma palavra de francês. Nem uma. Aprendi a dizer bonjour no comboio, e foi mais ou menos isso. Os primeiros meses foram duros. A obra começava cedo, eu não percebia nada do que diziam, fazia o que via os outros fazerem. À noite, ia para o quarto e chorava às vezes, ainda hoje admito isso. Mas tinha mandado a primeira carta para casa com o primeiro ordenado, e isso compensava tudo. A minha mãe não sabia ler, foi a vizinha que leu para ela. Depois disso, nunca mais quis voltar com as mãos a abanar. Cinquenta e dois anos depois, ainda estou aqui. Esch é a minha cidade agora, mesmo quando vou a Portugal todos os agostos. É estranho dizê-lo, mas é assim.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:30",
+     "label": "Chegada em 1973: viagem de três dias",
+     "analytical_annotations": {
+      "selected_topic": "migration arrival",
+      "selected_frame": "rite of passage",
+      "selected_rhetorical_pattern": "scene-setting",
+      "selected_discursive_position": "young arrival",
+      "gold_rationale": "Especificação temporal precisa ('setenta e três, vinte anos') e enumeração de elementos da chegada (estação, frio, primo) estabelecem a cena como rito iniciático.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:30",
+     "end": "00:01:05",
+     "label": "Barreira linguística e adaptação corporal",
+     "analytical_annotations": {
+      "selected_topic": "linguistic adaptation",
+      "selected_frame": "embodied learning",
+      "selected_rhetorical_pattern": "repetition",
+      "selected_discursive_position": "silent worker",
+      "gold_rationale": "Repetição enfática 'Não falava uma palavra. Nem uma' e descrição de aprendizagem por imitação ('fazia o que via os outros fazerem') configuram um modo de adaptação não-linguístico.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:05",
+     "end": "00:01:40",
+     "label": "Carta e mãe: motivação económica",
+     "analytical_annotations": {
+      "selected_topic": "remittance",
+      "selected_frame": "moral economy of migration",
+      "selected_rhetorical_pattern": "scene",
+      "selected_discursive_position": "filial provider",
+      "gold_rationale": "A cena da carta lida pela vizinha condensa a justificação moral da migração como obrigação filial; 'nunca mais quis voltar com as mãos a abanar' marca a determinação resultante.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:40",
+     "end": "00:02:10",
+     "label": "Cinquenta e dois anos depois: pertença ambivalente",
+     "analytical_annotations": {
+      "selected_topic": "belonging",
+      "selected_frame": "doubled home",
+      "selected_rhetorical_pattern": "qualification",
+      "selected_discursive_position": "settled migrant",
+      "gold_rationale": "Qualificação 'mesmo quando vou a Portugal todos os agostos' e 'É estranho dizê-lo, mas é assim' marcam a consciência reflexiva da própria pertença sem a resolver.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "Da chegada determinada como rito iniciático à pertença ambivalente cinquenta anos depois.",
+    "central_tension": "Tensão entre a permanência em Luxemburgo e o vínculo continuado com Portugal, mantida sem resolução.",
+    "positioning_summary": "Falante posiciona-se como migrante estabelecido que reconhece a ambivalência da sua pertença sem a apresentar como problema.",
+    "gold_rationale": "Estrutura biográfica em três tempos com auto-reflexão final; voz coloquial mas com consciência narrativa explícita.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-10-06_CDH_0025.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "fc11b934718a76ed826ecf5209b8b92594d20128a8adbb108e5caa5d43290d9e"
+   }
+  },
+  {
+   "record_id": "2025-10-07_CDH_0026",
+   "interview_date": "2025-10-07",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Sintético PT-02: Segunda geração, reflexão sobre identidade",
+   "interviewee_display": "PT-Falante 02 (sintético)",
+   "language": "por",
+   "spatial": "Luxembourg-Ville",
+   "keywords": [
+    "segunda geração",
+    "identidade",
+    "Luxemburgo",
+    "Portugal"
+   ],
+   "abstract": "Excerto sintético: reflexão de uma pessoa da segunda geração portuguesa em Luxemburgo sobre identidade e pertença.",
+   "synthetic": true,
+   "transcript": "Quando me perguntam o que sou, hesito sempre, e há muito tempo que parei de me sentir mal por isso. Nasci no Luxemburgo, em mil novecentos e oitenta e dois. Os meus pais tinham chegado de Trás-os-Montes uma década antes. Em casa falávamos português, na rua falava luxemburguês e francês, na escola francês, depois alemão. As línguas não eram um problema, eram apenas a água em que se nadava. O problema, se é que se pode chamar assim, era outro. Era o facto de em Portugal me considerarem luxemburguesa, e no Luxemburgo me considerarem portuguesa. Sempre algures, nunca completamente em parte alguma. Durante muito tempo li isto como uma forma de exclusão. Hoje leio-o de outra maneira. Acho que é uma forma de estar no mundo, e não necessariamente uma forma menor. Os meus filhos crescem com o mesmo. Para eles, ser luso-luxemburguês não é uma questão, é simplesmente o que são. Isto talvez seja a única coisa que mudou de verdade entre as minhas duas gerações. A minha mãe nunca deixou de ser portuguesa, com saudade e tudo. Eu sou uma coisa intermédia. Os meus filhos são uma terceira coisa, sem o peso da intermediariedade.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:30",
+     "label": "Hesitação assumida sobre identidade",
+     "analytical_annotations": {
+      "selected_topic": "identity",
+      "selected_frame": "refusal of categorisation",
+      "selected_rhetorical_pattern": "qualification",
+      "selected_discursive_position": "self-accepting hesitator",
+      "gold_rationale": "Qualificação 'há muito tempo que parei de me sentir mal por isso' transforma a hesitação de problema em posição assumida.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:30",
+     "end": "00:01:05",
+     "label": "Multilinguismo como naturalidade",
+     "analytical_annotations": {
+      "selected_topic": "multilingualism",
+      "selected_frame": "naturalised practice",
+      "selected_rhetorical_pattern": "metaphor",
+      "selected_discursive_position": "naturalised multilingual",
+      "gold_rationale": "Metáfora 'as línguas eram apenas a água em que se nadava' renatura a multilinguidade como condição ambiental, não como esforço.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:05",
+     "end": "00:01:45",
+     "label": "Dupla não-pertença e reinterpretação",
+     "analytical_annotations": {
+      "selected_topic": "belonging",
+      "selected_frame": "reframed exclusion",
+      "selected_rhetorical_pattern": "reinterpretation",
+      "selected_discursive_position": "mature reflector",
+      "gold_rationale": "Movimento explícito de 'durante muito tempo li como exclusão / hoje leio de outra maneira' marca uma reinterpretação autoreflexiva da própria condição.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:45",
+     "end": "00:02:25",
+     "label": "Três gerações, três modos de pertença",
+     "analytical_annotations": {
+      "selected_topic": "intergenerational identity",
+      "selected_frame": "generational sequence",
+      "selected_rhetorical_pattern": "enumeration",
+      "selected_discursive_position": "intergenerational mediator",
+      "gold_rationale": "Enumeração mãe / própria / filhos como sequência de três modos de pertença ('portuguesa com saudade' / 'intermédia' / 'sem o peso da intermediariedade') condensa a tese do segmento.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "Da hesitação identitária assumida à teorização geracional do peso variável da pertença.",
+    "central_tension": "Tensão entre a experiência de não-pertença bilateral e a sua reinterpretação como modo legítimo de estar no mundo.",
+    "positioning_summary": "Falante posiciona-se como mediadora geracional que teoriza a evolução da pertença sem privilegiar nenhum dos três modos.",
+    "gold_rationale": "Estrutura reflexiva com auto-reinterpretação explícita e culminação numa tipologia geracional laica; registo claramente analítico.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-10-07_CDH_0026.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "1edbcc18d96f8f41211772bc5325b8da4fed840fe45dc15e303b8b59637dfe12"
+   }
+  },
+  {
+   "record_id": "2025-10-08_CDH_0027",
+   "interview_date": "2025-10-08",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Sintético PT-03: Mulher a dias durante trinta anos",
+   "interviewee_display": "PT-Falante 03 (sintético)",
+   "language": "por",
+   "spatial": "Differdange",
+   "keywords": [
+    "trabalho doméstico",
+    "mulheres",
+    "migração",
+    "invisibilidade"
+   ],
+   "abstract": "Excerto sintético: relato coloquial de uma mulher portuguesa que trabalhou como mulher a dias em Luxemburgo durante trinta anos.",
+   "synthetic": true,
+   "transcript": "Comecei a fazer limpezas em oitenta e dois, dois anos depois de chegar. O meu marido trabalhava na construção e eu fiquei em casa com os miúdos os primeiros tempos. Mas depois precisávamos do dinheiro e arranjei umas casas. Comecei com três casas por semana, depois cinco, depois oito. Os patrões eram quase todos luxemburgueses, alguns franceses. Boas pessoas, na maior parte. Uma ou outra mais difícil. Tinha uma senhora, em Strassen, que punha um pelo numa coisa antes de eu chegar para ver se eu limpava bem. Eu via o pelo, limpava à volta, e voltava a pôr o pelo onde ele estava. Nunca lhe disse nada, ela nunca me disse nada, deve ter ficado convencida que eu não limpava. Mas pagava bem, e era o que importava. Trinta anos a fazer isto. As minhas mãos é que sabem. Vi crescer crianças que agora têm filhos. Algumas famílias tornaram-se quase família. Outras, não. Mudaram-se, esqueceram. Faz parte. O que me custa mais agora, quando penso nisso, é que durante trinta anos as pessoas viram-me na cozinha delas e nunca souberam nada sobre mim. Quem era. De onde vinha. Era a mulher das limpezas e pronto.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:30",
+     "label": "Entrada no trabalho doméstico",
+     "analytical_annotations": {
+      "selected_topic": "labour biography",
+      "selected_frame": "economic necessity",
+      "selected_rhetorical_pattern": "enumeration",
+      "selected_discursive_position": "necessitated worker",
+      "gold_rationale": "Enumeração progressiva ('três casas, depois cinco, depois oito') marca o crescimento gradual; quadro da necessidade económica como motor.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:30",
+     "end": "00:01:15",
+     "label": "Pelo como teste: pequena resistência silenciosa",
+     "analytical_annotations": {
+      "selected_topic": "workplace power",
+      "selected_frame": "silent resistance",
+      "selected_rhetorical_pattern": "anecdote",
+      "selected_discursive_position": "silently subversive worker",
+      "gold_rationale": "Anedota do pelo articula uma forma de resistência sem confronto; a posição discursiva é a do trabalhador que conhece o jogo e o joga sem o nomear.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:15",
+     "end": "00:01:45",
+     "label": "Trinta anos: relações que duraram e que não",
+     "analytical_annotations": {
+      "selected_topic": "long-term labour relations",
+      "selected_frame": "differentiated bonds",
+      "selected_rhetorical_pattern": "contrast",
+      "selected_discursive_position": "long-term witness",
+      "gold_rationale": "Contraste 'algumas famílias quase família / outras esqueceram' diferencia tipos de relação laboral sem moralizar.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:45",
+     "end": "00:02:20",
+     "label": "Invisibilidade pessoal: era a mulher das limpezas",
+     "analytical_annotations": {
+      "selected_topic": "epistemic invisibility",
+      "selected_frame": "reduction to function",
+      "selected_rhetorical_pattern": "categorical closure",
+      "selected_discursive_position": "named-as-function",
+      "gold_rationale": "Aforismo final 'era a mulher das limpezas e pronto' encerra o segmento sobre a redução da pessoa à função; clara consciência da invisibilização sem ressentimento performado.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "Da entrada no trabalho doméstico por necessidade económica à constatação reflexiva da invisibilidade pessoal mantida durante três décadas.",
+    "central_tension": "Tensão entre a duração íntima das relações laborais (trinta anos, cozinhas alheias) e a ausência de reconhecimento da pessoa por detrás da função.",
+    "positioning_summary": "Falante posiciona-se como trabalhadora consciente das assimetrias sem encená-las como vitimização; a anedota do pelo é o emblema de uma agência silenciosa.",
+    "gold_rationale": "Estrutura biográfica em quatro fases com uma anedota como pivô interpretativo; voz coloquial com consciência analítica precisa da posição estrutural.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-10-08_CDH_0027.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "604d6e11fc388da9d22e55ddf070bda3a2b6c9eb1dc37eddff4af6a70c9d1c39"
+   }
+  },
+  {
+   "record_id": "2025-10-09_CDH_0028",
+   "interview_date": "2025-10-09",
+   "interviewer": "[INTERVIEWER_1]",
+   "consent_status": "research-only",
+   "accessRights": "restricted",
+   "title": "Sintético PT-04: Engenheiro civil, reflexão sobre trajectória",
+   "interviewee_display": "PT-Falante 04 (sintético)",
+   "language": "por",
+   "spatial": "Luxembourg-Ville",
+   "keywords": [
+    "engenharia",
+    "trajectória",
+    "Luxemburgo",
+    "classe social"
+   ],
+   "abstract": "Excerto sintético: reflexão de um engenheiro civil sobre a sua trajectória profissional como filho de migrantes portugueses em Luxemburgo.",
+   "synthetic": true,
+   "transcript": "Quando olho para a minha trajectória, custa-me às vezes saber como falar dela. Sou filho de um pedreiro e de uma mulher a dias, ambos portugueses, ambos chegados nos anos setenta. Estudei engenharia civil, trabalho hoje num gabinete em Luxemburgo, ganho bem. A narrativa fácil seria a do sucesso pela educação, do filho de imigrantes que ascendeu socialmente. Essa narrativa não é falsa, mas é incompleta e até enganadora se ficar por aí. Porque o que ela não diz é o custo. Não o custo financeiro, que era previsível. O custo psicológico de viver entre dois universos sociais durante toda a juventude. Em casa, o português, a humildade, o respeito pelos patrões, a ideia de que a gente trabalha e não se queixa. Na universidade, depois no escritório, códigos completamente diferentes, que tive de aprender por imitação, sem ninguém me explicar. Aprendi-os, mas houve sempre uma parte de mim que continuou a ouvir a outra voz, que continua até hoje. Não tenho ressentimento, mas também não aceito a narrativa heroica. O que digo aos jovens portugueses ou luso-luxemburgueses que conheço, e que me perguntam, é: vale a pena, mas saibam que vão pagar um preço que ninguém vos vai mencionar. E que esse preço não é nada de que se devam envergonhar.",
+   "timecoded_segments": [
+    {
+     "start": "00:00:00",
+     "end": "00:00:35",
+     "label": "Dificuldade em narrar a própria trajectória",
+     "analytical_annotations": {
+      "selected_topic": "self-narrative",
+      "selected_frame": "narrative discomfort",
+      "selected_rhetorical_pattern": "self-reference",
+      "selected_discursive_position": "self-conscious narrator",
+      "gold_rationale": "Abertura 'custa-me às vezes saber como falar dela' tematiza a própria dificuldade narrativa antes de avançar com o conteúdo.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:00:35",
+     "end": "00:01:15",
+     "label": "Recusa da narrativa de ascensão fácil",
+     "analytical_annotations": {
+      "selected_topic": "class mobility",
+      "selected_frame": "rejected master narrative",
+      "selected_rhetorical_pattern": "qualified refusal",
+      "selected_discursive_position": "non-heroic mobile subject",
+      "gold_rationale": "Qualificação 'não é falsa, mas incompleta e enganadora se ficar por aí' refusa a narrativa hegemónica do sucesso pela educação sem a negar totalmente.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:15",
+     "end": "00:01:55",
+     "label": "Custo psicológico de viver entre dois universos sociais",
+     "analytical_annotations": {
+      "selected_topic": "class crossing",
+      "selected_frame": "psychic cost",
+      "selected_rhetorical_pattern": "antithesis",
+      "selected_discursive_position": "class-crosser",
+      "gold_rationale": "Antítese explícita 'em casa / na universidade e escritório' articula os dois universos sociais e nomeia o seu custo psicológico como invisível na narrativa pública.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    },
+    {
+     "start": "00:01:55",
+     "end": "00:02:35",
+     "label": "Conselho aos jovens: vale a pena, paguem o preço com dignidade",
+     "analytical_annotations": {
+      "selected_topic": "intergenerational advice",
+      "selected_frame": "qualified affirmation",
+      "selected_rhetorical_pattern": "conditional advice",
+      "selected_discursive_position": "honest mentor",
+      "gold_rationale": "Conselho conditional 'vale a pena, mas saibam o preço' combina afirmação e advertência sem moralização; posicionamento final como mentor honesto.",
+      "annotator_id": "[ANNOTATOR_1]",
+      "alternative_codings": []
+     }
+    }
+   ],
+   "interpretive_layer": {
+    "narrative_arc": "Da dificuldade em narrar a própria mobilidade social à formulação de um conselho intergeracional que recusa tanto a narrativa heroica como o ressentimento.",
+    "central_tension": "Tensão entre a realidade da ascensão social e o custo psicológico não-reconhecido que a acompanhou.",
+    "positioning_summary": "Falante posiciona-se como sujeito de mobilidade de classe que recusa a narrativa hegemónica sem cair na sua simples inversão; o conselho aos jovens é o seu modo de posicionamento mais explícito.",
+    "gold_rationale": "Estrutura argumentativa reflexiva com qualificação dupla (recusa da narrativa fácil + recusa do ressentimento); registo claramente analítico com forte componente normativo no segmento final.",
+    "annotator_id": "[ANNOTATOR_1]"
+   },
+   "profile_version": "0.1.0",
+   "consent": {
+    "status": "research-only",
+    "purpose": [
+     "analysis",
+     "benchmark"
+    ],
+    "source_form_ref": "SYNTH-N/A"
+   },
+   "privacy": {
+    "status": "field-policy-applied",
+    "engine": "qda-pseudonymizer",
+    "engine_version": "0.5.0",
+    "config_hash": "612d00a4a2cd555a49320e0b99193ed95496a6011d99346660d6b2a9981797ad",
+    "audit_ref": "reports/privacy_audits/2025-10-09_CDH_0028.txt.audit.json"
+   },
+   "provenance": {
+    "source": "CDH-synthetic",
+    "transcript_version": "synthetic-v1.2",
+    "transcript_sha256": "679c0be0ad6c57ffefd087862bdc2ff048fce36f4b08a2a2876fa8b2464d0aa8"
+   }
+  }
+ ],
+ "version": "1.3.0-draft",
+ "synthetic": true,
+ "n": 28
+}

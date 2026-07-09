@@ -1,0 +1,25 @@
+# Conda environment for the C²DH Oral History multilingual evaluation.
+#
+#   conda env create -f environment.yml
+#   conda activate dinoh
+#   python -m ipykernel install --user --name dinoh \
+#       --display-name "Python (dinoh)"
+#
+# The notebook and dashboard are pinned to Python 3.11.
+name: dinoh
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pandas>=2.0,<3.0
+  - jsonschema>=4.18,<5.0
+  - jupyterlab>=4.0
+  - notebook>=7.0
+  - nbformat>=5.9
+  - nbconvert>=7.0
+  - ipykernel>=6.0
+  - streamlit>=1.30
+  - pip>=23.0
+  - pip:
+      # segeval is pip-only (not packaged on conda-forge).
+      - segeval==2.0.11

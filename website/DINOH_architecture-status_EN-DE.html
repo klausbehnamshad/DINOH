@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DINOH research infrastructure — architecture status</title>
+<style>
+:root{--ink:#17232b;--muted:#52616b;--line:#d9e0e4;--bg:#fff;--soft:#f5f7f8;
+--blue:#1f6f8b;--bluebg:#eaf2f5;--purple:#6b4ea3;--purplebg:#f3eefb;
+--green:#2e7d32;--greenbg:#e8f3e9;--amber:#996800;--amberbg:#fbf0d8;
+--grey:#66747d;--greybg:#eef2f4;--red:#a72b24;--redbg:#fbe7e6}
+*{box-sizing:border-box}
+body{margin:0;background:#eef2f4;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+main{max-width:1180px;margin:24px auto;background:var(--bg);padding:32px 38px 28px;box-shadow:0 8px 30px rgba(22,35,43,.08)}
+h1{font-size:30px;line-height:1.15;margin:4px 0 8px} h2{font-size:18px;margin:0 0 10px}
+p{line-height:1.5}.kicker{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--blue);font-weight:700}
+.lead{max-width:90ch;color:#33434d;font-size:16px}.controls{float:right}
+button{border:1px solid var(--line);background:#fff;padding:6px 11px;font:inherit;font-size:12px;cursor:pointer}
+button[aria-pressed=true]{background:var(--blue);color:#fff;border-color:var(--blue)}
+.lang-en .de,.lang-de .en{display:none}
+.legend{display:flex;flex-wrap:wrap;gap:9px;margin:18px 0}.status{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.035em;padding:5px 8px;border-radius:999px}
+.implemented{background:var(--greenbg);color:var(--green)}.partial{background:var(--amberbg);color:var(--amber)}
+.specified{background:var(--purplebg);color:var(--purple)}.planned{background:var(--greybg);color:var(--grey)}
+.layer{border:1px solid var(--line);border-radius:14px;margin:14px 0;overflow:hidden}
+.layerhead{display:grid;grid-template-columns:190px 1fr;background:var(--soft);border-bottom:1px solid var(--line)}
+.layerhead h2{padding:16px 18px;margin:0;color:var(--blue)}.layerhead p{padding:13px 18px;margin:0;color:var(--muted);border-left:1px solid var(--line)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:0}.card{padding:17px 16px 18px;border-right:1px solid var(--line);min-height:194px}.card:last-child{border-right:0}
+.card h3{font-size:16px;margin:8px 0 5px}.card .long{font-size:12px;color:var(--muted);font-weight:600;min-height:34px}.card p{font-size:13px;margin:8px 0}
+.arrow{font-size:23px;color:#93a1aa;text-align:center;margin-top:56px}.evidence{font-size:11.5px;color:#3f515c;border-top:1px dashed var(--line);padding-top:7px}
+.assurance .cards{grid-template-columns:repeat(3,1fr)}.authority .cards{grid-template-columns:repeat(3,1fr)}
+.boundary{background:var(--redbg);color:#6f1b16;border-left:4px solid var(--red);padding:12px 15px;font-size:13px;line-height:1.45;margin-top:16px}
+.meta{border-top:1px solid var(--line);margin-top:22px;padding-top:13px;font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+code{background:#eef2f4;border-radius:4px;padding:1px 4px}
+@media(max-width:850px){main{margin:0;padding:22px 18px}.controls{float:none;margin-bottom:12px}.layerhead{grid-template-columns:1fr}.layerhead p{border-left:0;border-top:1px solid var(--line)}.cards,.assurance .cards,.authority .cards{grid-template-columns:1fr}.card{border-right:0;border-bottom:1px solid var(--line);min-height:0}.card:last-child{border-bottom:0}.arrow{display:none}}
+@media print{body{background:#fff}main{margin:0;max-width:none;box-shadow:none}.controls{display:none}}
+</style>
+</head>
+<body>
+<main id="status" class="lang-en">
+  <div class="controls" aria-label="Language" data-label-en="Language" data-label-de="Sprache">
+    <button data-lang="en" aria-pressed="true">EN</button><button data-lang="de" aria-pressed="false">DE</button>
+  </div>
+  <div class="kicker">DINOH · C²DH · University of Luxembourg · architecture status · 2026-06-18</div>
+  <h1><span class="en">Research infrastructure: what exists, what is evidenced, what remains human</span><span class="de">Forschungsinfrastruktur: Was existiert, was belegt ist, was menschlich bleibt</span></h1>
+  <p class="lead en">A status-aware architecture for grants, applications and technical review. Maturity is assigned per component; a strong subsystem does not make the entire workflow operational.</p>
+  <p class="lead de">Eine statusbewusste Architektur für Anträge, Bewerbungen und technische Begutachtung. Reifegrade werden komponentenweise vergeben; ein starkes Teilsystem macht nicht den gesamten Workflow operational.</p>
+
+  <div class="legend" aria-label="Maturity legend">
+    <span class="status implemented"><span class="en">Implemented &amp; tested</span><span class="de">Implementiert &amp; getestet</span></span>
+    <span class="status partial"><span class="en">Partial / bounded</span><span class="de">Partiell / begrenzt</span></span>
+    <span class="status specified"><span class="en">Specified</span><span class="de">Spezifiziert</span></span>
+    <span class="status planned"><span class="en">Planned / process incomplete</span><span class="de">Geplant / Prozess unvollständig</span></span>
+  </div>
+
+  <section class="layer lifecycle">
+    <div class="layerhead">
+      <h2><span class="en">1 · Data lifecycle</span><span class="de">1 · Datenlebenszyklus</span></h2>
+      <p><span class="en">Where candidate material moves. Admission is the boundary; record gates are not repeated inside Analysis.</span><span class="de">Wo Kandidatenmaterial fließt. Zugang ist die Grenze; Record-Gates werden nicht innerhalb der Analyse wiederholt.</span></p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <span class="status planned"><span class="en">Scope-dependent</span><span class="de">Scope-abhängig</span></span>
+        <h3><span class="en">Candidate data</span><span class="de">Kandidatendaten</span></h3>
+        <div class="long"><span class="en">External archives, synthetic data, future project collections</span><span class="de">Externe Archive, synthetische Daten, künftige Projektsammlungen</span></div>
+        <p><span class="en">No generic claim that all DINOH interviews are currently processable.</span><span class="de">Kein generischer Anspruch, dass derzeit alle DINOH-Interviews verarbeitbar sind.</span></p>
+      </article>
+      <article class="card">
+        <span class="status implemented"><span class="en">Core implemented</span><span class="de">Kern implementiert</span></span>
+        <h3><span class="en">Admission</span><span class="de">Zugang</span></h3>
+        <div class="long"><span class="en">Data Admission &amp; Governance</span><span class="de">Datenzugang und Governance</span></div>
+        <p><span class="en">Run attestation first; then G1 schema, G2 consent/purpose and G3 route/privacy evidence.</span><span class="de">Zuerst Lauf-Attestierung; danach G1 Schema, G2 Consent/Zweck und G3 Route/Privacy-Evidenz.</span></p>
+        <div class="evidence"><code>gates.py</code> · <code>ENTRY-GATE-CONTRACT.md</code> · negative tests</div>
+      </article>
+      <article class="card">
+        <span class="status partial"><span class="en">Partial workflow</span><span class="de">Partieller Workflow</span></span>
+        <h3><span class="en">Analysis</span><span class="de">Analyse</span></h3>
+        <div class="long"><span class="en">Analysis Workflow</span><span class="de">Analyseworkflow</span></div>
+        <p><span class="en">Schemas, manifests and evaluation machinery exist; no claim of a complete production workflow for every oral-history class.</span><span class="de">Schemas, Manifeste und Evaluationsmechanik existieren; kein Anspruch auf einen vollständigen Produktivworkflow für jede Oral-History-Klasse.</span></p>
+        <div class="evidence"><code>src/oh_eval/</code> · <code>schemas/</code> · <code>run_manifest</code></div>
+      </article>
+      <article class="card">
+        <span class="status planned"><span class="en">Controlled release</span><span class="de">Kontrollierte Freigabe</span></span>
+        <h3><span class="en">Outputs</span><span class="de">Outputs</span></h3>
+        <div class="long"><span class="en">Findings, coded objects, manifests and export artefacts</span><span class="de">Befunde, codierte Objekte, Manifeste und Exportartefakte</span></div>
+        <p><span class="en">Yellow free-text human-review operations and full release workflow are not presented as complete.</span><span class="de">Gelber Freitext-Human-Review und vollständiger Freigabeworkflow werden nicht als fertig dargestellt.</span></p>
+      </article>
+    </div>
+  </section>
+
+  <section class="layer assurance">
+    <div class="layerhead">
+      <h2><span class="en">2 · Assurance layer</span><span class="de">2 · Sicherungsschicht</span></h2>
+      <p><span class="en">Evidence and controls that support the lifecycle. They measure different things and must not be collapsed into one “quality” claim.</span><span class="de">Evidenz und Kontrollen zur Absicherung des Lebenszyklus. Sie messen Verschiedenes und dürfen nicht zu einer einzigen „Qualitäts“-Behauptung verschmolzen werden.</span></p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <span class="status implemented"><span class="en">Implemented &amp; tested</span><span class="de">Implementiert &amp; getestet</span></span>
+        <h3><span class="en">Attestation, gates &amp; manifests</span><span class="de">Attestierung, Gates &amp; Manifeste</span></h3>
+        <p><span class="en">Default-deny checks, non-overridable refusal classes, evidence/hash resolution and audit binding.</span><span class="de">Default-deny-Prüfungen, nicht übersteuerbare Verweigerungsklassen, Evidenz-/Hash-Auflösung und Audit-Bindung.</span></p>
+        <div class="evidence"><code>tests/test_attestation.py</code> · <code>tests/test_gates.py</code></div>
+      </article>
+      <article class="card">
+        <span class="status partial"><span class="en">Validated, bounded Stage 1</span><span class="de">Validierte, begrenzte Stufe 1</span></span>
+        <h3><span class="en">Privacy-safeguard benchmark</span><span class="de">Datenschutz-Prüfstand</span></h3>
+        <p><span class="en">Measures direct-PII recall on seeded synthetic text. Precision is a lower bound; it does not measure QCA coding quality or real-world anonymity.</span><span class="de">Misst Direct-PII-Recall auf eingestreutem synthetischem Text. Precision ist eine Untergrenze; QCA-Codierqualität oder reale Anonymität werden nicht gemessen.</span></p>
+        <div class="evidence"><code>freetext_benchmark/benchmark.py</code> · Stage 2 open</div>
+      </article>
+      <article class="card">
+        <span class="status partial"><span class="en">Partial + specified</span><span class="de">Partiell + spezifiziert</span></span>
+        <h3><span class="en">Interpretive provenance</span><span class="de">Interpretative Provenienz</span></h3>
+        <p><span class="en">Binding and scope controls exist. Derived-sensitivity release semantics and full adjudication remain incremental work.</span><span class="de">Bindungs- und Scope-Kontrollen existieren. Freigabesemantik für abgeleitete Sensitivität und vollständige Adjudikation bleiben inkrementelle Arbeit.</span></p>
+        <div class="evidence"><code>bind.py</code> · <code>account.py</code> · reviewer handoff</div>
+      </article>
+    </div>
+  </section>
+
+  <section class="layer authority">
+    <div class="layerhead">
+      <h2><span class="en">3 · Human authority</span><span class="de">3 · Menschliche Entscheidungshoheit</span></h2>
+      <p><span class="en">The system can make duties visible and block missing evidence. It cannot make legal, ethical or interpretive judgements true.</span><span class="de">Das System kann Pflichten sichtbar machen und fehlende Evidenz blockieren. Es kann rechtliche, ethische oder interpretative Urteile nicht wahr machen.</span></p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <span class="status specified"><span class="en">Role defined</span><span class="de">Rolle definiert</span></span>
+        <h3><span class="en">Researchers</span><span class="de">Forschende</span></h3>
+        <p><span class="en">Interpret material, review free text, document uncertainty and remain responsible for scholarly meaning.</span><span class="de">Interpretieren Material, prüfen Freitext, dokumentieren Unsicherheit und verantworten die wissenschaftliche Bedeutung.</span></p>
+      </article>
+      <article class="card">
+        <span class="status specified"><span class="en">Decision authority</span><span class="de">Entscheidungsbefugnis</span></span>
+        <h3><span class="en">Controller</span><span class="de">Verantwortliche Stelle</span></h3>
+        <p><span class="en">Determines and documents lawful operation and release. A gate pass is not a controller decision.</span><span class="de">Entscheidet und dokumentiert rechtmäßigen Betrieb und Freigabe. Ein Gate-Pass ist keine Controller-Entscheidung.</span></p>
+      </article>
+      <article class="card">
+        <span class="status specified"><span class="en">Advisory authority</span><span class="de">Beratende Funktion</span></span>
+        <h3>DPO</h3>
+        <p><span class="en">Advises and issues opinions; does not become the system’s automatic approver.</span><span class="de">Berät und gibt Stellungnahmen ab; wird nicht zum automatischen Genehmiger des Systems.</span></p>
+      </article>
+    </div>
+  </section>
+
+  <div class="boundary">
+    <strong><span class="en">Claim boundary:</span><span class="de">Aussagegrenze:</span></strong>
+    <span class="en"> “Technically admitted” means that required machine-checkable evidence passed. It does not mean “legally compliant,” “truly anonymous,” or “scientifically valid.”</span>
+    <span class="de"> „Technisch zugelassen“ bedeutet, dass die erforderliche maschinenprüfbare Evidenz bestanden wurde. Es bedeutet nicht „rechtmäßig“, „tatsächlich anonym“ oder „wissenschaftlich valide“.</span>
+  </div>
+
+  <div class="meta">
+    <span><strong><span class="en">Infrastructure design &amp; implementation:</span><span class="de">Infrastrukturdesign &amp; Implementierung:</span></strong> Klaus Behnam Shad (PI / operator)</span>
+    <span><strong><span class="en">Authority boundary:</span><span class="de">Entscheidungsgrenze:</span></strong> controller decides · DPO advises · builder ≠ approver</span>
+  </div>
+</main>
+<script>
+(function(){
+  var root=document.getElementById('status');
+  document.querySelector('.controls').addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b)return;
+    document.querySelectorAll('.controls button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+    root.classList.remove('lang-en','lang-de'); root.classList.add('lang-'+b.dataset.lang);
+    document.documentElement.lang=b.dataset.lang;
+    e.currentTarget.setAttribute('aria-label',e.currentTarget.getAttribute('data-label-'+b.dataset.lang));
+  });
+})();
+</script>
+</body>
+</html>

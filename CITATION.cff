@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this software or benchmark, please cite it as below."
+title: "DINOH — Evaluating AI Support for Oral History: A Multilingual Benchmark"
+abstract: >-
+  A multilingual, human-referenced evaluation benchmark for the C²DH Oral History
+  Workflow. It scores AI proposals for minimal metadata extraction (exact-match)
+  and thematic segmentation (WindowDiff, Pk) against a hand-annotated gold standard,
+  reported per language across German, English, French, Italian, Spanish,
+  Luxembourgish, and Portuguese, on synthetic data. Includes WebVTT and OHMS
+  interoperability exporters and a concept & architecture note.
+type: software
+authors:
+  - family-names: "Behnam Shad"
+    given-names: "Klaus"
+    affiliation: "Luxembourg Centre for Contemporary and Digital History (C²DH), University of Luxembourg"
+version: "1.0.0"
+date-released: "2026-07-08"
+license: MIT
+repository-code: "https://github.com/klausbehnamshad/DINOH"
+keywords:
+  - oral history
+  - digital humanities
+  - evaluation benchmark
+  - multilingual
+  - natural language processing
+  - thematic segmentation
+  - metadata extraction
+# After archiving the v1.0.0 tag on Zenodo, add the minted DOI here:
+# doi: "10.5281/zenodo.XXXXXXX"
+references:
+  - type: software
+    title: "IMM-Core: Interview Metadata Model — Core Profile"
+    authors:
+      - family-names: "Behnam Shad"
+        given-names: "Klaus"
+    version: "1.0"
+    year: 2026
+    doi: "10.5281/zenodo.20507329"
+    license: CC-BY-4.0
