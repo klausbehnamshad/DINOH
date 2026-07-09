@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software or benchmark, please cite it as below."
-title: "DINOH — Evaluating AI Support for Oral History: A Multilingual Benchmark"
+title: "DINOH — a Digital, AI-assisted Infrastructure for Oral History: public evaluation release (multilingual benchmark)"
 abstract: >-
   A multilingual, human-referenced evaluation benchmark for the C²DH Oral History
   Workflow. It scores AI proposals for minimal metadata extraction (exact-match)

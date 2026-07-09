@@ -1,6 +1,6 @@
-# DINOH — Evaluating AI Support for Oral History
+# DINOH — a Digital, AI-assisted Infrastructure for Oral History
 
-**A multilingual, human-referenced benchmark for the C²DH Oral History Workflow.**
+**Public evaluation release — a multilingual, human-referenced benchmark for the C²DH Oral History Workflow.**
 *When a tool proposes metadata or a thematic structure for a recorded interview — how good are those proposals, and can we measure it in a way we trust?*
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-informational)

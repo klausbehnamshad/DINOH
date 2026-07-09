@@ -1,6 +1,6 @@
-# Evaluating AI Support for Oral History
+# DINOH — a Digital, AI-assisted Infrastructure for Oral History
 
-### A multilingual benchmark for the C²DH Oral History Workflow
+### Evaluating AI support — a multilingual benchmark for the C²DH Oral History Workflow
 
 ---
 
