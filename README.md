@@ -8,7 +8,7 @@
 ![Status](https://img.shields.io/badge/status-v1.0.0%20(draft)-orange)
 <!-- After archiving on Zenodo, add: [![DOI](https://zenodo.org/badge/DOI/XX.XXXX/zenodo.XXXXXXX.svg)](https://doi.org/XX.XXXX/zenodo.XXXXXXX) -->
 
-DINOH (*Digital Infrastructure for Oral History*) is a research project at the **Luxembourg Centre for Contemporary and Digital History (C²DH), University of Luxembourg**. This repository is its **public evaluation release**: a citable benchmark, the concept & architecture behind it, and interoperability exporters — all on **synthetic data**.
+DINOH (*a Digital, AI-assisted Infrastructure for Oral History*) is a research project at the **Luxembourg Centre for Contemporary and Digital History (C²DH), University of Luxembourg**. This repository is its **public evaluation release**: a citable benchmark, the concept & architecture behind it, and interoperability exporters — all on **synthetic data**.
 
 ---
 

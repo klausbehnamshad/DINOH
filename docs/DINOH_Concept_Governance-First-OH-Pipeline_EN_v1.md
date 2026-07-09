@@ -11,7 +11,7 @@
 
 ### Concept & Architecture
 
-**Project:** DINOH — *Digital Infrastructure for Oral History* · Luxembourg Centre for Contemporary and Digital History (C²DH), University of Luxembourg
+**Project:** DINOH — *Digital, AI-assisted Infrastructure for Oral History* · Luxembourg Centre for Contemporary and Digital History (C²DH), University of Luxembourg
 **Document:** Concept & architecture note, version 1 (2026-07-01) · English
 **Register:** A single document written on two levels — a plain-language account for a general and institutional audience, and a methods-and-governance specification precise enough to cite. Technical identifiers are given verbatim where they matter for reproducibility.
 
@@ -417,7 +417,7 @@ The data model is explicit and versioned. Thirteen JSON schemas govern the artef
 
 ## 16. Colophon
 
-**DINOH — Digital Infrastructure for Oral History.** Luxembourg Centre for Contemporary and Digital History (C²DH), University of Luxembourg. Author / operator: **Klaus Behnam Shad** (principal investigator; builder ≠ legal approver). Concept & architecture note, version 1, 1 July 2026.
+**DINOH — Digital, AI-assisted Infrastructure for Oral History.** Luxembourg Centre for Contemporary and Digital History (C²DH), University of Luxembourg. Author / operator: **Klaus Behnam Shad** (principal investigator; builder ≠ legal approver). Concept & architecture note, version 1, 1 July 2026.
 
 This document describes a research infrastructure and its governance design at honestly-labelled maturity. It is **not legal advice**; lawfulness, DPIA necessity and release remain with the controller, advised by the DPO. All interview material referenced is **synthetic**. Technical identifiers (schema `$id`s, route enums, reason codes, manifest version) are reproduced verbatim because they live in schemas, tests and provenance hashes and must not be paraphrased.
 

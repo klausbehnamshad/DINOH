@@ -1,7 +1,7 @@
 # DINOH — Terminology & Title Inventory (EN + DE)
 ### Canonical naming for visualisation, video & public materials · Terminologie-Referenz für Visualisierung, Video & öffentliche Materialien
 
-**Project / Projekt:** DINOH — *Digital Infrastructure for Oral History* · C²DH, University of Luxembourg
+**Project / Projekt:** DINOH — *Digital, AI-assisted Infrastructure for Oral History* · C²DH, University of Luxembourg
 **Core / Kern:** local-only LLM workflow for qualitative content analysis (Mayring / QCA) — no internet egress, no external APIs · *lokaler LLM-Workflow für qualitative Inhaltsanalyse — kein Internet-Egress, keine externen APIs*
 **Status of this scheme / Status:** consolidated from `MEGAPROMPT_naming-architecture-visuals` + signed-off `REVIEW_naming-folders-visuals` (HI). Short names = lay register; long names = canonical scientific taxonomy.
 **Date / Stand:** 2026-06-19 · **Author / Autor:** Klaus Behnam Shad (PI / operator — builder ≠ legal approver)
