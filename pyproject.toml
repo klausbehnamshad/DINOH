@@ -14,6 +14,7 @@ dependencies = [
     "segeval==2.0.11",
     "jsonschema>=4.18,<5.0",  # Import-Zeit: oh_eval.schema (via __init__)
     "pandas>=2.0,<3.0",       # Import-Zeit: oh_eval.corpus/reports (via __init__)
+    "jinja2>=3.0",            # required by oh_eval.reports LaTeX writer (pandas Styler.to_latex)
 ]
 
 [project.optional-dependencies]

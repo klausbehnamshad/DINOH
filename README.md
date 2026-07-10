@@ -7,6 +7,7 @@
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![Status](https://img.shields.io/badge/status-v1.0.0%20(draft)-orange)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21273366.svg)](https://doi.org/10.5281/zenodo.21273366)
+[![CI](https://github.com/klausbehnamshad/DINOH/actions/workflows/ci.yml/badge.svg)](https://github.com/klausbehnamshad/DINOH/actions/workflows/ci.yml)
 
 DINOH (*a Digital, AI-assisted Infrastructure for Oral History*) is a research project at the **Luxembourg Centre for Contemporary and Digital History (C²DH), University of Luxembourg**. This repository is its **public evaluation release**: a citable benchmark, the concept & architecture behind it, and interoperability exporters — all on **synthetic data**.
 
@@ -21,6 +22,8 @@ This is an **open, synthetic-data** release of the **evaluation core** and the *
 - **interoperability exporters** to **WebVTT** and **OHMS** (Oral History Metadata Synchronizer).
 
 It **does not** contain DINOH's governance / enforcement engine — the default-deny gates, attestation, run-manifests, BIND/ACCOUNT (Article-9 inference), quarantine-review, controller-release and withdrawal machinery. Those are described in the concept note as *design* but are part of the internal pipeline and are **not shipped or executed here**. No real interview data is included; every record is synthetic.
+
+For specifications, see [`DATA_CARD.md`](./DATA_CARD.md) (dataset) and [`BENCHMARK_CARD.md`](./BENCHMARK_CARD.md) (tasks & metrics); for release history, [`CHANGELOG.md`](./CHANGELOG.md).
 
 ---
 
