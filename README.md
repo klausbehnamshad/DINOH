@@ -6,7 +6,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-informational)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![Status](https://img.shields.io/badge/status-v1.0.0%20(draft)-orange)
-<!-- After archiving on Zenodo, add: [![DOI](https://zenodo.org/badge/DOI/XX.XXXX/zenodo.XXXXXXX.svg)](https://doi.org/XX.XXXX/zenodo.XXXXXXX) -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21273366.svg)](https://doi.org/10.5281/zenodo.21273366)
 
 DINOH (*a Digital, AI-assisted Infrastructure for Oral History*) is a research project at the **Luxembourg Centre for Contemporary and Digital History (C²DH), University of Luxembourg**. This repository is its **public evaluation release**: a citable benchmark, the concept & architecture behind it, and interoperability exporters — all on **synthetic data**.
 
@@ -97,11 +97,19 @@ eval_dashboard.py
 
 ## Data & transparency
 
-All interview material is **synthetic** — written for methodological testing, representing no real person, testimony, or event; every record is marked accordingly. The benchmark uses **open-weight** models whose behaviour can be inspected and reproduced, and the descriptive fields follow a published minimal-metadata schema (the **LuxOH Implementation Profile** of the discipline-agnostic **Interview Metadata Model — Core Profile (IMM-Core)**). Every run is versioned and repeatable.
+All interview material is **synthetic** — written for methodological testing, representing no real person, testimony, or event; every record is marked accordingly. The benchmark uses **open-weight** models whose behaviour can be inspected and reproduced, and the descriptive fields follow a published minimal-metadata schema (the **LuxOH Implementation Profile** of the discipline-agnostic **Interview Metadata Model — Core Profile (IMM-Core)**). The public evaluation artefacts under `reports/` are versioned and reproducible; full run-manifest enforcement (model, prompt, and corpus hashes) belongs to the internal pipeline described in the concept note, not to this public release.
+
+## Anticipated questions
+
+**Why only synthetic data?** A public release should demonstrate the *method*, not real testimony. Real interview processing happens only inside the institutional pipeline — locally, under controller/DPO oversight — never in this repository.
+
+**Where is the governance engine?** Where it matters most — the point where content leaves the system — it is present and tested here: the WebVTT/OHMS exporter is default-deny and consent-aware (`src/oh_eval/export.py`). The full enforcement layer (gates, BIND/ACCOUNT, run-manifests, withdrawal) is specified in the concept note and runs in the internal pipeline; it is deliberately not shipped here.
+
+**One annotator isn't a benchmark.** Correct — this is a benchmark *infrastructure* release: a reproducible corpus, schema, scoring method and export path. Inter-annotator agreement is the next step, and an open invitation to collaborate (see [Status](#status)).
 
 ## Citing
 
-If you use this benchmark, please cite it via [`CITATION.cff`](./CITATION.cff). A Zenodo DOI will be minted for the `v1.0.0` release and added here.
+If you use this benchmark, please cite it via [`CITATION.cff`](./CITATION.cff). Archived on Zenodo: cite **all versions** with the concept DOI [10.5281/zenodo.21273366](https://doi.org/10.5281/zenodo.21273366) (always resolves to the latest); this specific release (`v1.0.0`) is [10.5281/zenodo.21273367](https://doi.org/10.5281/zenodo.21273367).
 
 The metadata profile is published separately: Behnam Shad, K. *IMM-Core: Interview Metadata Model — Core Profile* (v1.0, 2026). Zenodo, CC-BY 4.0. DOI [10.5281/zenodo.20507329](https://doi.org/10.5281/zenodo.20507329).
 
