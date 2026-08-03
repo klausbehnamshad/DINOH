@@ -1,50 +1,111 @@
 # DINOH — a Digital, AI-assisted Infrastructure for Oral History
 
-**Public evaluation release — a multilingual, human-referenced benchmark for the C²DH Oral History Workflow.**
+**Public evaluation release — the corpus, schemas, metric design and scoring path for a multilingual, human-referenced evaluation of AI assistance in oral history.**
 *When a tool proposes metadata or a thematic structure for a recorded interview — how good are those proposals, and can we measure it in a way we trust?*
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-informational)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
-![Status](https://img.shields.io/badge/status-v1.0.0%20(draft)-orange)
+![Status](https://img.shields.io/badge/status-v1.0.1%20(draft)-orange)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21273366.svg)](https://doi.org/10.5281/zenodo.21273366)
 [![CI](https://github.com/klausbehnamshad/DINOH/actions/workflows/ci.yml/badge.svg)](https://github.com/klausbehnamshad/DINOH/actions/workflows/ci.yml)
 
-DINOH (*a Digital, AI-assisted Infrastructure for Oral History*) is a research project at the **Luxembourg Centre for Contemporary and Digital History (C²DH), University of Luxembourg**. This repository is its **public evaluation release**: a citable benchmark, the concept & architecture behind it, and interoperability exporters — all on **synthetic data**.
+DINOH (*a Digital, AI-assisted Infrastructure for Oral History*) is a research project at the **Luxembourg Centre for Contemporary and Digital History (C²DH), University of Luxembourg**. This repository is its **public evaluation release**: a citable evaluation harness, the concept & architecture behind it, and interoperability exporters — all on **synthetic data**.
+
+---
+
+> ## ⚠️ This harness has not measured anything yet — please read before citing
+>
+> The model backend is **stubbed**. `MODEL_REGISTRY` holds placeholder entries and `run_model()`
+> returns a deterministic placeholder, so the downstream evaluation logic can be exercised end to
+> end without a compute connection (see §5 of the notebook).
+>
+> **Everything under `reports/` is scoring infrastructure and smoke-test output — not
+> model-performance evidence.** That is why every accuracy reads `1.0` and every WindowDiff is
+> constant across models and languages. Those files are shipped so the scoring path is inspectable
+> and reproducible, not because they say anything about models.
+>
+> **Please do not cite this as a benchmark of model quality, and do not quote any number from
+> `reports/`.**
+>
+> What *is* real and tested: the human-authored corpus, the schemas, the metric design, the
+> scoring-integrity rules, the export path and the test suite. **This release makes measurement
+> possible; it does not report measurements.** See [Status](#status) for the two things that
+> would change that.
 
 ---
 
 ## Scope of this repository — please read first
 
-This is an **open, synthetic-data** release of the **evaluation core** and the **concept**. Concretely, it contains:
+This is an **open, synthetic-data** release of the **evaluation core** and the **concept**.
+Concretely, it contains:
 
-- the multilingual **evaluation benchmark** (code, synthetic gold-standard corpus, two JSON schemas, notebook, dashboard);
-- the **concept & architecture note** (`docs/`), which describes the full DINOH governance pipeline as a *design*;
+- the multilingual **evaluation harness** (code, synthetic gold-standard corpus, two JSON schemas,
+  notebook, dashboard);
+- the **concept & architecture note** (`docs/`), which describes the full DINOH governance pipeline
+  as a *design*;
 - **interoperability exporters** to **WebVTT** and **OHMS** (Oral History Metadata Synchronizer).
 
-It **does not** contain DINOH's governance / enforcement engine — the default-deny gates, attestation, run-manifests, BIND/ACCOUNT (Article-9 inference), quarantine-review, controller-release and withdrawal machinery. Those are described in the concept note as *design* but are part of the internal pipeline and are **not shipped or executed here**. No real interview data is included; every record is synthetic.
+It **does not** contain DINOH's governance / enforcement engine — the default-deny gates,
+attestation, run-manifests, BIND/ACCOUNT, quarantine-review, controller-release and withdrawal
+machinery. Those are described in the concept note as *design* but are part of the internal
+pipeline and are **not shipped or executed here**. No real interview data is included; every
+record is synthetic.
 
-For specifications, see [`DATA_CARD.md`](./DATA_CARD.md) (dataset) and [`BENCHMARK_CARD.md`](./BENCHMARK_CARD.md) (tasks & metrics); for release history, [`CHANGELOG.md`](./CHANGELOG.md).
+For specifications, see [`DATA_CARD.md`](./DATA_CARD.md) (dataset) and
+[`BENCHMARK_CARD.md`](./BENCHMARK_CARD.md) (tasks, metrics and current status); for release
+history, [`CHANGELOG.md`](./CHANGELOG.md).
 
 ---
 
-## What the benchmark does
+## What the harness is built to measure
 
-The benchmark scores two tasks that a computational tool might assist with, always against a **human** gold standard:
+Two tasks that a computational tool might assist with, always scored against a **human** gold
+standard:
 
-1. **Minimal metadata extraction** — given an interview, can a model correctly fill a small set of descriptive fields (title, language, place, keywords, short abstract)? Scored by exact agreement with the human reference, field by field.
-2. **Thematic segmentation** — can a model divide an interview into coherent thematic sections, with boundaries where a human reader would place them? Scored with **WindowDiff** and **Pk**, the two standard segmentation metrics.
+1. **Minimal metadata extraction** — given an interview, can a model correctly fill a small set of
+   descriptive fields (title, language, place, keywords, short abstract)? Scored field by field, by
+   field type: exact agreement for controlled vocabulary, precision/recall/F1 for keyword lists,
+   and **no automatic score at all** for free text (`title`, `abstract`), which is flagged for
+   human review instead.
+2. **Thematic segmentation** — can a model divide an interview into coherent thematic sections,
+   with boundaries where a human reader would place them? Scored with **WindowDiff** and **Pk**,
+   the two standard segmentation metrics, over timecode-derived boundary masses on a shared unit
+   axis.
 
-Results are **always reported per language and never pooled** into a single average — so strong performance in English cannot mask weak performance in a lower-resourced language. The current gold standard spans **seven languages: German, English, French, Italian, Spanish, Luxembourgish, and Portuguese**, over 28 synthetic interview records.
+Results are designed to be **always reported per language and never pooled** into a single average
+— so strong performance in English cannot mask weak performance in a lower-resourced language. The
+gold standard spans **seven languages: German, English, French, Italian, Spanish, Luxembourgish and
+Portuguese**, over 28 synthetic interview records, four per language.
+
+Scoring integrity is part of the design, not an afterthought: a malformed or missing timecode in a
+prediction is recorded as a per-record `error`, never silently mis-scored, and never aborts the
+run.
 
 ## What makes it different
 
-- **The reference is human.** The gold standard is annotated by a researcher, not generated by another model. AI is measured on a narrow, assistive contribution — not on interpretation, which remains a scholarly act.
-- **Language is treated with care.** Luxembourg's oral history is multilingual by nature; Luxembourgish and Portuguese are poorly served by mainstream tools. Every language is reported on its own terms.
-- **The benchmark knows its limits.** The deepest layer of interpretation is deliberately left outside automated scoring; fields that resist mechanical comparison are flagged for human review rather than scored by proxy.
+- **The reference is human.** The gold standard is annotated by a researcher, not generated by
+  another model. AI is measured on a narrow, assistive contribution — not on interpretation, which
+  remains a scholarly act.
+- **Proposal and selection stay separate.** Model output is carried as `suggested_*`, curated
+  values as `selected_*`, and the two remain distinguishable even when the values are identical,
+  because they carry different epistemic status.
+- **Language is treated with care.** Luxembourg's oral history is multilingual by nature;
+  Luxembourgish and Portuguese are poorly served by mainstream tools. Every language is reported on
+  its own terms. Seven languages are *represented* here — multilinguality is not yet *evaluated*
+  (the synthetic corpus does not reproduce deep code-switching, authentic disfluency or dialect
+  variation).
+- **The harness knows its limits.** The deepest layer of interpretation is deliberately left
+  outside automated scoring; fields that resist mechanical comparison are flagged for human review
+  rather than scored by proxy.
 
 ## Interoperability (WebVTT + OHMS)
 
-The exporter turns evaluation records into two widely-used oral-history formats — **WebVTT** captions and **OHMS XML** (for the OHMS Viewer) — under an explicit *open + public* allow-list. See `examples/` for the 28 exported synthetic records and a minimal `viewer.html`.
+The exporter turns evaluation records into two widely-used oral-history formats — **WebVTT**
+captions and **OHMS XML** (for the OHMS Viewer) — under an explicit *open + public* allow-list. See
+`examples/` for the 28 exported synthetic records and a minimal `viewer.html`.
+
+Note the limits: the OHMS output is well-formed and escaped, but is **not yet validated against the
+published OHMS XSD**, and there is no connector or tested mapping to any external portal.
 
 ## Quick start
 
@@ -65,7 +126,8 @@ python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-**Run the benchmark** (regenerates everything under `reports/`):
+**Run the harness** — regenerates everything under `reports/`, using the placeholder backend
+(see the status note above; the outputs are smoke tests, not results):
 
 ```bash
 jupyter notebook notebooks/cdh_oh_eval_v1.ipynb   # then: Restart Kernel & Run All
@@ -93,6 +155,7 @@ tests/           evaluation-core tests (no pipeline dependencies)
 data/            corpus_synthetic.json  (synthetic gold standard)
 schemas/         luxoh_minimal_metadata · oh_eval_record
 notebooks/       cdh_oh_eval_v1.ipynb   (the narrative surface)
+reports/         smoke-test output of the scoring path — NOT model results
 examples/        WebVTT + OHMS exports (28 records) + viewer.html
 docs/            concept & architecture note · plain-language walkthrough · terminology
 eval_dashboard.py
@@ -100,34 +163,82 @@ eval_dashboard.py
 
 ## Data & transparency
 
-All interview material is **synthetic** — written for methodological testing, representing no real person, testimony, or event; every record is marked accordingly. The benchmark uses **open-weight** models whose behaviour can be inspected and reproduced, and the descriptive fields follow a published minimal-metadata schema (the **LuxOH Implementation Profile** of the discipline-agnostic **Interview Metadata Model — Core Profile (IMM-Core)**). The public evaluation artefacts under `reports/` are versioned and reproducible; full run-manifest enforcement (model, prompt, and corpus hashes) belongs to the internal pipeline described in the concept note, not to this public release.
+All interview material is **synthetic** — written for methodological testing, representing no real
+person, testimony, or event; every record is marked accordingly. The harness targets **open-weight**
+models whose behaviour can be inspected and reproduced, and the descriptive fields follow a
+published minimal-metadata schema (the **LuxOH Implementation Profile** of the discipline-agnostic
+**Interview Metadata Model — Core Profile (IMM-Core)**).
+
+The artefacts under `reports/` are versioned and regenerate deterministically from this repository
+— but with the placeholder backend, so what is reproducible is the *scoring path*, not a
+measurement. Full run-manifest enforcement (model, prompt and corpus hashes) belongs to the
+internal pipeline described in the concept note, not to this public release.
 
 ## Anticipated questions
 
-**Why only synthetic data?** A public release should demonstrate the *method*, not real testimony. Real interview processing happens only inside the institutional pipeline — locally, under controller/DPO oversight — never in this repository.
+**Are the numbers in `reports/` results?** No. They are smoke-test output of the scoring path with
+a stubbed model backend — which is why they are uniform. They are shipped so the path is
+inspectable, and they should not be quoted.
 
-**Where is the governance engine?** Where it matters most — the point where content leaves the system — it is present and tested here: the WebVTT/OHMS exporter is default-deny and consent-aware (`src/oh_eval/export.py`). The full enforcement layer (gates, BIND/ACCOUNT, run-manifests, withdrawal) is specified in the concept note and runs in the internal pipeline; it is deliberately not shipped here.
+**Why ship them at all, then?** Because the scoring logic, the schema validation and the export
+path are the substance of this release, and they are easier to review with their outputs present
+than absent. `reports/README.md` repeats the warning next to the files.
 
-**One annotator isn't a benchmark.** Correct — this is a benchmark *infrastructure* release: a reproducible corpus, schema, scoring method and export path. Inter-annotator agreement is the next step, and an open invitation to collaborate (see [Status](#status)).
+**Why only synthetic data?** A public release should demonstrate the *method*, not real testimony.
+Real interview processing happens only inside the institutional pipeline — locally, under
+controller/DPO oversight — never in this repository.
+
+**Where is the governance engine?** Where it matters most — the point where content leaves the
+system — it is present and tested here: the WebVTT/OHMS exporter is default-deny and consent-aware
+(`src/oh_eval/export.py`). The full enforcement layer (gates, BIND/ACCOUNT, run-manifests,
+withdrawal) is specified in the concept note and runs in the internal pipeline; it is deliberately
+not shipped here.
+
+**One annotator isn't a benchmark.** Correct — and neither is a stubbed backend. This is an
+evaluation *infrastructure* release: a reproducible corpus, schema, scoring method and export path.
+Real inference and inter-annotator agreement are the next steps, and an open invitation to
+collaborate (see [Status](#status)).
 
 ## Citing
 
-If you use this benchmark, please cite it via [`CITATION.cff`](./CITATION.cff). Archived on Zenodo: cite **all versions** with the concept DOI [10.5281/zenodo.21273366](https://doi.org/10.5281/zenodo.21273366) (always resolves to the latest); this specific release (`v1.0.0`) is [10.5281/zenodo.21273367](https://doi.org/10.5281/zenodo.21273367).
+If you use this release, please cite it via [`CITATION.cff`](./CITATION.cff). Archived on Zenodo:
+cite **all versions** with the concept DOI
+[10.5281/zenodo.21273366](https://doi.org/10.5281/zenodo.21273366) (always resolves to the latest);
+the `v1.0.0` release is
+[10.5281/zenodo.21273367](https://doi.org/10.5281/zenodo.21273367); `v1.0.1` receives its own
+version DOI on release.
 
-The metadata profile is published separately: Behnam Shad, K. *IMM-Core: Interview Metadata Model — Core Profile* (v1.0, 2026). Zenodo, CC-BY 4.0. DOI [10.5281/zenodo.20507329](https://doi.org/10.5281/zenodo.20507329).
+Please cite it as evaluation infrastructure, not as a source of model-performance figures.
+
+The metadata profile is published separately: Behnam Shad, K. *IMM-Core: Interview Metadata Model —
+Core Profile* (v1.0, 2026). Zenodo, CC-BY 4.0. DOI
+[10.5281/zenodo.20507329](https://doi.org/10.5281/zenodo.20507329).
 
 ## Status
 
-Early stage (**v1.0.0**, draft). The gold standard is currently annotated by a single researcher; a second-annotator pass is planned to measure inter-annotator agreement. We are sharing the concept and benchmark now to invite discussion and refinement with other oral-history institutes and universities.
+Early stage (**v1.0.1**, draft). Two things stand between this release and a benchmark in the
+proper sense, and both are open:
+
+1. **Real inference**, replacing the stubbed backend, so that scores discriminate between systems.
+2. **A second annotator pass** on a subset, so the human reference is defensible enough to rank
+   against. The gold standard is currently annotated by a single researcher.
+
+We are sharing the concept and the harness now to invite discussion and refinement with other
+oral-history institutes and universities — including on both of the points above.
 
 ## Contact
 
-**Klaus Behnam Shad** — Luxembourg Centre for Contemporary and Digital History (C²DH), University of Luxembourg.
+**Klaus Behnam Shad** — Luxembourg Centre for Contemporary and Digital History (C²DH), University
+of Luxembourg.
 
 ## License
 
-Code and synthetic data are released under the **MIT License** (see [`LICENSE`](./LICENSE)). The synthetic corpus may be redistributed and adapted under the same terms; it contains no real personal data.
+Code and synthetic data are released under the **MIT License** (see [`LICENSE`](./LICENSE)). The
+synthetic corpus may be redistributed and adapted under the same terms; it contains no real
+personal data.
 
 ---
 
-*Not legal advice. The concept note references GDPR and Luxembourg data-protection law as the frame the internal pipeline is designed around; lawfulness and any release of real data are decisions for a controller advised by a Data Protection Officer, not for this repository.*
+*Not legal advice. The concept note references GDPR and Luxembourg data-protection law as the frame
+the internal pipeline is designed around; lawfulness and any release of real data are decisions for
+a controller advised by a Data Protection Officer, not for this repository.*

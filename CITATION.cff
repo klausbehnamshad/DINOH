@@ -1,26 +1,31 @@
 cff-version: 1.2.0
-message: "If you use this software or benchmark, please cite it as below."
-title: "DINOH — a Digital, AI-assisted Infrastructure for Oral History: public evaluation release (multilingual benchmark)"
+message: "If you use this software, please cite it as below."
+title: "DINOH — a Digital, AI-assisted Infrastructure for Oral History: public evaluation release (multilingual evaluation harness)"
 abstract: >-
-  A multilingual, human-referenced evaluation benchmark for the C²DH Oral History
-  Workflow. It scores AI proposals for minimal metadata extraction (exact-match)
-  and thematic segmentation (WindowDiff, Pk) against a hand-annotated gold standard,
-  reported per language across German, English, French, Italian, Spanish,
-  Luxembourgish, and Portuguese, on synthetic data. Includes WebVTT and OHMS
-  interoperability exporters and a concept & architecture note.
+  A multilingual, human-referenced evaluation harness for the C²DH Oral History
+  Workflow. It provides the hand-annotated synthetic gold standard, the JSON schemas,
+  the per-field-type metric design and the tested scoring path for evaluating AI
+  proposals on two narrow, assistive tasks — minimal metadata extraction and thematic
+  segmentation (WindowDiff, Pk) — reported per language across German, English, French,
+  Italian, Spanish, Luxembourgish, and Portuguese, on synthetic data. Includes WebVTT
+  and OHMS interoperability exporters and a concept & architecture note. Note: the model
+  backend is stubbed in this release, so the artefacts under reports/ are smoke-test
+  output of the scoring path and not model-performance results; this release makes
+  measurement possible rather than reporting measurements.
 type: software
 authors:
   - family-names: "Behnam Shad"
     given-names: "Klaus"
     affiliation: "Luxembourg Centre for Contemporary and Digital History (C²DH), University of Luxembourg"
-version: "1.0.0"
-date-released: "2026-07-08"
+version: "1.0.1"
+date-released: "2026-08-03"
 license: MIT
 repository-code: "https://github.com/klausbehnamshad/DINOH"
 keywords:
   - oral history
   - digital humanities
-  - evaluation benchmark
+  - evaluation harness
+  - research data infrastructure
   - multilingual
   - natural language processing
   - thematic segmentation
@@ -33,6 +38,10 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.21273367"
     description: "Version DOI (v1.0.0)"
+  # After the v1.0.1 release is archived, add its version DOI here:
+  # - type: doi
+  #   value: "10.5281/zenodo.XXXXXXXX"
+  #   description: "Version DOI (v1.0.1)"
 references:
   - type: software
     title: "IMM-Core: Interview Metadata Model — Core Profile"

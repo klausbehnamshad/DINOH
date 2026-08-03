@@ -6,6 +6,36 @@ and the project aims to follow [Semantic Versioning](https://semver.org/spec/v2.
 
 ## [Unreleased]
 
+## [1.0.1] — 2026-08-03
+
+### Changed — honest-status pass (documentation only, no code or data changes)
+
+The `v1.0.0` release described this repository as a *benchmark* without stating prominently that
+the model backend is stubbed. The disclosure existed only inside the notebook (§5), so the
+top-level documentation over-promised. This pass corrects that. **No code, schema, corpus or
+report file was altered.**
+
+- **README** now opens with a status notice: the harness has not measured anything yet, everything
+  under `reports/` is smoke-test output of the scoring path, and no number from it should be
+  quoted. The framing shifts from "benchmark" to "evaluation harness / evaluation infrastructure"
+  throughout, and the `Status` section names the two conditions that would make it a benchmark
+  (real inference; a second-annotator pass).
+- **`BENCHMARK_CARD.md`** renamed in framing to an *Evaluation Card*: same status block at the
+  top, plus an explicit "What would make this a benchmark" section. Limitations now lead with
+  "no results yet".
+- **`DATA_CARD.md`** replaces "Balance: 4 records per language" with "Distribution: evenly
+  distributed by language only, not by difficulty, register, speaker profile or content", states
+  single-annotator / no inter-annotator agreement in the summary table, and clarifies that seven
+  languages are *represented* while multilinguality is not *evaluated* — the synthetic corpus does
+  not reproduce deep code-switching, authentic disfluency or dialect variation.
+- **`reports/README.md`** added: a warning next to the files themselves, explaining why every
+  accuracy reads `1.0`, and noting that the two schema-validation reports are the exception — their
+  content is meaningful.
+- **README** additionally: notes that the OHMS output is not yet validated against the published
+  OHMS XSD and that no connector or tested mapping to an external portal exists; adds the
+  `suggested_*` / `selected_*` distinction to "What makes it different"; adds an
+  anticipated-question pair on whether the numbers in `reports/` are results.
+
 ### Added
 - `DATA_CARD.md` — dataset specification for the synthetic evaluation corpus.
 - `BENCHMARK_CARD.md` — task, metric, and scoring-integrity specification.
@@ -18,7 +48,9 @@ and the project aims to follow [Semantic Versioning](https://semver.org/spec/v2.
 ### Changed
 - Scoped the reproducibility claim in the README to the public evaluation
   artefacts; full run-manifest enforcement is attributed to the internal pipeline.
-- Aligned `pyproject.toml` version with the release version (`1.0.0`).
+- Aligned `pyproject.toml` version with the release version (`1.0.1`), and updated
+  `CITATION.cff` (version, release date, and title/abstract wording — the citation
+  metadata described a scoring benchmark, which is what propagates to Zenodo).
 
 ### Fixed
 - Declared `jinja2` as a dependency (required by the LaTeX report writer via
@@ -29,7 +61,7 @@ and the project aims to follow [Semantic Versioning](https://semver.org/spec/v2.
 
 ### Added
 - Initial **public evaluation release** (synthetic data only).
-- Multilingual evaluation benchmark: per-language metadata extraction
+- Multilingual evaluation harness: per-language metadata extraction
   (exact-match) and thematic segmentation (WindowDiff, Pk) across seven
   languages, over 28 synthetic records.
 - Evaluation core (`src/oh_eval`): `corpus`, `schema`, `metrics`, `reports`,
@@ -41,5 +73,10 @@ and the project aims to follow [Semantic Versioning](https://semver.org/spec/v2.
 - Archived on Zenodo — concept DOI `10.5281/zenodo.21273366`
   (resolves to the latest version), version DOI `10.5281/zenodo.21273367`.
 
-[Unreleased]: https://github.com/klausbehnamshad/DINOH/compare/v1.0.0...HEAD
+> **Note added later:** the model backend in this release is stubbed; the files under `reports/`
+> are smoke-test output and were never model-performance results. This was disclosed in the
+> notebook but not in the release documentation. See the Unreleased section above.
+
+[Unreleased]: https://github.com/klausbehnamshad/DINOH/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/klausbehnamshad/DINOH/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/klausbehnamshad/DINOH/releases/tag/v1.0.0
