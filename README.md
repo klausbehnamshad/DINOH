@@ -1,13 +1,13 @@
 # DINOH — a Digital, AI-assisted Infrastructure for Oral History
 
-**Public evaluation release — the corpus, schemas, metric design and scoring path for a multilingual, human-referenced evaluation of AI assistance in oral history.**
-*When a tool proposes metadata or a thematic structure for a recorded interview — how good are those proposals, and can we measure it in a way we trust?*
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21273366.svg)](https://doi.org/10.5281/zenodo.21273366)
 ![License: MIT](https://img.shields.io/badge/License-MIT-informational)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![Status](https://img.shields.io/badge/status-v1.0.1%20(draft)-orange)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21273366.svg)](https://doi.org/10.5281/zenodo.21273366)
 [![CI](https://github.com/klausbehnamshad/DINOH/actions/workflows/ci.yml/badge.svg)](https://github.com/klausbehnamshad/DINOH/actions/workflows/ci.yml)
+
+**Public evaluation release — the corpus, schemas, metric design and scoring path for a multilingual, human-referenced evaluation of AI assistance in oral history.**
+*When a tool proposes metadata or a thematic structure for a recorded interview — how good are those proposals, and can we measure it in a way we trust?*
 
 DINOH (*a Digital, AI-assisted Infrastructure for Oral History*) is a research project at the **Luxembourg Centre for Contemporary and Digital History (C²DH), University of Luxembourg**. This repository is its **public evaluation release**: a citable evaluation harness, the concept & architecture behind it, and interoperability exporters — all on **synthetic data**.
 
@@ -199,14 +199,51 @@ evaluation *infrastructure* release: a reproducible corpus, schema, scoring meth
 Real inference and inter-annotator agreement are the next steps, and an open invitation to
 collaborate (see [Status](#status)).
 
-## Citing
+## Citation
 
-If you use this release, please cite it via [`CITATION.cff`](./CITATION.cff). Archived on Zenodo:
-cite **all versions** with the concept DOI
-[10.5281/zenodo.21273366](https://doi.org/10.5281/zenodo.21273366) (always resolves to the latest);
-the `v1.0.0` release is
-[10.5281/zenodo.21273367](https://doi.org/10.5281/zenodo.21273367); `v1.0.1` receives its own
-version DOI on release.
+This release is archived on Zenodo and citable. Please cite the **archived version**, not the
+repository URL — GitHub's *"Cite this repository"* button reads [`CITATION.cff`](./CITATION.cff)
+and produces the same metadata.
+
+**Author** — Klaus Behnam Shad, Luxembourg Centre for Contemporary and Digital History (C²DH),
+University of Luxembourg. ORCID: [0000-0002-3601-9024](https://orcid.org/0000-0002-3601-9024).
+
+### APA (7th edition)
+
+> Behnam Shad, K. (2026). *DINOH — a Digital, AI-assisted Infrastructure for Oral History: Public
+> evaluation release (multilingual evaluation harness)* (Version 1.0.1) [Computer software].
+> Zenodo. https://doi.org/10.5281/zenodo.21273366
+
+### BibTeX
+
+```bibtex
+@software{behnam_shad_dinoh_2026,
+  author    = {Behnam Shad, Klaus},
+  title     = {{DINOH --- a Digital, AI-assisted Infrastructure for Oral History:
+                public evaluation release (multilingual evaluation harness)}},
+  version   = {1.0.1},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.21273366},
+  url       = {https://doi.org/10.5281/zenodo.21273366},
+  orcid     = {0000-0002-3601-9024},
+  license   = {MIT}
+}
+```
+
+*(For BibTeX styles without a `@software` entry type, `@misc` with the same fields works; the
+`orcid` field is a biblatex extension and is ignored by styles that do not know it.)*
+
+### Which DOI to use
+
+The badge and both citations above use the **concept DOI**
+[10.5281/zenodo.21273366](https://doi.org/10.5281/zenodo.21273366), which always resolves to the
+latest archived version — that is the right choice in most cases. To pin one specific version, use
+its own version DOI:
+
+| Version | Released | Version DOI |
+| --- | --- | --- |
+| `v1.0.0` | 2026-07-09 | [10.5281/zenodo.21273367](https://doi.org/10.5281/zenodo.21273367) |
 
 Please cite it as evaluation infrastructure, not as a source of model-performance figures.
 
