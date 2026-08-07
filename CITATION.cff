@@ -16,11 +16,13 @@ type: software
 authors:
   - family-names: "Behnam Shad"
     given-names: "Klaus"
+    orcid: "https://orcid.org/0000-0002-3601-9024"
     affiliation: "Luxembourg Centre for Contemporary and Digital History (C²DH), University of Luxembourg"
 version: "1.0.1"
 date-released: "2026-08-03"
 license: MIT
 repository-code: "https://github.com/klausbehnamshad/DINOH"
+url: "https://github.com/klausbehnamshad/DINOH"
 keywords:
   - oral history
   - digital humanities
