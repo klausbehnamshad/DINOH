@@ -5,9 +5,10 @@
 ## Summary
 
 A small, fully **synthetic** corpus written for methodological testing of an oral-history
-assistance pipeline. It is the human-authored reference for the DINOH evaluation harness (see
-[`BENCHMARK_CARD.md`](./BENCHMARK_CARD.md)). It contains **no real person, testimony, or
-event**.
+assistance pipeline. Its segmentation, metadata and analytical annotations are the human-authored
+reference for the DINOH evaluation harness (see [`BENCHMARK_CARD.md`](./BENCHMARK_CARD.md)); the
+transcript texts themselves were drafted with AI assistance and edited by the author (see *How it
+was produced*). It contains **no real person, testimony, or event**.
 
 | Property | Value |
 |---|---|
@@ -35,11 +36,19 @@ layer), `interpretive_layer`, `profile_version`, `consent`, `privacy`, `provenan
 
 ## How it was produced
 
-Records were **authored by hand for testing**, not collected from interviews and not generated
-by a model as ground truth. The thematic segmentation and metadata are the *human reference*
-against which AI proposals are to be scored; the human annotation is the reference, not an AI
-output. Circular validation — testing model A against a reference produced by model B — is
-methodologically excluded.
+The **transcript texts** were drafted with the assistance of a generative language model and
+edited by the author. They are invented texts written for testing; they were not collected from
+interviews. The **segmentation, metadata and analytical annotations** were authored by hand by a
+single annotator and form the *human reference* against which AI proposals are to be scored. No
+model output serves as ground truth. Circular validation — testing model A against a reference
+produced by model B — remains methodologically excluded: the reference is the human annotation,
+never the drafted text.
+
+Two consequences follow for interpretation. Model-drafted text may be easier for a model to
+process than authentic speech, so any score on this corpus describes the scoring path and the
+process, not model performance on real interviews. And the Luxembourgish transcripts are invented
+text produced with AI assistance; they are not evidence about authentic Luxembourgish or about a
+model's competence in it.
 
 ## Intended use
 
@@ -53,10 +62,10 @@ methodologically excluded.
 
 ## Out of scope / limitations
 
-- **Not representative** of real oral-history complexity. Synthetic text does not reproduce
-  authentic disfluency, deep code-switching, emotional register, dialect variation, or archival
-  messiness. Seven languages are *represented here*; multilinguality is not *evaluated* by this
-  corpus.
+- **Not representative** of real oral-history complexity. Synthetic, AI-drafted text does not
+  reproduce authentic disfluency, deep code-switching, emotional register, dialect variation, or
+  archival messiness. Seven languages are *represented here*; multilinguality is not *evaluated*
+  by this corpus.
 - **Not a basis for claims about real interviewees or populations.**
 - **Small (n = 28)** and **single-annotator** — suitable for method and regression testing, not
   for leaderboard-style model ranking.
