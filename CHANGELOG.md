@@ -6,6 +6,16 @@ and the project aims to follow [Semantic Versioning](https://semver.org/spec/v2.
 
 ## [Unreleased]
 
+### Changed — provenance of the synthetic transcripts (documentation only, 2026-09-10)
+
+- **`DATA_CARD.md`** now states that the transcript texts were drafted with the assistance of a
+  generative language model and edited by the author, and that the segmentation, metadata and
+  analytical annotations are the human-authored reference. The earlier wording ("authored by hand
+  for testing") described the annotation layer and was imprecise for the transcript text. Two
+  interpretation notes were added: scores on model-drafted text describe the scoring path, not model
+  performance on real interviews; the Luxembourgish transcripts are not evidence about authentic
+  Luxembourgish. **No code, schema, corpus or report file was altered.**
+
 ## [1.0.1] — 2026-08-03
 
 ### Changed — honest-status pass (documentation only, no code or data changes)
