@@ -235,7 +235,7 @@ University of Luxembourg. ORCID: [0000-0002-3601-9024](https://orcid.org/0000-00
 
 ### Which DOI to use
 
-The badge uses the **concept DOI**
+The DOI link at the top uses the **concept DOI**
 [10.5281/zenodo.21273366](https://doi.org/10.5281/zenodo.21273366), which always resolves to the
 latest archived version. The citations above instead pin the verified archive with its version DOI:
 
