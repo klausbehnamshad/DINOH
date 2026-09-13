@@ -6,17 +6,16 @@ Scoring logic: `src/oh_eval/metrics.py` · corpus: [`DATA_CARD.md`](./DATA_CARD.
 >
 > The model backend is **stubbed**. `MODEL_REGISTRY` holds placeholder entries and
 > `run_model()` returns a deterministic placeholder, so the downstream evaluation logic can be
-> exercised end to end without a compute connection. **Everything in `reports/` is scoring
-> infrastructure and smoke-test output — not model-performance evidence.** That is why every
-> accuracy reads 1.0 and every WindowDiff is constant across models and languages. Real
+> exercised end to end without a compute connection. **The task scores in `reports/` are
+> smoke-test output, not model-performance evidence.** The schema-validation reports separately
+> describe record conformance. Every task-field accuracy reads 1.0 and every WindowDiff is constant across models and languages. Real
 > inference is wired in when the compute path is provisioned.
 >
 > What is real and tested today: the corpus, the schemas, the metric design, the scoring
 > integrity rules and the export path. **This release makes measurement possible. It does not
 > report measurements.**
 >
-> Please do not cite this as a benchmark of model quality, and do not quote any number from
-> `reports/`.
+> Please do not cite this as a benchmark of model quality or quote its task scores as model results.
 
 ## What it is for
 
@@ -34,9 +33,9 @@ Per-field comparison, by field type:
   `consent_status`, `accessRights`, `language` are controlled-vocabulary fields.
 - **List field** `keywords`: set-based **precision / recall / F1**.
 - **Free-text fields** `title`, `abstract`: **not auto-scored.** They are flagged
-  `review_required` for manual qualitative review. Auto-scoring free text against a human gold
-  standard is methodologically circular at this stage, so it is deliberately excluded rather
-  than approximated by a proxy metric.
+  `review_required` for manual qualitative review. This harness has no validated automatic
+  scoring rule for these fields; text similarity alone would not establish descriptive adequacy
+  or interpretive validity.
 
 ### Task 2 — Thematic segmentation
 
@@ -86,14 +85,18 @@ leaderboard, and not yet a comparative measurement.
   produces well-formed, escaped OHMS-style XML but is not yet validated against the published
   XSD. There is no connector or tested mapping to any external portal.
 
-## What would make this a benchmark
+## Next validation steps
 
-Two things, both nameable and both open:
+Two immediate priorities remain open:
 
 1. **Real inference**, replacing the stubbed backend, so that scores discriminate between
    systems.
-2. **A second annotator pass** on a subset, so the reference is defensible enough to rank
-   against.
+2. **Independent annotation and agreement analysis** on a documented sample.
+
+These steps alone do not establish benchmark validity. A future experiment also needs justified
+tasks, representative material, uncertainty reporting and separation of reference answers from
+model inputs. The current placeholder deliberately receives the gold record; that smoke-test
+arrangement must not be reused as a real model-evaluation protocol.
 
 Until then the honest description is: *an evaluation harness with a human gold standard, a
 schema-bound metric design and a tested scoring path.*

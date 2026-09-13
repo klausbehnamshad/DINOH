@@ -1,4 +1,4 @@
-# DINOH — a Digital, AI-assisted Infrastructure for Oral History
+# DINOH Evaluation
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21273366.svg)](https://doi.org/10.5281/zenodo.21273366)
 ![License: MIT](https://img.shields.io/badge/License-MIT-informational)
@@ -6,10 +6,13 @@
 ![Status](https://img.shields.io/badge/status-v1.0.1%20(draft)-orange)
 [![CI](https://github.com/klausbehnamshad/DINOH/actions/workflows/ci.yml/badge.svg)](https://github.com/klausbehnamshad/DINOH/actions/workflows/ci.yml)
 
-**Public evaluation release — the corpus, schemas, metric design and scoring path for a multilingual, human-referenced evaluation of AI assistance in oral history.**
-*When a tool proposes metadata or a thematic structure for a recorded interview — how good are those proposals, and can we measure it in a way we trust?*
+**Synthetic examples and evaluation methods under development for computational assistance in oral history.**
 
-DINOH (*a Digital, AI-assisted Infrastructure for Oral History*) is a research project at the **Luxembourg Centre for Contemporary and Digital History (C²DH), University of Luxembourg**. This repository is its **public evaluation release**: a citable evaluation harness, the concept & architecture behind it, and interoperability exporters — all on **synthetic data**.
+DINOH is a digital research infrastructure developed at the **Luxembourg Centre for Contemporary and Digital History (C²DH), University of Luxembourg**. It brings together **OHPIPE**, its transcript-workflow component, **DINOH Evaluation**, the **Interview Metadata Model (IMM)** and shared methods for oral-history research. This repository contains **DINOH Evaluation**, a separate component for inspecting evaluation procedures using synthetic records and researcher-authored reference annotations. OHPIPE is available separately as an [experimental public preview](https://github.com/klausbehnamshad/ohpipe/releases/tag/v0.1.0a1), with its own test results and limitations.
+
+The synthetic transcript texts were drafted with AI assistance and edited by the author. The reference annotations are human-authored; see the [data card](DATA_CARD.md) for provenance and limitations.
+
+The current model backend is a **placeholder**. The included scoring outputs demonstrate the procedure; they are **not measurements of model performance**. The reference annotations provide a basis for specific comparison tasks, not a general standard for interpreting oral histories.
 
 ---
 
@@ -19,18 +22,18 @@ DINOH (*a Digital, AI-assisted Infrastructure for Oral History*) is a research p
 > returns a deterministic placeholder, so the downstream evaluation logic can be exercised end to
 > end without a compute connection (see §5 of the notebook).
 >
-> **Everything under `reports/` is scoring infrastructure and smoke-test output — not
+> **The task scores under `reports/` are smoke-test output, not
 > model-performance evidence.** That is why every accuracy reads `1.0` and every WindowDiff is
 > constant across models and languages. Those files are shipped so the scoring path is inspectable
 > and reproducible, not because they say anything about models.
 >
-> **Please do not cite this as a benchmark of model quality, and do not quote any number from
-> `reports/`.**
+> **Please do not cite this as a benchmark of model quality or quote its task scores as model
+> results.** The separate schema-validation reports describe whether the synthetic records
+> conform to the schemas; they do not measure model quality either.
 >
-> What *is* real and tested: the human-authored corpus, the schemas, the metric design, the
+> What *is* real and tested: the synthetic corpus with human-authored reference annotations, the schemas, the metric design, the
 > scoring-integrity rules, the export path and the test suite. **This release makes measurement
-> possible; it does not report measurements.** See [Status](#status) for the two things that
-> would change that.
+> possible; it does not report model measurements.** See [Status](#status) for the next validation steps.
 
 ---
 
@@ -41,15 +44,15 @@ Concretely, it contains:
 
 - the multilingual **evaluation harness** (code, synthetic gold-standard corpus, two JSON schemas,
   notebook, dashboard);
-- the **concept & architecture note** (`docs/`), which describes the full DINOH governance pipeline
-  as a *design*;
+- **historical concept and architecture documents** (`docs/`, `website/` and the architecture SVG),
+  retained with explicit status notices. Their maturity labels and implementation claims are not
+  evidence about the current releases; see [Governance and current scope](docs/GOVERNANCE.md);
 - **interoperability exporters** to **WebVTT** and **OHMS** (Oral History Metadata Synchronizer).
 
-It **does not** contain DINOH's governance / enforcement engine — the default-deny gates,
-attestation, run-manifests, BIND/ACCOUNT, quarantine-review, controller-release and withdrawal
-machinery. Those are described in the concept note as *design* but are part of the internal
-pipeline and are **not shipped or executed here**. No real interview data is included; every
-record is synthetic.
+It **does not** contain or execute OHPIPE. Descriptions of gates, attestation, run manifests,
+BIND/ACCOUNT, quarantine, controller release and withdrawal in the historical concept documents
+are design context, not guarantees of this evaluation repository or of the separate OHPIPE
+preview. No real interview data is included; every corpus record is synthetic.
 
 For specifications, see [`DATA_CARD.md`](./DATA_CARD.md) (dataset) and
 [`BENCHMARK_CARD.md`](./BENCHMARK_CARD.md) (tasks, metrics and current status); for release
@@ -100,12 +103,13 @@ run.
 
 ## Interoperability (WebVTT + OHMS)
 
-The exporter turns evaluation records into two widely-used oral-history formats — **WebVTT**
-captions and **OHMS XML** (for the OHMS Viewer) — under an explicit *open + public* allow-list. See
-`examples/` for the 28 exported synthetic records and a minimal `viewer.html`.
+The examples export synthetic evaluation records as **WebVTT** and **OHMS XML**. See `examples/` for the synthetic exports and demonstration viewer.
 
-Note the limits: the OHMS output is well-formed and escaped, but is **not yet validated against the
-published OHMS XSD**, and there is no connector or tested mapping to any external portal.
+When `record_to_ohms_xml()` is called without an explicit override (`allow_fulltext=None`), inclusion of the abstract and anchor quotations depends on the record's declared `accessRights == "open"` and `consent_status == "public"` values. Passing `allow_fulltext=True` overrides that metadata decision. Other metadata and segment titles remain in the output. Callers are responsible for appropriate inputs and invocation.
+
+The WebVTT function emits supplied record and segment titles regardless of access status; it ignores `allow_fulltext`. Neither function assesses whether a title or another field identifies a person. These are format exporters for controlled synthetic examples, not an authorisation mechanism or a general privacy filter.
+
+The OHMS output has **not yet been validated against the published OHMS XSD**. No connector or tested mapping to an external portal is provided here.
 
 ## Quick start
 
@@ -126,7 +130,7 @@ python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-**Run the harness** — regenerates everything under `reports/`, using the placeholder backend
+**Run the harness** — regenerates the report data using the placeholder backend
 (see the status note above; the outputs are smoke tests, not results):
 
 ```bash
@@ -164,35 +168,29 @@ eval_dashboard.py
 ## Data & transparency
 
 All interview material is **synthetic** — written for methodological testing, representing no real
-person, testimony, or event; every record is marked accordingly. The harness targets **open-weight**
-models whose behaviour can be inspected and reproduced, and the descriptive fields follow a
+person, testimony, or event; every record is marked accordingly. Future backend work targets **open-weight** models; the current entries are placeholders.
+The descriptive fields follow a
 published minimal-metadata schema (the **LuxOH Implementation Profile** of the discipline-agnostic
 **Interview Metadata Model — Core Profile (IMM-Core)**).
 
-The artefacts under `reports/` are versioned and regenerate deterministically from this repository
-— but with the placeholder backend, so what is reproducible is the *scoring path*, not a
-measurement. Full run-manifest enforcement (model, prompt and corpus hashes) belongs to the
-internal pipeline described in the concept note, not to this public release.
+The task reports are versioned outputs of the placeholder scoring path. They do not document a
+model-performance experiment. Notebook execution also produces schema-validation reports.
+This evaluation repository does not enforce a complete model/prompt/corpus run manifest;
+historical architecture descriptions are not proof of that capability in another component.
 
 ## Anticipated questions
 
-**Are the numbers in `reports/` results?** No. They are smoke-test output of the scoring path with
-a stubbed model backend — which is why they are uniform. They are shipped so the path is
-inspectable, and they should not be quoted.
+**Are the numbers in `reports/` model results?** No. The task scores come from the placeholder
+backend and should not be quoted as model-performance evidence. The schema-validation reports
+separately describe record conformance. [The report notice](reports/README.md) explains the distinction.
 
 **Why ship them at all, then?** Because the scoring logic, the schema validation and the export
 path are the substance of this release, and they are easier to review with their outputs present
 than absent. `reports/README.md` repeats the warning next to the files.
 
-**Why only synthetic data?** A public release should demonstrate the *method*, not real testimony.
-Real interview processing happens only inside the institutional pipeline — locally, under
-controller/DPO oversight — never in this repository.
+**Why only synthetic data?** These examples make the evaluation procedure inspectable without publishing interview testimony. Real interview processing belongs within the applicable institutional framework. Required data-protection, ethics and access reviews precede processing; the controller or joint controllers remain responsible. This repository neither establishes nor verifies that authorisation. See [Governance](docs/GOVERNANCE.md) for responsibilities and methodological limits.
 
-**Where is the governance engine?** Where it matters most — the point where content leaves the
-system — it is present and tested here: the WebVTT/OHMS exporter is default-deny and consent-aware
-(`src/oh_eval/export.py`). The full enforcement layer (gates, BIND/ACCOUNT, run-manifests,
-withdrawal) is specified in the concept note and runs in the internal pipeline; it is deliberately
-not shipped here.
+**Where is OHPIPE?** Its [separate repository](https://github.com/klausbehnamshad/ohpipe) contains an experimental transcript workflow. It is not distributed here, and its preview does not claim complete historical contract conformance. The exporters in this repository demonstrate limited format conversion on synthetic examples; they grant no authorisation and provide no general privacy filter. See [Interoperability](#interoperability-webvtt--ohms) for their exact behaviour.
 
 **One annotator isn't a benchmark.** Correct — and neither is a stubbed backend. This is an
 evaluation *infrastructure* release: a reproducible corpus, schema, scoring method and export path.
@@ -201,9 +199,10 @@ collaborate (see [Status](#status)).
 
 ## Citation
 
-This release is archived on Zenodo and citable. Please cite the **archived version**, not the
-repository URL — GitHub's *"Cite this repository"* button reads [`CITATION.cff`](./CITATION.cff)
-and produces the same metadata.
+The verified Zenodo archive is **v1.0.0**, published on 9 July 2026. The current `main` branch,
+including these documentation corrections, is a later development snapshot and is not that
+archived version. The examples below and the preferred citation in [`CITATION.cff`](./CITATION.cff)
+identify the archive. If your work uses later changes, also record the exact Git commit.
 
 **Author** — Klaus Behnam Shad, Luxembourg Centre for Contemporary and Digital History (C²DH),
 University of Luxembourg. ORCID: [0000-0002-3601-9024](https://orcid.org/0000-0002-3601-9024).
@@ -211,8 +210,8 @@ University of Luxembourg. ORCID: [0000-0002-3601-9024](https://orcid.org/0000-00
 ### APA (7th edition)
 
 > Behnam Shad, K. (2026). *DINOH — a Digital, AI-assisted Infrastructure for Oral History: Public
-> evaluation release (multilingual evaluation harness)* (Version 1.0.1) [Computer software].
-> Zenodo. https://doi.org/10.5281/zenodo.21273366
+> evaluation release (multilingual benchmark)* (Version v1.0.0) [Computer software].
+> Zenodo. https://doi.org/10.5281/zenodo.21273367
 
 ### BibTeX
 
@@ -220,12 +219,12 @@ University of Luxembourg. ORCID: [0000-0002-3601-9024](https://orcid.org/0000-00
 @software{behnam_shad_dinoh_2026,
   author    = {Behnam Shad, Klaus},
   title     = {{DINOH --- a Digital, AI-assisted Infrastructure for Oral History:
-                public evaluation release (multilingual evaluation harness)}},
-  version   = {1.0.1},
+                public evaluation release (multilingual benchmark)}},
+  version   = {v1.0.0},
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.21273366},
-  url       = {https://doi.org/10.5281/zenodo.21273366},
+  doi       = {10.5281/zenodo.21273367},
+  url       = {https://doi.org/10.5281/zenodo.21273367},
   orcid     = {0000-0002-3601-9024},
   license   = {MIT}
 }
@@ -236,16 +235,16 @@ University of Luxembourg. ORCID: [0000-0002-3601-9024](https://orcid.org/0000-00
 
 ### Which DOI to use
 
-The badge and both citations above use the **concept DOI**
+The badge uses the **concept DOI**
 [10.5281/zenodo.21273366](https://doi.org/10.5281/zenodo.21273366), which always resolves to the
-latest archived version — that is the right choice in most cases. To pin one specific version, use
-its own version DOI:
+latest archived version. The citations above instead pin the verified archive with its version DOI:
 
 | Version | Released | Version DOI |
 | --- | --- | --- |
 | `v1.0.0` | 2026-07-09 | [10.5281/zenodo.21273367](https://doi.org/10.5281/zenodo.21273367) |
 
-Please cite it as evaluation infrastructure, not as a source of model-performance figures.
+The archived title includes the historical word “benchmark”; this does not make its placeholder
+scores model-performance evidence. Cite it as evaluation infrastructure.
 
 The metadata profile is published separately: Behnam Shad, K. *IMM-Core: Interview Metadata Model —
 Core Profile* (v1.0, 2026). Zenodo, CC-BY 4.0. DOI
@@ -253,12 +252,13 @@ Core Profile* (v1.0, 2026). Zenodo, CC-BY 4.0. DOI
 
 ## Status
 
-Early stage (**v1.0.1**, draft). Two things stand between this release and a benchmark in the
-proper sense, and both are open:
+Early stage (**v1.0.1**, development draft). The next priorities are:
 
 1. **Real inference**, replacing the stubbed backend, so that scores discriminate between systems.
-2. **A second annotator pass** on a subset, so the human reference is defensible enough to rank
-   against. The gold standard is currently annotated by a single researcher.
+2. **Independent annotation and agreement analysis.** The reference currently comes from one researcher.
+
+These steps alone would not establish a reliable benchmark. Task validity, separation of reference
+answers from model inputs, representative material and uncertainty also need explicit evaluation.
 
 We are sharing the concept and the harness now to invite discussion and refinement with other
 oral-history institutes and universities — including on both of the points above.
@@ -276,6 +276,5 @@ personal data.
 
 ---
 
-*Not legal advice. The concept note references GDPR and Luxembourg data-protection law as the frame
-the internal pipeline is designed around; lawfulness and any release of real data are decisions for
-a controller advised by a Data Protection Officer, not for this repository.*
+*The controller or joint controllers remain responsible for lawful processing. The DPO advises
+and monitors; software checks do not confer permission. See [Governance](docs/GOVERNANCE.md).*

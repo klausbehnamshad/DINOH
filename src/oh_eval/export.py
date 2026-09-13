@@ -1,33 +1,18 @@
-"""Interop export for DINOH: WebVTT chapters + OHMS-compatible XML index.
+"""Format exporters for DINOH synthetic examples: WebVTT and OHMS-style XML.
 
-Turns DINOH segmentation/metadata output into two viewer-friendly standard
-formats so results can be played back / indexed in common tools (any HTML5
-player for WebVTT; the OHMS / Aviary ecosystem for the XML index) without
-leaving the governance layer.
+These functions do not assess identifying content or authorise publication.
+OHMS uses declared accessRights == "open" and consent_status == "public" to
+decide whether to include abstracts and anchor quotations only when
+allow_fulltext is None. Explicit True overrides that metadata decision;
+False omits those fields. Other metadata and titles are still emitted.
 
-GOVERNANCE — the export is itself access-aware (allowlist / default-deny)
-=========================================================================
-Full text is emitted ONLY for records that are BOTH::
+WebVTT emits supplied record and segment titles regardless of access markers
+and ignores allow_fulltext. Titles are not checked for personal information.
+The analytical_annotations field is not mapped into either export; that is
+not a guarantee that other fields lack interpretive or personal data.
+OHMS output has not been validated against the official XSD.
 
-    accessRights == "open"  AND  consent_status == "public"
-
-Everything else (accessRights restricted/closed; consent_status
-research-only/teaching/embargoed) exports *structure only*: timecodes plus
-neutral segment titles, nothing more.
-
-NEVER exported, under ANY access level — deliberate, tested decisions
---------------------------------------------------------------------
-* ``analytical_annotations`` — the L2 interpretive layer carried on
-  ``timecoded_segments``. That is analysis IP, not distribution/index data,
-  so :func:`normalize_segments` intentionally maps only ``{start, end,
-  title}`` and drops L2. (See ``test_analytical_annotations_never_exported``.)
-* ``anchor_quote`` — a direct-quote field flagged ``x-pii: flag`` on analysis
-  ``units``. Emitted only when the open+public allowlist passes; otherwise
-  never. (See ``test_redaction_anchor_quote_never_leaks``.)
-
-The module is stdlib-only (no pandas) and reuses ``timecode_to_seconds`` from
-``oh_eval.metrics`` so timecode parsing has a single source of truth.
-"""
+Timecode parsing uses oh_eval.metrics.timecode_to_seconds."""
 
 from __future__ import annotations
 
@@ -36,19 +21,18 @@ from xml.etree import ElementTree as ET
 
 from .metrics import timecode_to_seconds
 
-# ── Redaction allowlist ──────────────────────────────────────────────────────
-# Full text only for this exact pair; default-deny for everything else.
+# ── Default metadata decision ──────────────────────────────────────────────────────
+# Used only when no explicit allow_fulltext value is supplied.
 FULLTEXT_ACCESS_RIGHTS = "open"
 FULLTEXT_CONSENT_STATUS = "public"
 
 
 def fulltext_allowed(meta: dict) -> bool:
-    """True iff the record's access markers permit emitting full text.
+    """Return the default text-inclusion decision from declared metadata.
 
-    Allowlist, not denylist: only ``accessRights == "open"`` AND
-    ``consent_status == "public"`` unlock synopsis / anchor_quote / transcript.
-    A missing marker is treated as *not* allowed.
-    """
+    Only accessRights == "open" and consent_status == "public" produce True.
+    Callers can override this decision. It neither establishes project
+    authorisation nor inspects the text."""
     return (
         meta.get("accessRights") == FULLTEXT_ACCESS_RIGHTS
         and meta.get("consent_status") == FULLTEXT_CONSENT_STATUS
@@ -117,13 +101,12 @@ def normalize_segments(segments: list[dict]) -> list[dict]:
 # ── WebVTT ───────────────────────────────────────────────────────────────────
 def segments_to_webvtt(meta: dict, segments: list[dict],
                        *, allow_fulltext: Optional[bool] = None) -> str:
-    """Render segments as a WebVTT chapter track.
+    """Render supplied titles as a WebVTT chapter track.
 
-    Cue payload is the neutral segment *title* only — never ``anchor_quote`` or
-    transcript — so the VTT is safe to ship at any access level. ``meta`` and
-    ``allow_fulltext`` are accepted for signature symmetry with the OHMS export;
-    the VTT body does not vary by access level (titles are non-sensitive labels).
-    """
+    Cue payload contains the segment title; the record title becomes a NOTE
+    when present. Anchor quotations and transcript fields are not mapped.
+    Access markers and allow_fulltext do not change the output. Titles may
+    identify people and require appropriate input selection and review."""
     norm = normalize_segments(segments)
     lines = ["WEBVTT", ""]
     title = meta.get("title")
@@ -142,18 +125,15 @@ def segments_to_webvtt(meta: dict, segments: list[dict],
 # ── OHMS XML index ───────────────────────────────────────────────────────────
 def record_to_ohms_xml(meta: dict, segments: list[dict],
                        *, allow_fulltext: Optional[bool] = None) -> str:
-    """Render an OHMS-style ``cdoc`` XML index.
+    """Render an OHMS-style cdoc XML index.
 
-    Header fields come from the metadata record; one ``point`` per segment.
-    Under the open+public allowlist, the interview-level ``abstract`` is emitted
-    as the record ``synopsis`` and each unit's ``anchor_quote`` as the point's
-    ``partial_transcript``. Outside the allowlist, neither is written — only
-    time + neutral title survive.
+    With allow_fulltext=None, declared open+public metadata controls whether
+    the abstract becomes synopsis and anchor_quote becomes partial_transcript.
+    Explicit True/False overrides that decision. Other metadata and segment
+    titles are emitted independently and may contain identifying information.
 
-    Structure follows the OHMS ``cdoc`` convention; full XSD validation against
-    the official OHMS schema is a pre-publication follow-up (see module/plan).
-    Built with ``xml.etree`` so output is always well-formed and escaped.
-    """
+    ElementTree serializes the output. Official OHMS XSD validation remains
+    outstanding; no tested external-portal connector is provided."""
     if allow_fulltext is None:
         allow_fulltext = fulltext_allowed(meta)
     norm = normalize_segments(segments)
@@ -171,12 +151,12 @@ def record_to_ohms_xml(meta: dict, segments: list[dict],
     _field(record, "interviewer", meta.get("interviewer"))
     _field(record, "language", meta.get("language"))
     _field(record, "coverage", meta.get("spatial"))
-    # Usage/rights carried verbatim so downstream tooling can re-check the gate.
+    # Declared rights are carried verbatim; they do not establish authorisation.
     _field(record, "usage", meta.get("accessRights"))
     _field(record, "consent_status", meta.get("consent_status"))
     kws = meta.get("keywords") or []
     _field(record, "keywords", ", ".join(str(k) for k in kws))
-    # Interview-level synopsis (abstract) only under the allowlist.
+    # Synopsis follows the resolved metadata decision or caller override.
     _field(record, "synopsis", meta.get("abstract") if allow_fulltext else "")
 
     index = ET.SubElement(record, "index")
@@ -184,7 +164,7 @@ def record_to_ohms_xml(meta: dict, segments: list[dict],
         point = ET.SubElement(index, "point")
         _field(point, "time", str(int(round(timecode_to_seconds(seg["start"])))))
         _field(point, "title", seg["title"])
-        # Direct-quote (PII) only under the allowlist; otherwise omitted entirely.
+        # Quote follows the resolved decision or override; no content inspection.
         if allow_fulltext and seg.get("anchor_quote"):
             _field(point, "partial_transcript", seg["anchor_quote"])
 
@@ -197,9 +177,9 @@ def record_to_ohms_xml(meta: dict, segments: list[dict],
 def to_dublin_core(meta: dict, *, allow_fulltext: Optional[bool] = None) -> dict:
     """Map a metadata record onto Dublin Core terms.
 
-    ``dc:description`` (the abstract) is gated behind the allowlist; the rest are
-    structural bibliographic fields and are always included.
-    """
+    dc:description follows the metadata decision when allow_fulltext=None and
+    otherwise the explicit override. Other bibliographic fields are always
+    included and may contain identifying information."""
     if allow_fulltext is None:
         allow_fulltext = fulltext_allowed(meta)
     dc = {

@@ -6,6 +6,24 @@ and the project aims to follow [Semantic Versioning](https://semver.org/spec/v2.
 
 ## [Unreleased]
 
+### Changed — public communication and scope (2026-09-13)
+
+- Applied README V3 and aligned it with the separate public OHPIPE experimental preview.
+- Corrected OHMS override, WebVTT-title and metadata descriptions in the README, data card,
+  exporter docstrings and synthetic viewer. Export and scoring functions are unchanged.
+- Added current governance scope and historical-status notices to earlier architecture material.
+  Required project reviews precede processing; the controller or joint controllers remain
+  responsible, while the DPO advises and monitors. No universal ethics procedure is implied.
+- Distinguished the verified v1.0.0 Zenodo archive from later development snapshots; added its
+  preferred citation without rewriting the archived release.
+- Clarified notebook and dashboard limitations, synthetic-text provenance and the need to exclude
+  reference answers from future real-inference inputs. Notebook executable cells, corpus, schemas
+  and report data remain unchanged.
+- Removed the dashboard's cross-language mean table to match the per-language reporting policy,
+  corrected unsupported status/method claims and removed its external font import. Plain score
+  tables also avoid an undeclared matplotlib dependency that broke both task pages on a fresh install.
+
+
 ### Changed — provenance of the synthetic transcripts (documentation only, 2026-09-10)
 
 - **`DATA_CARD.md`** now states that the transcript texts were drafted with the assistance of a

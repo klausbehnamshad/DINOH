@@ -54,3 +54,14 @@ references:
     year: 2026
     doi: "10.5281/zenodo.20507329"
     license: CC-BY-4.0
+preferred-citation:
+  type: software
+  title: "DINOH — a Digital, AI-assisted Infrastructure for Oral History: public evaluation release (multilingual benchmark)"
+  authors:
+    - family-names: "Behnam Shad"
+      given-names: "Klaus"
+      orcid: "https://orcid.org/0000-0002-3601-9024"
+  version: "v1.0.0"
+  date-released: "2026-07-09"
+  doi: "10.5281/zenodo.21273367"
+  url: "https://doi.org/10.5281/zenodo.21273367"
