@@ -1,6 +1,6 @@
 # DINOH Evaluation
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21273366.svg)](https://doi.org/10.5281/zenodo.21273366)
+[DOI: 10.5281/zenodo.21273366](https://doi.org/10.5281/zenodo.21273366)
 ![License: MIT](https://img.shields.io/badge/License-MIT-informational)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![Status](https://img.shields.io/badge/status-v1.0.1%20(draft)-orange)
