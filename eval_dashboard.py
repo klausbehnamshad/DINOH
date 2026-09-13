@@ -39,7 +39,6 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;600&display=swap');
 
     html, body, [class*="css"] {
         font-family: 'IBM Plex Sans', sans-serif;
@@ -249,7 +248,7 @@ with st.sidebar:
     st.markdown("**Project:** DINOH (2024–2027)")
     st.markdown("**PI:** Klaus Behnam Shad")
     st.markdown("**Affiliation:** C²DH, Université du Luxembourg")
-    st.caption("DINOH — the Oral History pipeline of the LIFE research programme (C²DH).")
+    st.caption("DINOH Evaluation — synthetic evaluation procedures; OHPIPE is a separate component.")
     st.markdown("---")
     page = st.radio(
         "Navigate",
@@ -277,8 +276,8 @@ if page == "Overview":
     st.markdown("""
     <div class="stub-banner">
     ⚠️ <strong>Stub run:</strong> Model backends are deterministic placeholders.
-    Real inference on Grid'5000 (gpt-oss-120b, Gemma 31B, Qwen 27B) is pending DRI integration.
-    Metrics demonstrate pipeline correctness, not model performance.
+    Real inference is future work; the current notebook uses the documented placeholder registry.
+    Task scores demonstrate the placeholder scoring path; they establish neither pipeline correctness nor model performance.
     </div>
     """, unsafe_allow_html=True)
 
@@ -323,7 +322,7 @@ if page == "Overview":
         st.markdown(f"""
         <div class="metric-card">
             <div class="metric-number">{n_models}</div>
-            <div class="metric-label">Models evaluated</div>
+            <div class="metric-label">Placeholder model entries</div>
         </div>""", unsafe_allow_html=True)
 
     st.markdown("---")
@@ -390,19 +389,16 @@ elif page == "Task 1 — Metadata":
         pivot = filtered.pivot_table(
             index="language", columns="field", values="accuracy"
         ).round(2)
-        st.dataframe(pivot.style.background_gradient(cmap="YlGn", vmin=0, vmax=1),
+        st.dataframe(pivot,
                      **_stretch())
 
-        st.markdown("### Mean accuracy per field (all languages)")
-        mean_by_field = filtered.groupby("field")["accuracy"].mean().round(2).reset_index()
-        mean_by_field.columns = ["Field", "Mean accuracy"]
-        st.dataframe(mean_by_field, **_stretch(), hide_index=True)
+        st.caption("Each row reports one language. No pooled cross-language accuracy is shown.")
 
         st.markdown("### Methodological note on free-text fields")
         st.info(
             "Fields `title` and `abstract` are flagged for **manual qualitative review** "
-            "rather than auto-scored with embedding similarity. Automatic scoring of free-text "
-            "fields against a human goldstandard would be methodologically circular at this stage."
+            "because this harness has no validated automatic scoring rule for these fields. "
+            "Text similarity alone would not establish descriptive adequacy or interpretive validity."
         )
     else:
         st.warning("No Task 1 data found. Run the notebook to generate reports/task1_metadata_summary.csv")
@@ -417,19 +413,19 @@ elif page == "Task 2 — Segmentation":
     <div class="stub-banner">
     ⚠️ Stub run: every model returns the gold segmentation with the final two segments
     merged (a single missed boundary). WindowDiff/Pk therefore reflect one boundary error
-    per transcript, not model performance. Real variation will emerge with Grid'5000 backends.
+    per transcript, not model performance. A future real-inference protocol needs independent validation.
     </div>
     """, unsafe_allow_html=True)
 
     if task2_df is not None:
         st.markdown("### Mean WindowDiff and Pk — all models × languages")
-        st.markdown("Lower is better. 0.0 = perfect, 0.5 = random baseline.")
+        st.markdown("Lower indicates closer boundary agreement with the supplied reference. There is no universal 0.5 random baseline; these are placeholder scores.")
 
         pivot2 = task2_df.pivot_table(
             index="language", columns="model", values="mean_window_diff"
         ).round(3)
         st.markdown("**WindowDiff (lower = better)**")
-        st.dataframe(pivot2.style.background_gradient(cmap="RdYlGn_r", vmin=0, vmax=0.6),
+        st.dataframe(pivot2,
                      **_stretch())
 
         st.markdown("---")
@@ -474,14 +470,15 @@ elif page == "Methodological positions":
          "Per-language reporting only. Pooling scores across seven typologically distinct languages "
          "— including low-resource Luxembourgish — would obscure meaningful variation."),
         ("Free-text fields: manual review only",
-         "Title and abstract are flagged for qualitative review. Auto-scoring with embedding "
-         "similarity against a human goldstandard is considered methodologically circular at this stage."),
+         "Title and abstract are flagged for qualitative review. No automatic scoring rule "
+         "for descriptive adequacy or interpretive validity has been validated here."),
         ("Researcher-in-the-loop is structural",
-         "The pipeline is designed so that the researcher's decision is always visible in the data. "
-         "This is not advisory — it is a structural constraint."),
+         "The annotation model distinguishes reference selections from proposals. "
+         "This evaluation dashboard does not enforce project approval or a production review process."),
         ("Open-weight models only",
-         "Mistral, OLMo 2, Gemma, gpt-oss-120b. No data egress to third-party APIs. "
-         "All inference runs on EU infrastructure (Grid'5000 / Lux-HPC). GDPR-compatible."),
+         "The notebook lists candidate models but uses a placeholder backend. No real model "
+         "inference is performed. Future hosting and data flows require project-specific assessment; "
+         "the choice of open weights does not establish legal compliance."),
         ("Synthetic corpus, explicitly declared",
          f"All {_n_syn} records carry `synthetic: true`. No real interview material is used in this "
          "evaluation set. Should the dataset be redistributed, this declaration must travel with it."),
@@ -498,7 +495,7 @@ elif page == "Methodological positions":
     st.markdown("---")
     st.markdown("### What this notebook deliberately does *not* do")
     not_doing = [
-        "No AI-generated goldstandard",
+        "Human reference annotations; AI-assisted synthetic transcript drafting",
         "No active learning or auto-tuning loop",
         "No L3 evaluation",
         "No embedding-similarity scoring of free-text fields",

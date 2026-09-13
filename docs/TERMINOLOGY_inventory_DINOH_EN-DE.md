@@ -1,3 +1,10 @@
+> **Historical design material — status notice, 13 September 2026.**
+> The names, maturity labels, legal discussion and implementation claims below describe an earlier
+> design. They are not verified statements about this evaluation release or the separate OHPIPE
+> preview, and are not current operating instructions. DINOH Evaluation uses a placeholder backend
+> and reports no model-performance results. See [Governance and current scope](GOVERNANCE.md) and
+> the [current README](../README.md). This notice supersedes any contrary current-status reading.
+
 # DINOH — Terminology & Title Inventory (EN + DE)
 ### Canonical naming for visualisation, video & public materials · Terminologie-Referenz für Visualisierung, Video & öffentliche Materialien
 

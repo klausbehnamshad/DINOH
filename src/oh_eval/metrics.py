@@ -163,8 +163,8 @@ def evaluate_metadata(gold: dict, prediction: dict,
 
     Exact-match fields are compared verbatim; list fields (keywords) get
     set precision/recall/F1; free-text fields are *not* auto-scored — they are
-    flagged for manual qualitative review (auto-scoring against a human gold is
-    methodologically circular at this stage).
+    flagged for manual qualitative review. No automatic scoring rule for these
+    free-text fields has been validated in this harness.
     """
     exact_match_fields = exact_match_fields if exact_match_fields is not None else EXACT_MATCH_FIELDS
     list_fields = list_fields if list_fields is not None else LIST_FIELDS

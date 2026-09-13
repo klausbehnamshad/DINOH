@@ -1,10 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 770" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" role="img" aria-labelledby="t d">
-  <title id="t">DINOH — AI research infrastructure / KI-Forschungsinfrastruktur</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -70 1040 840" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">Historical DINOH architecture / Historischer Architekturentwurf</title>
   <desc id="d">Two-step path Admission then Analysis, with Benchmark setting the bar offline and Provenance recording how each interpretation was made. Traffic light and gates are shown as separate axes. Per-element maturity labels included. Attestation gate runs first, before G1 to G3. There is no G4.</desc>
 
   <rect x="0" y="0" width="1040" height="770" fill="#ffffff"/>
   <rect x="8" y="8" width="1024" height="754" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
 
+  <rect x="0" y="-70" width="1040" height="70" fill="#fff7df"/>
+  <text x="28" y="-42" font-size="17" font-weight="700" fill="#503b13">Historical design / Historischer Entwurf · 13 September 2026</text>
+  <text x="28" y="-18" font-size="13" fill="#503b13">Not verified release capabilities. Current scope: README.md and docs/GOVERNANCE.md.</text>
   <!-- Header -->
   <text x="28" y="44" font-size="22" font-weight="700" fill="#111827">DINOH — AI research infrastructure · KI-Forschungsinfrastruktur</text>
   <text x="28" y="66" font-size="12" fill="#4b5563">Digital, AI-assisted Infrastructure for Oral History · C²DH, University of Luxembourg · local-only LLM workflow for QCA (Mayring)</text>

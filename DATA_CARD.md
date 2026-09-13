@@ -40,9 +40,8 @@ The **transcript texts** were drafted with the assistance of a generative langua
 edited by the author. They are invented texts written for testing; they were not collected from
 interviews. The **segmentation, metadata and analytical annotations** were authored by hand by a
 single annotator and form the *human reference* against which AI proposals are to be scored. No
-model output serves as ground truth. Circular validation — testing model A against a reference
-produced by model B — remains methodologically excluded: the reference is the human annotation,
-never the drafted text.
+model output serves as the reference annotation. This separates human annotations from
+model-drafted input texts; it does not rule out bias or contamination associated with those inputs.
 
 Two consequences follow for interpretation. Model-drafted text may be easier for a model to
 process than authentic speech, so any score on this corpus describes the scoring path and the
@@ -55,10 +54,12 @@ model's competence in it.
 - Exercising the *narrow, assistive* pipeline components: minimal metadata extraction and
   thematic segmentation.
 - Regression and integrity testing of the scoring path.
-- Demonstrating the access-aware export path. Because **no record is `open` + `public`**, the
-  shipped WebVTT/OHMS exports in `examples/` are **structure-only** (timecodes + neutral
-  titles); no synopsis, quote, or transcript is emitted. The corpus therefore exercises the
-  default-deny behaviour by construction.
+- Demonstrating format conversion. The 28 corpus records are all `restricted` + `research-only`.
+  Their default OHMS exports omit abstracts and anchor quotations but retain other metadata and
+  titles. WebVTT emits record and segment titles regardless of access status. The separately named
+  `ILLUSTRATION_open-public` example demonstrates text inclusion on a synthetic record.
+  An explicit OHMS `allow_fulltext=True` also enables text inclusion regardless of those markers.
+  These examples do not establish a privacy barrier; see [the export scope](README.md#interoperability-webvtt--ohms).
 
 ## Out of scope / limitations
 
@@ -77,7 +78,7 @@ model's competence in it.
 
 ## Ethics & privacy
 
-Contains no real personal or special-category data. It is safe to redistribute under MIT. Real
-interview processing is **not** performed in this repository and is out of scope for this
-release; it belongs to the internal pipeline described in the concept note, under
-controller/DPO oversight.
+The corpus is declared synthetic and is distributed under MIT. Real interview processing is
+outside this evaluation repository's scope. Applicable project reviews precede processing;
+the controller or joint controllers remain responsible, with the DPO advising and monitoring.
+No software result establishes authorisation or anonymity. See [Governance](docs/GOVERNANCE.md).

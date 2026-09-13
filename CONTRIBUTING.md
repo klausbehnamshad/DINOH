@@ -4,12 +4,12 @@ Thanks for your interest. This repository is the **public, synthetic-data evalua
 
 ## Scope
 
-This repo covers the **evaluation core**, the **concept & architecture note**, and the **WebVTT/OHMS exporters**. It does **not** contain DINOH's internal governance/enforcement engine, and issues or pull requests about that engine cannot be actioned here. No real interview data belongs in this repository — the corpus is and must remain **synthetic**.
+This repo covers the **evaluation core**, the **concept & architecture note**, and the **WebVTT/OHMS exporters**. OHPIPE is developed in its [separate repository](https://github.com/klausbehnamshad/ohpipe). Historical architecture documents do not establish current release capabilities; see [Governance](docs/GOVERNANCE.md). No real interview data belongs in this repository — the corpus is and must remain **synthetic**.
 
 ## Ways to contribute
 
 - **Report issues** — bugs, unclear docs, metric questions, or export interoperability problems (WebVTT / OHMS).
-- **Improve the benchmark** — additional synthetic records, language coverage, or metric reporting. Please keep new corpus data synthetic and mark it as such.
+- **Improve the evaluation procedure** — additional synthetic records, language coverage, or metric reporting. Please keep new corpus data synthetic and mark it as such.
 - **Discuss the method** — the per-language, human-referenced evaluation design is meant to be debated and refined.
 
 ## Ground rules
