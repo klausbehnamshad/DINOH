@@ -6,6 +6,8 @@
 ![Status](https://img.shields.io/badge/status-v1.0.1%20(draft)-orange)
 [![CI](https://github.com/klausbehnamshad/DINOH/actions/workflows/ci.yml/badge.svg)](https://github.com/klausbehnamshad/DINOH/actions/workflows/ci.yml)
 
+**DINOH: a Digital, AI-assisted Infrastructure for Oral History** *multilingual evaluation harness*
+
 **Synthetic examples and evaluation methods under development for computational assistance in oral history.**
 
 DINOH is a digital research infrastructure developed at the **Luxembourg Centre for Contemporary and Digital History (C²DH), University of Luxembourg**. It brings together **OHPIPE**, its transcript-workflow component, **DINOH Evaluation**, the **Interview Metadata Model (IMM)** and shared methods for oral-history research. This repository contains **DINOH Evaluation**, a separate component for inspecting evaluation procedures using synthetic records and researcher-authored reference annotations. OHPIPE is available separately as an [experimental public preview](https://github.com/klausbehnamshad/ohpipe/releases/tag/v0.1.0a1), with its own test results and limitations.
